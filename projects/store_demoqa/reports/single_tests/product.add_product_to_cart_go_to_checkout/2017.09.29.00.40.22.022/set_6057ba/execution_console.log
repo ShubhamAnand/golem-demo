@@ -1,0 +1,25 @@
+00:40:22.475 INFO Test execution started: product.add_product_to_cart_go_to_checkout
+00:40:22.475 INFO Driver: chrome
+00:40:30.845 INFO Navigate to: 'http://store.demoqa.com/'
+00:40:30.878 INFO Mouse hover element ''
+00:40:37.766 INFO Take screenshot error
+00:40:38.470 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 92, in run_test
+    test_module.test(golem.core.test_data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/tests/product/add_product_to_cart_go_to_checkout.py", line 13, in test
+    header.navigate_to_category('Accessories')
+  File "/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/pages/header.py", line 18, in navigate_to_category
+    m.click()
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 77, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 493, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 257, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+

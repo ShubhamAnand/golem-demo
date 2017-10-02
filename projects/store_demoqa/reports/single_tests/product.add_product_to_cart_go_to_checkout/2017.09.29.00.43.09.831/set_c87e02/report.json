@@ -1,0 +1,17 @@
+{
+    "test_case": "product.add_product_to_cart_go_to_checkout",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://store.demoqa.com/'",
+        "Click None",
+        "Click None",
+        "error__5bdea6e1"
+    ],
+    "description": "",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 92, in run_test\n    test_module.test(golem.core.test_data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/tests/product/add_product_to_cart_go_to_checkout.py\", line 15, in test\n    click(category.go_to_checkout)\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 125, in click\n    webelement.click()\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py\", line 77, in click\n    self._execute(Command.CLICK_ELEMENT)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py\", line 493, in _execute\n    return self._parent.execute(command, params)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py\", line 257, in execute\n    self.error_handler.check_response(response)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py\", line 194, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.ElementNotVisibleException: Message: element not visible\n  (Session info: chrome=61.0.3163.100)\n  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)\n\n",
+    "short_error": "\n",
+    "test_elapsed_time": 18.86,
+    "test_timestamp": "2017.09.29.00.43.10.282",
+    "browser": "chrome",
+    "test_data": {}
+}
