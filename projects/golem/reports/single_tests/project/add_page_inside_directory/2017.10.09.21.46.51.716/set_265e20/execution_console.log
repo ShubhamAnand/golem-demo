@@ -1,0 +1,80 @@
+21:46:51.996 INFO Test execution started: project/add_page_inside_directory
+21:46:51.997 INFO Browser: chrome
+21:46:51.997 INFO Environment: test
+21:46:51.997 INFO Using data: 
+    url: http://localhost:8000
+
+21:46:54.037 INFO Navigate to: 'http://localhost:8000'
+21:46:54.169 INFO Write 'admin' in element username
+21:46:54.256 INFO Write 'admin' in element password
+21:46:54.294 INFO Click login_button
+21:46:54.628 INFO Random value generated: one/lranc
+21:46:54.628 INFO Store value one/lranc in key page_name
+21:46:55.983 INFO Write 'one/' in element None
+21:46:55.984 INFO Press key: ENTER
+21:46:56.183 INFO Write 'lranc' in element None
+21:46:56.183 INFO Press key: ENTER
+21:46:57.299 INFO Take screenshot error
+21:46:57.911 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li.tree-element[fullpath='one.lranc']"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li.tree-element[fullpath='one.lranc']"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 82, in verify_page_exists
+    tree_element = pages_tree_ul.find(page_selector, timeout=1)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 113, in _find
+    element_name, timeout)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 44, in _find_webelement
+    element_name, remaining_time)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element li.tree-element[fullpath='one.lranc'] not found using selector css:'li.tree-element[fullpath='one.lranc']'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page_inside_directory.py", line 18, in test
+    project.verify_page_exists(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 84, in verify_page_exists
+    raise Exception('Page {} does not exist'.format(full_path))
+Exception: Page one/lranc does not exist
+21:46:57.912 INFO Close driver

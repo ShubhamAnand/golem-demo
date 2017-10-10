@@ -1,0 +1,877 @@
+2017-10-09 19:45:35,839 golem INFO Test execution started: project/add_page
+2017-10-09 19:45:35,839 golem INFO Browser: chrome
+2017-10-09 19:45:35,839 golem INFO Environment: test
+2017-10-09 19:45:35,840 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 19:45:37,925 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 19:45:37,949 golem DEBUG Element found
+2017-10-09 19:45:38,027 golem INFO Write 'admin' in element username
+2017-10-09 19:45:38,041 golem DEBUG Element found
+2017-10-09 19:45:38,103 golem INFO Write 'admin' in element password
+2017-10-09 19:45:38,117 golem DEBUG Element found
+2017-10-09 19:45:38,138 golem INFO Click login_button
+2017-10-09 19:45:38,559 golem INFO Random value generated: ppgvg
+2017-10-09 19:45:38,560 golem INFO Store value ppgvg in key page_name
+2017-10-09 19:45:38,587 golem DEBUG Element found
+2017-10-09 19:45:39,120 golem DEBUG Element not found yet, remaining time: 19.48628520965576
+2017-10-09 19:45:39,627 golem DEBUG Element not found yet, remaining time: 18.978941202163696
+2017-10-09 19:45:40,134 golem DEBUG Element not found yet, remaining time: 18.472077131271362
+2017-10-09 19:45:40,643 golem DEBUG Element not found yet, remaining time: 17.964009284973145
+2017-10-09 19:45:41,152 golem DEBUG Element not found yet, remaining time: 17.455342292785645
+2017-10-09 19:45:41,660 golem DEBUG Element not found yet, remaining time: 16.94761562347412
+2017-10-09 19:45:42,168 golem DEBUG Element not found yet, remaining time: 16.440255641937256
+2017-10-09 19:45:42,676 golem DEBUG Element not found yet, remaining time: 15.931990385055542
+2017-10-09 19:45:43,183 golem DEBUG Element not found yet, remaining time: 15.42552638053894
+2017-10-09 19:45:43,691 golem DEBUG Element not found yet, remaining time: 14.91799521446228
+2017-10-09 19:45:44,201 golem DEBUG Element not found yet, remaining time: 14.408442258834839
+2017-10-09 19:45:44,711 golem DEBUG Element not found yet, remaining time: 13.898730278015137
+2017-10-09 19:45:45,220 golem DEBUG Element not found yet, remaining time: 13.390480279922485
+2017-10-09 19:45:45,730 golem DEBUG Element not found yet, remaining time: 12.880298137664795
+2017-10-09 19:45:46,240 golem DEBUG Element not found yet, remaining time: 12.37120795249939
+2017-10-09 19:45:46,750 golem DEBUG Element not found yet, remaining time: 11.861325025558472
+2017-10-09 19:45:47,259 golem DEBUG Element not found yet, remaining time: 11.353314638137817
+2017-10-09 19:45:47,769 golem DEBUG Element not found yet, remaining time: 10.843397617340088
+2017-10-09 19:45:48,281 golem DEBUG Element not found yet, remaining time: 10.331877708435059
+2017-10-09 19:45:48,790 golem DEBUG Element not found yet, remaining time: 9.823091506958008
+2017-10-09 19:45:49,300 golem DEBUG Element not found yet, remaining time: 9.314083337783813
+2017-10-09 19:45:49,809 golem DEBUG Element not found yet, remaining time: 8.805188417434692
+2017-10-09 19:45:50,320 golem DEBUG Element not found yet, remaining time: 8.295050382614136
+2017-10-09 19:45:50,831 golem DEBUG Element not found yet, remaining time: 7.784595251083374
+2017-10-09 19:45:51,340 golem DEBUG Element not found yet, remaining time: 7.276060104370117
+2017-10-09 19:45:51,847 golem DEBUG Element not found yet, remaining time: 6.769276857376099
+2017-10-09 19:45:52,354 golem DEBUG Element not found yet, remaining time: 6.262341737747192
+2017-10-09 19:45:52,865 golem DEBUG Element not found yet, remaining time: 5.7523438930511475
+2017-10-09 19:45:53,375 golem DEBUG Element not found yet, remaining time: 5.241988897323608
+2017-10-09 19:45:53,884 golem DEBUG Element not found yet, remaining time: 4.733526706695557
+2017-10-09 19:45:54,395 golem DEBUG Element not found yet, remaining time: 4.223680734634399
+2017-10-09 19:45:54,904 golem DEBUG Element not found yet, remaining time: 3.7148597240448
+2017-10-09 19:45:55,416 golem DEBUG Element not found yet, remaining time: 3.203178882598877
+2017-10-09 19:45:55,926 golem DEBUG Element not found yet, remaining time: 2.693915843963623
+2017-10-09 19:45:56,433 golem DEBUG Element not found yet, remaining time: 2.1873438358306885
+2017-10-09 19:45:56,943 golem DEBUG Element not found yet, remaining time: 1.6779289245605469
+2017-10-09 19:45:57,453 golem DEBUG Element not found yet, remaining time: 1.1682848930358887
+2017-10-09 19:45:57,962 golem DEBUG Element not found yet, remaining time: 0.6593148708343506
+2017-10-09 19:45:58,470 golem DEBUG Element not found yet, remaining time: 0.15169882774353027
+2017-10-09 19:45:58,982 golem INFO Take screenshot error
+2017-10-09 19:45:59,537 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li[fullpath='']>a.new-element-link"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 15, in test
+    project.add_new_page(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 45, in add_new_page
+    add_page_link = pages_tree_ul.find(add_link_selector)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 113, in _find
+    element_name, timeout)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 44, in _find_webelement
+    element_name, remaining_time)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 44, in _find_webelement
+    element_name, remaining_time)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 44, in _find_webelement
+    element_name, remaining_time)
+  [Previous line repeated 35 more times]
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element li[fullpath='']>a.new-element-link not found using selector css:'li[fullpath='']>a.new-element-link'
+2017-10-09 19:45:59,544 golem INFO Close driver

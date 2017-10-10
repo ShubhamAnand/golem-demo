@@ -1,0 +1,374 @@
+{
+    "test_cases": [
+        {
+            "test_set": "set_16766d",
+            "module": "api",
+            "sub_modules": [
+                "project"
+            ],
+            "name": "get_tests",
+            "full_name": "api.project.get_tests",
+            "result": "pass",
+            "test_elapsed_time": 0.05,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+                "last_response": "<Response [200]>"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_dbd14a",
+            "module": "index",
+            "sub_modules": [],
+            "name": "create_project",
+            "full_name": "index.create_project",
+            "result": "pass",
+            "test_elapsed_time": 16.71,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+                "project_name": "'pyri'"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_9901c4",
+            "module": "index",
+            "sub_modules": [],
+            "name": "create_project_missing_name",
+            "full_name": "index.create_project_missing_name",
+            "result": "pass",
+            "test_elapsed_time": 13.31,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_2fe803",
+            "module": "index",
+            "sub_modules": [],
+            "name": "create_project_name_too_short",
+            "full_name": "index.create_project_name_too_short",
+            "result": "pass",
+            "test_elapsed_time": 13.31,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+                "project_name": "'uu'"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_2b56a4",
+            "module": "index",
+            "sub_modules": [],
+            "name": "create_project_repeated_name",
+            "full_name": "index.create_project_repeated_name",
+            "result": "pass",
+            "test_elapsed_time": 15.14,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+                "project_name": "'cmlze'"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_2c9150",
+            "module": "login",
+            "sub_modules": [],
+            "name": "login",
+            "full_name": "login.login",
+            "result": "pass",
+            "test_elapsed_time": 13.38,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_d49021",
+            "module": "login",
+            "sub_modules": [],
+            "name": "login_incorrect_password",
+            "full_name": "login.login_incorrect_password",
+            "result": "pass",
+            "test_elapsed_time": 9.55,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_b47db2",
+            "module": "login",
+            "sub_modules": [],
+            "name": "login_missing_password",
+            "full_name": "login.login_missing_password",
+            "result": "pass",
+            "test_elapsed_time": 9.61,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_3ff08f",
+            "module": "login",
+            "sub_modules": [],
+            "name": "login_missing_username",
+            "full_name": "login.login_missing_username",
+            "result": "pass",
+            "test_elapsed_time": 9.13,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_13a3fd",
+            "module": "project",
+            "sub_modules": [],
+            "name": "access_test",
+            "full_name": "project.access_test",
+            "result": "pass",
+            "test_elapsed_time": 18.86,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+                "test_name": "'rwouy'"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_64db39",
+            "module": "project",
+            "sub_modules": [],
+            "name": "add_directory_to_pages_section",
+            "full_name": "project.add_directory_to_pages_section",
+            "result": "fail",
+            "test_elapsed_time": 18.1,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+                "directory_name": "'zixgg/'"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_e0dac2",
+            "module": "project",
+            "sub_modules": [],
+            "name": "add_page",
+            "full_name": "project.add_page",
+            "result": "pass",
+            "test_elapsed_time": 28.67,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+                "page_name": "'hyuxz'"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_ff3b38",
+            "module": "project",
+            "sub_modules": [],
+            "name": "add_page_inside_directory",
+            "full_name": "project.add_page_inside_directory",
+            "result": "fail",
+            "test_elapsed_time": 28.68,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+                "dir_name": "'zmutb/'",
+                "page_name": "'wqxko'"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_6f28ca",
+            "module": "project",
+            "sub_modules": [],
+            "name": "add_page_with_duplicated_name",
+            "full_name": "project.add_page_with_duplicated_name",
+            "result": "pass",
+            "test_elapsed_time": 22.92,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+                "page_name": "'hvnwz'"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_d2e8d0",
+            "module": "project",
+            "sub_modules": [],
+            "name": "add_test",
+            "full_name": "project.add_test",
+            "result": "fail",
+            "test_elapsed_time": 21.41,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_e68f6e",
+            "module": "project",
+            "sub_modules": [],
+            "name": "add_test_with_duplicated_name",
+            "full_name": "project.add_test_with_duplicated_name",
+            "result": "pass",
+            "test_elapsed_time": 30.37,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+                "test_name": "'xcnpa'"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:19"
+        },
+        {
+            "test_set": "set_9a63b3",
+            "module": "project",
+            "sub_modules": [],
+            "name": "create_page_with_middle_spaces",
+            "full_name": "project.create_page_with_middle_spaces",
+            "result": "pass",
+            "test_elapsed_time": 22.86,
+            "browser": "chrome (headless)",
+            "data": {
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:18"
+        },
+        {
+            "test_set": "set_20bf3f",
+            "module": "test_page",
+            "sub_modules": [],
+            "name": "add_action_to_test",
+            "full_name": "test_page.add_action_to_test",
+            "result": "fail",
+            "test_elapsed_time": 27.35,
+            "browser": "chrome (headless)",
+            "data": {
+                "action": "'navigate'",
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:19"
+        },
+        {
+            "test_set": "set_3c1879",
+            "module": "test_page",
+            "sub_modules": [],
+            "name": "add_action_to_test",
+            "full_name": "test_page.add_action_to_test",
+            "result": "fail",
+            "test_elapsed_time": 20.55,
+            "browser": "chrome (headless)",
+            "data": {
+                "action": "'close'",
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:19"
+        },
+        {
+            "test_set": "set_c19c72",
+            "module": "test_page",
+            "sub_modules": [],
+            "name": "add_action_to_test",
+            "full_name": "test_page.add_action_to_test",
+            "result": "fail",
+            "test_elapsed_time": 29.23,
+            "browser": "chrome (headless)",
+            "data": {
+                "action": "'capture'",
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:19"
+        },
+        {
+            "test_set": "set_cf52e2",
+            "module": "test_page",
+            "sub_modules": [],
+            "name": "add_action_to_test",
+            "full_name": "test_page.add_action_to_test",
+            "result": "fail",
+            "test_elapsed_time": 32.85,
+            "browser": "chrome (headless)",
+            "data": {
+                "action": "'click'",
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:19"
+        },
+        {
+            "test_set": "set_ded97e",
+            "module": "test_page",
+            "sub_modules": [],
+            "name": "add_action_to_test",
+            "full_name": "test_page.add_action_to_test",
+            "result": "fail",
+            "test_elapsed_time": 32.77,
+            "browser": "chrome (headless)",
+            "data": {
+                "action": "'send keys'",
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:19"
+        },
+        {
+            "test_set": "set_a785b4",
+            "module": "test_page",
+            "sub_modules": [],
+            "name": "add_description",
+            "full_name": "test_page.add_description",
+            "result": "fail",
+            "test_elapsed_time": 16.8,
+            "browser": "chrome (headless)",
+            "data": {
+                "description": "'description of the test'",
+                "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+                "name": "'gmiswwz'"
+            },
+            "environment": "test",
+            "start_date_time": "2017/10/09 18:19"
+        }
+    ],
+    "total_cases_ok": 14,
+    "total_cases_fail": 9,
+    "total_pending": 0,
+    "total_cases": 23,
+    "net_elapsed_time": 59.79
+}

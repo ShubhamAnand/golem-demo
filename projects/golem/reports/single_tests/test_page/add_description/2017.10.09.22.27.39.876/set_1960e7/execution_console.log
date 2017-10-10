@@ -1,0 +1,36 @@
+22:27:40.149 INFO Test execution started: test_page/add_description
+22:27:40.150 INFO Browser: chrome
+22:27:40.150 INFO Environment: test
+22:27:40.150 INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+22:27:42.228 INFO Navigate to: 'http://localhost:8000'
+22:27:42.348 INFO Write 'admin' in element username
+22:27:42.432 INFO Write 'admin' in element password
+22:27:42.469 INFO Click login_button
+22:27:43.014 INFO Random value generated: uakhuzi
+22:27:43.015 INFO Store value uakhuzi in key name
+22:27:44.306 INFO Write 'uakhuzi' in element None
+22:27:44.307 INFO Press key: ENTER
+22:27:44.394 INFO Click None
+22:27:44.660 INFO Write 'description of the test' in element description
+22:27:44.694 INFO Click save
+22:27:44.759 INFO Waiting for 5 seconds
+22:27:49.825 INFO Refresh page
+22:27:49.885 INFO Refresh page
+22:27:49.941 INFO Refresh page
+22:27:50.003 INFO Refresh page
+22:27:50.003 INFO Waiting for 10 seconds
+22:28:00.040 INFO Verify element 'description' contains text 'description of the test'
+22:28:00.058 INFO Take screenshot error
+22:28:00.589 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 25, in test
+    verify_text_in_element(test_page.description, data.description)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 372, in verify_text_in_element
+    .format(text, webelement.name))
+golem.core.exceptions.TextNotPresent: Text 'description of the test' was not found in element description
+22:28:00.589 INFO Close driver

@@ -1,0 +1,24 @@
+{
+    "test_case": "project.add_page_inside_directory",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'qbmby' in element None",
+        "Press key: ENTER"
+    ],
+    "description": "Verify that the user can create a new page inside a directory",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 13.4,
+    "test_timestamp": "2017.10.09.22.03.11.738",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "page_name": "'one/qbmby'"
+    },
+    "environment": "test"
+}

@@ -1,0 +1,26 @@
+{
+    "test_case": "project.access_test",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'rwouy' in element add input",
+        "Press key: ENTER",
+        "Click None",
+        "Verify element 'testName' contains text 'rwouy'"
+    ],
+    "description": "Verify that the user can access a test by clicking on it in the test list.",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 18.86,
+    "test_timestamp": "2017.10.09.18.18.43.578",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "test_name": "'rwouy'"
+    },
+    "environment": "test"
+}

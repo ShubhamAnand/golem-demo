@@ -1,0 +1,32 @@
+2017-10-09 19:57:59,213 golem INFO Test execution started: project/add_page
+2017-10-09 19:57:59,213 golem INFO Browser: chrome
+2017-10-09 19:57:59,214 golem INFO Environment: test
+2017-10-09 19:57:59,214 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 19:58:01,309 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 19:58:01,328 golem DEBUG Element found
+2017-10-09 19:58:01,414 golem INFO Write 'admin' in element username
+2017-10-09 19:58:01,429 golem DEBUG Element found
+2017-10-09 19:58:01,490 golem INFO Write 'admin' in element password
+2017-10-09 19:58:01,510 golem DEBUG Element found
+2017-10-09 19:58:01,539 golem INFO Click login_button
+2017-10-09 19:58:01,872 golem INFO Random value generated: ptjgw
+2017-10-09 19:58:01,873 golem INFO Store value ptjgw in key page_name
+2017-10-09 19:58:01,987 golem DEBUG Element found
+2017-10-09 19:58:02,022 golem DEBUG Element found
+2017-10-09 19:58:02,064 golem DEBUG Element found
+2017-10-09 19:58:02,175 golem DEBUG Element found
+2017-10-09 19:58:02,235 golem INFO Write 'ptjgw' in element None
+2017-10-09 19:58:02,236 golem INFO Waiting for 5 seconds
+2017-10-09 19:58:07,272 golem INFO Take screenshot error
+2017-10-09 19:58:07,818 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 17, in test
+    project.verify_page_exists(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 130, in verify_page_exists
+    raise Exception('Page {} was not found'.format(dir_name))
+Exception: Page ptjgw was not found
+2017-10-09 19:58:07,819 golem INFO Close driver

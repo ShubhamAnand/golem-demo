@@ -1,0 +1,46 @@
+2017-10-09 22:24:28,848 golem INFO Test execution started: test_page/add_description
+2017-10-09 22:24:28,849 golem INFO Browser: chrome
+2017-10-09 22:24:28,849 golem INFO Environment: test
+2017-10-09 22:24:28,849 golem INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+2017-10-09 22:24:30,947 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 22:24:30,967 golem DEBUG Element found
+2017-10-09 22:24:31,054 golem INFO Write 'admin' in element username
+2017-10-09 22:24:31,070 golem DEBUG Element found
+2017-10-09 22:24:31,132 golem INFO Write 'admin' in element password
+2017-10-09 22:24:31,148 golem DEBUG Element found
+2017-10-09 22:24:31,170 golem INFO Click login_button
+2017-10-09 22:24:31,705 golem INFO Random value generated: xjgpurl
+2017-10-09 22:24:31,705 golem INFO Store value xjgpurl in key name
+2017-10-09 22:24:31,738 golem DEBUG Element found
+2017-10-09 22:24:32,276 golem DEBUG Element not found yet, remaining time: 0.4848799705505371
+2017-10-09 22:24:32,795 golem DEBUG Element found
+2017-10-09 22:24:32,819 golem DEBUG Element found
+2017-10-09 22:24:32,850 golem DEBUG Element found
+2017-10-09 22:24:32,930 golem DEBUG Element found
+2017-10-09 22:24:32,994 golem INFO Write 'xjgpurl' in element None
+2017-10-09 22:24:32,994 golem INFO Press key: ENTER
+2017-10-09 22:24:33,014 golem DEBUG Element found
+2017-10-09 22:24:33,031 golem DEBUG Element found
+2017-10-09 22:24:33,062 golem DEBUG Element found
+2017-10-09 22:24:33,080 golem INFO Click None
+2017-10-09 22:24:33,299 golem DEBUG Element found
+2017-10-09 22:24:33,410 golem INFO Write 'description of the test' in element description
+2017-10-09 22:24:33,426 golem DEBUG Element found
+2017-10-09 22:24:33,444 golem INFO Click save
+2017-10-09 22:24:33,575 golem INFO Refresh page
+2017-10-09 22:24:33,582 golem DEBUG Element found
+2017-10-09 22:24:33,603 golem INFO Verify element 'description' contains text 'description of the test'
+2017-10-09 22:24:33,622 golem INFO Take screenshot error
+2017-10-09 22:24:34,216 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 20, in test
+    verify_text_in_element(test_page.description, data.description)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 372, in verify_text_in_element
+    .format(text, webelement.name))
+golem.core.exceptions.TextNotPresent: Text 'description of the test' was not found in element description
+2017-10-09 22:24:34,217 golem INFO Close driver

@@ -1,0 +1,23 @@
+19:41:06.270 INFO Test execution started: project/add_page
+19:41:06.270 INFO Browser: chrome
+19:41:06.270 INFO Environment: test
+19:41:06.271 INFO Using data: 
+    url: http://localhost:8000
+
+19:41:08.422 INFO Navigate to: 'http://localhost:8000'
+19:41:08.535 INFO Write 'admin' in element username
+19:41:08.617 INFO Write 'admin' in element password
+19:41:08.663 INFO Click login_button
+19:41:08.997 INFO Random value generated: hsdge
+19:41:08.998 INFO Store value hsdge in key page_name
+19:41:09.156 INFO Take screenshot error
+19:41:09.718 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 15, in test
+    project.add_new_page(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 42, in add_new_page
+    _expand_tree_path(element(id='pagesTree'))
+TypeError: _expand_tree_path() missing 1 required positional argument: 'path'
+19:41:09.719 INFO Close driver

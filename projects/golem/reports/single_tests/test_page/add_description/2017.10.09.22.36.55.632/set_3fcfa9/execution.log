@@ -1,0 +1,44 @@
+2017-10-09 22:36:55,916 golem INFO Test execution started: test_page/add_description
+2017-10-09 22:36:55,916 golem INFO Browser: chrome
+2017-10-09 22:36:55,917 golem INFO Environment: test
+2017-10-09 22:36:55,917 golem INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+2017-10-09 22:36:57,990 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 22:36:58,012 golem DEBUG Element found
+2017-10-09 22:36:58,096 golem INFO Write 'admin' in element username
+2017-10-09 22:36:58,110 golem DEBUG Element found
+2017-10-09 22:36:58,171 golem INFO Write 'admin' in element password
+2017-10-09 22:36:58,188 golem DEBUG Element found
+2017-10-09 22:36:58,209 golem INFO Click login_button
+2017-10-09 22:36:58,755 golem INFO Random value generated: prmklvh
+2017-10-09 22:36:58,756 golem INFO Store value prmklvh in key name
+2017-10-09 22:36:58,790 golem DEBUG Element found
+2017-10-09 22:36:59,328 golem DEBUG Element not found yet, remaining time: 0.485414981842041
+2017-10-09 22:36:59,843 golem DEBUG Element found
+2017-10-09 22:36:59,866 golem DEBUG Element found
+2017-10-09 22:36:59,899 golem DEBUG Element found
+2017-10-09 22:36:59,988 golem DEBUG Element found
+2017-10-09 22:37:00,056 golem INFO Write 'prmklvh' in element None
+2017-10-09 22:37:00,056 golem INFO Press key: ENTER
+2017-10-09 22:37:00,077 golem DEBUG Element found
+2017-10-09 22:37:00,098 golem DEBUG Element found
+2017-10-09 22:37:00,131 golem DEBUG Element found
+2017-10-09 22:37:00,149 golem INFO Click None
+2017-10-09 22:37:00,361 golem DEBUG Element found
+2017-10-09 22:37:00,453 golem INFO Write 'description of the test' in element description
+2017-10-09 22:37:00,467 golem DEBUG Element found
+2017-10-09 22:37:00,491 golem INFO Click save
+2017-10-09 22:37:00,549 golem INFO Waiting for 3 seconds
+2017-10-09 22:37:03,550 golem INFO Take screenshot error
+2017-10-09 22:37:04,145 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 20, in test
+    refresh_page()
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 189, in refresh_page
+    browser.get(browser.getCurrentUrl());
+AttributeError: 'WebDriver' object has no attribute 'getCurrentUrl'
+2017-10-09 22:37:04,145 golem INFO Close driver

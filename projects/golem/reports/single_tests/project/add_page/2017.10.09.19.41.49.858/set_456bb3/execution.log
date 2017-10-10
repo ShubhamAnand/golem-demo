@@ -1,0 +1,30 @@
+2017-10-09 19:41:50,151 golem INFO Test execution started: project/add_page
+2017-10-09 19:41:50,151 golem INFO Browser: chrome
+2017-10-09 19:41:50,151 golem INFO Environment: test
+2017-10-09 19:41:50,152 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 19:41:52,263 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 19:41:52,287 golem DEBUG Element found
+2017-10-09 19:41:52,377 golem INFO Write 'admin' in element username
+2017-10-09 19:41:52,395 golem DEBUG Element found
+2017-10-09 19:41:52,458 golem INFO Write 'admin' in element password
+2017-10-09 19:41:52,475 golem DEBUG Element found
+2017-10-09 19:41:52,500 golem INFO Click login_button
+2017-10-09 19:41:52,837 golem INFO Random value generated: fvcsh
+2017-10-09 19:41:52,838 golem INFO Store value fvcsh in key page_name
+2017-10-09 19:41:52,951 golem DEBUG Element found
+2017-10-09 19:41:52,975 golem DEBUG Element found
+2017-10-09 19:41:52,985 golem INFO Take screenshot error
+2017-10-09 19:41:53,570 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 15, in test
+    project.add_new_page(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 42, in add_new_page
+    _expand_tree_path(element(id='pagesTree'), split_path)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 13, in _expand_tree_path
+    this_dir = path.pop()
+IndexError: pop from empty list
+2017-10-09 19:41:53,571 golem INFO Close driver

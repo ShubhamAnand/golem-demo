@@ -1,0 +1,44 @@
+2017-10-09 22:38:03,958 golem INFO Test execution started: test_page/add_description
+2017-10-09 22:38:03,959 golem INFO Browser: chrome
+2017-10-09 22:38:03,959 golem INFO Environment: test
+2017-10-09 22:38:03,959 golem INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+2017-10-09 22:38:06,001 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 22:38:06,024 golem DEBUG Element found
+2017-10-09 22:38:06,108 golem INFO Write 'admin' in element username
+2017-10-09 22:38:06,123 golem DEBUG Element found
+2017-10-09 22:38:06,188 golem INFO Write 'admin' in element password
+2017-10-09 22:38:06,205 golem DEBUG Element found
+2017-10-09 22:38:06,228 golem INFO Click login_button
+2017-10-09 22:38:06,671 golem INFO Random value generated: lsbqkcl
+2017-10-09 22:38:06,671 golem INFO Store value lsbqkcl in key name
+2017-10-09 22:38:06,805 golem DEBUG Element found
+2017-10-09 22:38:07,341 golem DEBUG Element not found yet, remaining time: 0.48517394065856934
+2017-10-09 22:38:07,858 golem DEBUG Element found
+2017-10-09 22:38:07,883 golem DEBUG Element found
+2017-10-09 22:38:07,914 golem DEBUG Element found
+2017-10-09 22:38:08,001 golem DEBUG Element found
+2017-10-09 22:38:08,068 golem INFO Write 'lsbqkcl' in element None
+2017-10-09 22:38:08,068 golem INFO Press key: ENTER
+2017-10-09 22:38:08,092 golem DEBUG Element found
+2017-10-09 22:38:08,109 golem DEBUG Element found
+2017-10-09 22:38:08,146 golem DEBUG Element found
+2017-10-09 22:38:08,165 golem INFO Click None
+2017-10-09 22:38:08,349 golem DEBUG Element found
+2017-10-09 22:38:08,444 golem INFO Write 'description of the test' in element description
+2017-10-09 22:38:08,457 golem DEBUG Element found
+2017-10-09 22:38:08,483 golem INFO Click save
+2017-10-09 22:38:08,530 golem INFO Waiting for 3 seconds
+2017-10-09 22:38:11,536 golem INFO Take screenshot error
+2017-10-09 22:38:12,095 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 20, in test
+    refresh_page()
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 189, in refresh_page
+    browser.get(browser.current_url+111);
+TypeError: must be str, not int
+2017-10-09 22:38:12,095 golem INFO Close driver

@@ -1,0 +1,765 @@
+22:43:37.682 INFO Test execution started: test_page/add_description
+22:43:37.683 INFO Browser: chrome
+22:43:37.683 INFO Environment: test
+22:43:37.683 INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+22:43:39.716 INFO Navigate to: 'http://localhost:8000'
+22:43:39.820 INFO Write 'admin' in element username
+22:43:39.900 INFO Write 'admin' in element password
+22:43:39.936 INFO Click login_button
+22:43:40.466 INFO Random value generated: evwiuwy
+22:43:40.466 INFO Store value evwiuwy in key name
+22:43:41.755 INFO Write 'evwiuwy' in element None
+22:43:41.756 INFO Press key: ENTER
+22:43:41.846 INFO Click None
+22:43:42.118 INFO Write 'description of the test' in element description
+22:43:42.157 INFO Click save
+22:43:42.217 INFO Waiting for 1 seconds
+22:43:47.052 INFO Navigate to: 'https://google.com/'
+22:43:48.241 INFO Navigate to: 'https://www.google.com.ar/?gfe_rd=cr&dcr=0&ei=0iXcWY-aI-_i8AeWgJ_gBA'
+22:43:48.242 INFO Refresh page
+22:43:48.242 INFO Waiting for 1 seconds
+22:44:09.644 INFO Take screenshot error
+22:44:10.172 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 19, in _find_webelement
+    webelement = root.find_element_by_id(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"description"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 22, in test
+    verify_text_in_element(test_page.description, data.description)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 371, in verify_text_in_element
+    webelement = get_browser().find(element)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 114, in _find
+    element_name, timeout)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 45, in _find_webelement
+    element_name, remaining_time)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 45, in _find_webelement
+    element_name, remaining_time)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 45, in _find_webelement
+    element_name, remaining_time)
+  [Previous line repeated 35 more times]
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 48, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element description not found using selector id:'description'
+22:44:10.178 INFO Close driver

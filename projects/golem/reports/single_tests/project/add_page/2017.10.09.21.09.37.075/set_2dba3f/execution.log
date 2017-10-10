@@ -1,0 +1,36 @@
+2017-10-09 21:09:37,351 golem INFO Test execution started: project/add_page
+2017-10-09 21:09:37,351 golem INFO Browser: chrome
+2017-10-09 21:09:37,352 golem INFO Environment: test
+2017-10-09 21:09:37,352 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 21:09:39,412 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 21:09:39,432 golem DEBUG Element found
+2017-10-09 21:09:39,518 golem INFO Write 'admin' in element username
+2017-10-09 21:09:39,535 golem DEBUG Element found
+2017-10-09 21:09:39,597 golem INFO Write 'admin' in element password
+2017-10-09 21:09:39,615 golem DEBUG Element found
+2017-10-09 21:09:39,635 golem INFO Click login_button
+2017-10-09 21:09:40,079 golem INFO Random value generated: qhish
+2017-10-09 21:09:40,080 golem INFO Store value qhish in key page_name
+2017-10-09 21:09:40,101 golem DEBUG Element found
+2017-10-09 21:09:40,137 golem DEBUG Element found
+2017-10-09 21:09:40,167 golem DEBUG Element found
+2017-10-09 21:09:40,247 golem DEBUG Element found
+2017-10-09 21:09:40,312 golem INFO Write 'qhish' in element None
+2017-10-09 21:09:40,312 golem INFO Press key: ENTER
+2017-10-09 21:09:40,334 golem DEBUG Element found
+2017-10-09 21:09:40,361 golem INFO Assert that 0 equals 1
+2017-10-09 21:09:40,362 golem INFO Take screenshot error
+2017-10-09 21:09:40,906 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 16, in test
+    project.verify_page_exists(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 88, in verify_page_exists
+    actions.assert_equals(len(tree_elements), 1)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 56, in assert_equals
+    raise Exception('Expected {} to equal {}'.format(actual_value, expected_value))
+Exception: Expected 0 to equal 1
+2017-10-09 21:09:40,906 golem INFO Close driver

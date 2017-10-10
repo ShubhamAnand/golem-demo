@@ -1,0 +1,48 @@
+2017-10-09 20:29:59,101 golem INFO Test execution started: project/add_test
+2017-10-09 20:29:59,101 golem INFO Browser: chrome
+2017-10-09 20:29:59,101 golem INFO Environment: test
+2017-10-09 20:29:59,102 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 20:30:01,325 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 20:30:01,349 golem DEBUG Element found
+2017-10-09 20:30:01,467 golem INFO Write 'admin' in element username
+2017-10-09 20:30:01,483 golem DEBUG Element found
+2017-10-09 20:30:01,557 golem INFO Write 'admin' in element password
+2017-10-09 20:30:01,577 golem DEBUG Element found
+2017-10-09 20:30:01,601 golem INFO Click login_button
+2017-10-09 20:30:01,827 golem DEBUG Element found
+2017-10-09 20:30:01,845 golem INFO Click Create Project button
+2017-10-09 20:30:01,893 golem INFO Waiting for element ('id', 'newProjectName', 'Project Name input') to be visible
+2017-10-09 20:30:01,916 golem DEBUG Element found
+2017-10-09 20:30:01,953 golem DEBUG Element found
+2017-10-09 20:30:02,005 golem INFO Write 'test' in element Project Name input
+2017-10-09 20:30:02,026 golem DEBUG Element found
+2017-10-09 20:30:02,050 golem INFO Click Create button
+2017-10-09 20:30:02,094 golem INFO Waiting for element ('id', 'createProjectCreate', 'Create button') to be not visible
+2017-10-09 20:30:02,104 golem DEBUG Element found
+2017-10-09 20:30:02,110 golem DEBUG Element still not visible, waiting
+2017-10-09 20:30:02,620 golem DEBUG Element still not visible, waiting
+2017-10-09 20:30:03,126 golem DEBUG Element still not visible, waiting
+2017-10-09 20:30:03,641 golem DEBUG Element not visible, continuing anyway
+2017-10-09 20:30:03,865 golem INFO Random value generated: fctum
+2017-10-09 20:30:03,865 golem INFO Store value fctum in key test_name
+2017-10-09 20:30:03,884 golem DEBUG Element found
+2017-10-09 20:30:03,969 golem DEBUG Element found
+2017-10-09 20:30:04,025 golem INFO Write 'fctum' in element add input
+2017-10-09 20:30:04,025 golem INFO Press key: ENTER
+2017-10-09 20:30:04,030 golem DEBUG Element found
+2017-10-09 20:30:04,058 golem INFO Waiting for element li[fullpath='fctum'] to be visible
+2017-10-09 20:30:04,075 golem DEBUG Element found
+2017-10-09 20:30:04,116 golem DEBUG Element found
+2017-10-09 20:30:04,133 golem INFO Take screenshot error
+2017-10-09 20:30:04,707 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_test.py", line 16, in test
+    project.verify_test_exists(data.test_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 122, in verify_test_exists
+    tree_elements = pages_tree_ul.find_all("li.tree-element[fullpath='{}']".format(full_dot_path))
+NameError: name 'pages_tree_ul' is not defined
+2017-10-09 20:30:04,708 golem INFO Close driver

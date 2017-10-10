@@ -1,0 +1,36 @@
+2017-10-09 21:05:15,471 golem INFO Test execution started: project/add_directory_to_pages
+2017-10-09 21:05:15,471 golem INFO Browser: chrome
+2017-10-09 21:05:15,471 golem INFO Environment: test
+2017-10-09 21:05:15,472 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 21:05:17,527 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 21:05:17,554 golem DEBUG Element found
+2017-10-09 21:05:17,639 golem INFO Write 'admin' in element username
+2017-10-09 21:05:17,655 golem DEBUG Element found
+2017-10-09 21:05:17,722 golem INFO Write 'admin' in element password
+2017-10-09 21:05:17,739 golem DEBUG Element found
+2017-10-09 21:05:17,763 golem INFO Click login_button
+2017-10-09 21:05:18,248 golem INFO Random value generated: dhgap
+2017-10-09 21:05:18,248 golem INFO Store value dhgap in key directory_name
+2017-10-09 21:05:18,290 golem DEBUG Element found
+2017-10-09 21:05:18,329 golem DEBUG Element found
+2017-10-09 21:05:18,362 golem DEBUG Element found
+2017-10-09 21:05:18,453 golem DEBUG Element found
+2017-10-09 21:05:18,519 golem INFO Write 'dhgap/' in element None
+2017-10-09 21:05:18,520 golem INFO Press key: ENTER
+2017-10-09 21:05:18,539 golem DEBUG Element found
+2017-10-09 21:05:18,550 golem INFO Waiting for 20 seconds
+2017-10-09 21:05:20,673 golem INFO Take screenshot error
+2017-10-09 21:05:20,674 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages.py", line 17, in test
+    project.verify_page_directory_exists(data.directory_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 98, in verify_page_directory_exists
+    actions.wait(20)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 380, in wait
+    time.sleep(to_float)
+KeyboardInterrupt
+2017-10-09 21:05:20,675 golem INFO Close driver

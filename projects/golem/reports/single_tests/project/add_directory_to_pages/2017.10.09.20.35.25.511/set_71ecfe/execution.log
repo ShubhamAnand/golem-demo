@@ -1,0 +1,36 @@
+2017-10-09 20:35:25,795 golem INFO Test execution started: project/add_directory_to_pages
+2017-10-09 20:35:25,796 golem INFO Browser: chrome
+2017-10-09 20:35:25,796 golem INFO Environment: test
+2017-10-09 20:35:25,796 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 20:35:27,878 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 20:35:27,904 golem DEBUG Element found
+2017-10-09 20:35:27,988 golem INFO Write 'admin' in element username
+2017-10-09 20:35:28,011 golem DEBUG Element found
+2017-10-09 20:35:28,072 golem INFO Write 'admin' in element password
+2017-10-09 20:35:28,090 golem DEBUG Element found
+2017-10-09 20:35:28,115 golem INFO Click login_button
+2017-10-09 20:35:28,430 golem INFO Random value generated: kyrfo
+2017-10-09 20:35:28,431 golem INFO Store value kyrfo in key directory_name
+2017-10-09 20:35:28,549 golem DEBUG Element found
+2017-10-09 20:35:28,584 golem DEBUG Element found
+2017-10-09 20:35:28,613 golem DEBUG Element found
+2017-10-09 20:35:28,699 golem DEBUG Element found
+2017-10-09 20:35:28,759 golem INFO Write 'kyrfo/' in element None
+2017-10-09 20:35:28,760 golem INFO Press key: ENTER
+2017-10-09 20:35:28,783 golem DEBUG Element found
+2017-10-09 20:35:28,809 golem INFO Assert that 0 equals 1
+2017-10-09 20:35:28,810 golem INFO Take screenshot error
+2017-10-09 20:35:29,352 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages.py", line 17, in test
+    project.verify_page_directory_exists(data.directory_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 118, in verify_page_directory_exists
+    actions.assert_equals(len(tree_elements), 1)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 56, in assert_equals
+    raise Exception('Expected {} to equal {}'.format(actual_value, expected_value))
+Exception: Expected 0 to equal 1
+2017-10-09 20:35:29,353 golem INFO Close driver

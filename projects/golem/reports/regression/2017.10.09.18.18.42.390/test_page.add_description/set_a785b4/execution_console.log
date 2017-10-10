@@ -1,0 +1,31 @@
+18:19:22.932 INFO Test execution started: test_page.add_description
+18:19:25.379 INFO Browser: chrome-headless
+18:19:25.392 INFO Environment: test
+18:19:25.401 INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+18:19:32.361 INFO Navigate to: 'http://localhost:8000'
+18:19:32.964 INFO Write 'admin' in element username
+18:19:33.246 INFO Write 'admin' in element password
+18:19:33.403 INFO Click login_button
+18:19:36.287 INFO Random value generated: gmiswwz
+18:19:36.287 INFO Store value gmiswwz in key name
+18:19:38.795 INFO Write 'gmiswwz' in element add input
+18:19:38.795 INFO Press key: ENTER
+18:19:38.852 INFO Waiting for element li[fullpath='gmiswwz'] to be visible
+18:19:39.603 INFO Click None
+18:19:40.762 INFO Write 'description of the test' in element description
+18:19:40.887 INFO Click save
+18:19:41.131 INFO Refresh page
+18:19:41.133 INFO Take screenshot error
+18:19:42.134 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 20, in test
+    refresh_page()
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 188, in refresh_page
+    _capture_or_add_step(step_message, settings.settings['screenshot_on_step'])
+NameError: name 'settings' is not defined
+18:19:42.135 INFO Close driver

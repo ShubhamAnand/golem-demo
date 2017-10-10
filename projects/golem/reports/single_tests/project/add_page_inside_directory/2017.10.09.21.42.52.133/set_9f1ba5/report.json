@@ -1,0 +1,25 @@
+{
+    "test_case": "project.add_page_inside_directory",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'dir_one/' in element None",
+        "Press key: ENTER",
+        "error__b135ab54"
+    ],
+    "description": "Verify that the user can create a new page inside a directory",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 115, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page_inside_directory.py\", line 17, in test\n    project.add_page(page_name)\nNameError: name 'page_name' is not defined\n",
+    "short_error": "NameError: name 'page_name' is not defined\n",
+    "test_elapsed_time": 4.63,
+    "test_timestamp": "2017.10.09.21.42.52.411",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "page_name": "'7ir_one/bnolo'"
+    },
+    "environment": "test"
+}

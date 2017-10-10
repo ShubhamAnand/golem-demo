@@ -1,0 +1,24 @@
+{
+    "test_case": "project.add_page",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'ptjgw' in element None",
+        "error__a9971f5b"
+    ],
+    "description": "Verify that the user can create a new page from the project page",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 115, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py\", line 17, in test\n    project.verify_page_exists(data.page_name)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py\", line 130, in verify_page_exists\n    raise Exception('Page {} was not found'.format(dir_name))\nException: Page ptjgw was not found\n",
+    "short_error": "Exception: Page ptjgw was not found\n",
+    "test_elapsed_time": 8.67,
+    "test_timestamp": "2017.10.09.19.57.59.214",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "page_name": "'ptjgw'"
+    },
+    "environment": "test"
+}

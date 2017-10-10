@@ -1,0 +1,24 @@
+19:54:04.569 INFO Test execution started: project/add_page
+19:54:04.569 INFO Browser: chrome
+19:54:04.570 INFO Environment: test
+19:54:04.570 INFO Using data: 
+    url: http://localhost:8000
+
+19:54:06.618 INFO Navigate to: 'http://localhost:8000'
+19:54:06.734 INFO Write 'admin' in element username
+19:54:06.824 INFO Write 'admin' in element password
+19:54:06.864 INFO Click login_button
+19:54:07.230 INFO Random value generated: apcej
+19:54:07.231 INFO Store value apcej in key page_name
+19:54:07.451 INFO Waiting for 5 seconds
+19:54:12.484 INFO Take screenshot error
+19:54:13.056 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 17, in test
+    project.verify_page_exists(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 130, in verify_page_exists
+    raise Exception('Page {} was not found'.format(dir_name))
+Exception: Page apcej was not found
+19:54:13.057 INFO Close driver

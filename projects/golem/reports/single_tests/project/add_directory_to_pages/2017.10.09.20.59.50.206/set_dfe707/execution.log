@@ -1,0 +1,37 @@
+2017-10-09 20:59:50,508 golem INFO Test execution started: project/add_directory_to_pages
+2017-10-09 20:59:50,508 golem INFO Browser: chrome
+2017-10-09 20:59:50,508 golem INFO Environment: test
+2017-10-09 20:59:50,509 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 20:59:52,606 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 20:59:52,624 golem DEBUG Element found
+2017-10-09 20:59:52,704 golem INFO Write 'admin' in element username
+2017-10-09 20:59:52,723 golem DEBUG Element found
+2017-10-09 20:59:52,794 golem INFO Write 'admin' in element password
+2017-10-09 20:59:52,810 golem DEBUG Element found
+2017-10-09 20:59:52,837 golem INFO Click login_button
+2017-10-09 20:59:53,320 golem INFO Random value generated: xwysn
+2017-10-09 20:59:53,321 golem INFO Store value xwysn in key directory_name
+2017-10-09 20:59:53,359 golem DEBUG Element found
+2017-10-09 20:59:53,397 golem DEBUG Element found
+2017-10-09 20:59:53,432 golem DEBUG Element found
+2017-10-09 20:59:53,777 golem DEBUG Element found
+2017-10-09 20:59:53,855 golem INFO Write 'xwysn/' in element None
+2017-10-09 20:59:53,856 golem INFO Press key: ENTER
+2017-10-09 20:59:53,871 golem INFO Waiting for 3 seconds
+2017-10-09 20:59:57,025 golem DEBUG Element found
+2017-10-09 20:59:57,052 golem INFO Waiting for 10 seconds
+2017-10-09 21:00:03,265 golem INFO Take screenshot error
+2017-10-09 21:00:03,267 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages.py", line 17, in test
+    project.verify_page_directory_exists(data.directory_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 100, in verify_page_directory_exists
+    actions.wait(10)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 380, in wait
+    time.sleep(to_float)
+KeyboardInterrupt
+2017-10-09 21:00:03,267 golem INFO Close driver

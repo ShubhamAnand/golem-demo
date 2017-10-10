@@ -1,0 +1,32 @@
+2017-10-09 18:18:44,484 golem INFO Test execution started: project.add_directory_to_pages_section
+2017-10-09 18:18:44,485 golem INFO Browser: chrome-headless
+2017-10-09 18:18:44,485 golem INFO Environment: test
+2017-10-09 18:18:44,486 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 18:18:49,970 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 18:18:50,078 golem DEBUG Element found
+2017-10-09 18:18:50,283 golem INFO Write 'admin' in element username
+2017-10-09 18:18:50,398 golem DEBUG Element found
+2017-10-09 18:18:50,770 golem INFO Write 'admin' in element password
+2017-10-09 18:18:51,009 golem DEBUG Element found
+2017-10-09 18:18:51,047 golem INFO Click login_button
+2017-10-09 18:18:56,876 golem INFO Random value generated: zixgg/
+2017-10-09 18:18:56,877 golem INFO Store value zixgg/ in key directory_name
+2017-10-09 18:18:57,867 golem DEBUG Element not found yet, remaining time: 19.0107159614563
+2017-10-09 18:18:57,880 golem DEBUG Element found
+2017-10-09 18:18:58,263 golem DEBUG Element found
+2017-10-09 18:18:58,527 golem INFO Write 'zixgg/' in element add input
+2017-10-09 18:18:58,528 golem INFO Press key: ENTER
+2017-10-09 18:18:58,550 golem DEBUG Element found
+2017-10-09 18:18:59,558 golem INFO Take screenshot error
+2017-10-09 18:19:01,489 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages_section.py", line 18, in test
+    project.verify_page_exists(data.directory_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 80, in verify_page_exists
+    raise Exception('Page {} was not found'.format(dir_name))
+Exception: Page zixgg/ was not found
+2017-10-09 18:19:01,490 golem INFO Close driver

@@ -1,0 +1,16 @@
+{
+    "test_case": "product.add_product_to_cart_go_to_checkout",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://store.demoqa.com/'",
+        "Click None",
+        "error__2b62ec47"
+    ],
+    "description": "",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 93, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/tests/product/add_product_to_cart_go_to_checkout.py\", line 14, in test\n    category.add_product_to_cart('Magic Mouse')\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/pages/category.py\", line 13, in add_product_to_cart\n    products = elements('div.default_product_display')\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/browser.py\", line 209, in elements\n    webelement = get_browser().find_all(**kwargs)\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/browser.py\", line 187, in _find_all\n    raise IncorrectSelectorType('Incorrect selector provided')\ngolem.core.exceptions.IncorrectSelectorType: Incorrect selector provided\n",
+    "short_error": "golem.core.exceptions.IncorrectSelectorType: Incorrect selector provided\n",
+    "test_elapsed_time": 18.3,
+    "test_timestamp": "2017.10.05.15.43.04.050",
+    "browser": "chrome (headless)",
+    "test_data": {}
+}

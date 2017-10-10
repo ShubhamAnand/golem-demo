@@ -1,0 +1,25 @@
+20:05:28.366 INFO Test execution started: project/add_page
+20:05:28.366 INFO Browser: chrome
+20:05:28.367 INFO Environment: test
+20:05:28.367 INFO Using data: 
+    url: http://localhost:8000
+
+20:05:30.469 INFO Navigate to: 'http://localhost:8000'
+20:05:30.570 INFO Write 'admin' in element username
+20:05:30.652 INFO Write 'admin' in element password
+20:05:30.689 INFO Click login_button
+20:05:31.032 INFO Random value generated: iizyj
+20:05:31.033 INFO Store value iizyj in key page_name
+20:05:31.342 INFO Write 'iizyj' in element None
+20:05:31.342 INFO Press key: ENTER
+20:05:31.502 INFO Take screenshot error
+20:05:32.031 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 16, in test
+    project.verify_page_exists('not')
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 122, in verify_page_exists
+    raise Exception('Page {} was not found'.format(dir_name))
+Exception: Page not was not found
+20:05:32.031 INFO Close driver

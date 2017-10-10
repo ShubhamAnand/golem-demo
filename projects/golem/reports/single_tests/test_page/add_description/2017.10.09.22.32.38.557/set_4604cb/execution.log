@@ -1,0 +1,44 @@
+2017-10-09 22:32:38,844 golem INFO Test execution started: test_page/add_description
+2017-10-09 22:32:38,844 golem INFO Browser: chrome
+2017-10-09 22:32:38,844 golem INFO Environment: test
+2017-10-09 22:32:38,844 golem INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+2017-10-09 22:32:40,967 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 22:32:40,986 golem DEBUG Element found
+2017-10-09 22:32:41,067 golem INFO Write 'admin' in element username
+2017-10-09 22:32:41,083 golem DEBUG Element found
+2017-10-09 22:32:41,145 golem INFO Write 'admin' in element password
+2017-10-09 22:32:41,160 golem DEBUG Element found
+2017-10-09 22:32:41,182 golem INFO Click login_button
+2017-10-09 22:32:41,721 golem INFO Random value generated: qoqkjdq
+2017-10-09 22:32:41,722 golem INFO Store value qoqkjdq in key name
+2017-10-09 22:32:41,752 golem DEBUG Element found
+2017-10-09 22:32:42,288 golem DEBUG Element not found yet, remaining time: 0.48619699478149414
+2017-10-09 22:32:42,806 golem DEBUG Element found
+2017-10-09 22:32:42,830 golem DEBUG Element found
+2017-10-09 22:32:42,862 golem DEBUG Element found
+2017-10-09 22:32:42,939 golem DEBUG Element found
+2017-10-09 22:32:43,011 golem INFO Write 'qoqkjdq' in element None
+2017-10-09 22:32:43,011 golem INFO Press key: ENTER
+2017-10-09 22:32:43,033 golem DEBUG Element found
+2017-10-09 22:32:43,050 golem DEBUG Element found
+2017-10-09 22:32:43,081 golem DEBUG Element found
+2017-10-09 22:32:43,100 golem INFO Click None
+2017-10-09 22:32:43,287 golem DEBUG Element found
+2017-10-09 22:32:43,380 golem INFO Write 'description of the test' in element description
+2017-10-09 22:32:43,394 golem DEBUG Element found
+2017-10-09 22:32:43,421 golem INFO Click save
+2017-10-09 22:32:43,466 golem INFO Waiting for 3 seconds
+2017-10-09 22:32:46,468 golem INFO Take screenshot error
+2017-10-09 22:32:47,054 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 20, in test
+    refresh_page()
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 186, in refresh_page
+    get_browser().navigate().refresh()
+AttributeError: 'WebDriver' object has no attribute 'navigate'
+2017-10-09 22:32:47,055 golem INFO Close driver

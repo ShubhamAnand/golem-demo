@@ -1,0 +1,29 @@
+{
+    "test_case": "test_page.add_description",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'axtioem' in element None",
+        "Press key: ENTER",
+        "Click None",
+        "Write 'description of the test' in element description",
+        "Verify element 'description' contains text 'description of the test'",
+        "error__2f24626b"
+    ],
+    "description": "Verify that the user can access a test by clicking on it in the test list.",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 115, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py\", line 22, in test\n    verify_text_in_element(test_page.description, data.description)\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 375, in verify_text_in_element\n    .format(text, webelement.name))\ngolem.core.exceptions.TextNotPresent: Text 'description of the test' was not found in element description\n",
+    "short_error": "golem.core.exceptions.TextNotPresent: Text 'description of the test' was not found in element description\n",
+    "test_elapsed_time": 7.46,
+    "test_timestamp": "2017.10.09.22.57.00.314",
+    "browser": "chrome",
+    "test_data": {
+        "description": "'description of the test'",
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "name": "'axtioem'"
+    },
+    "environment": "test"
+}

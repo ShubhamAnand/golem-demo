@@ -1,0 +1,31 @@
+20:29:59.101 INFO Test execution started: project/add_test
+20:29:59.101 INFO Browser: chrome
+20:29:59.101 INFO Environment: test
+20:29:59.102 INFO Using data: 
+    url: http://localhost:8000
+
+20:30:01.325 INFO Navigate to: 'http://localhost:8000'
+20:30:01.467 INFO Write 'admin' in element username
+20:30:01.557 INFO Write 'admin' in element password
+20:30:01.601 INFO Click login_button
+20:30:01.845 INFO Click Create Project button
+20:30:01.893 INFO Waiting for element ('id', 'newProjectName', 'Project Name input') to be visible
+20:30:02.005 INFO Write 'test' in element Project Name input
+20:30:02.050 INFO Click Create button
+20:30:02.094 INFO Waiting for element ('id', 'createProjectCreate', 'Create button') to be not visible
+20:30:03.865 INFO Random value generated: fctum
+20:30:03.865 INFO Store value fctum in key test_name
+20:30:04.025 INFO Write 'fctum' in element add input
+20:30:04.025 INFO Press key: ENTER
+20:30:04.058 INFO Waiting for element li[fullpath='fctum'] to be visible
+20:30:04.133 INFO Take screenshot error
+20:30:04.707 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_test.py", line 16, in test
+    project.verify_test_exists(data.test_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 122, in verify_test_exists
+    tree_elements = pages_tree_ul.find_all("li.tree-element[fullpath='{}']".format(full_dot_path))
+NameError: name 'pages_tree_ul' is not defined
+20:30:04.708 INFO Close driver

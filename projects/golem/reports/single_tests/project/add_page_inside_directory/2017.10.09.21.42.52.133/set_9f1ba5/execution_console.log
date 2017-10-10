@@ -1,0 +1,23 @@
+21:42:52.409 INFO Test execution started: project/add_page_inside_directory
+21:42:52.410 INFO Browser: chrome
+21:42:52.410 INFO Environment: test
+21:42:52.410 INFO Using data: 
+    url: http://localhost:8000
+
+21:42:54.417 INFO Navigate to: 'http://localhost:8000'
+21:42:54.520 INFO Write 'admin' in element username
+21:42:54.600 INFO Write 'admin' in element password
+21:42:54.636 INFO Click login_button
+21:42:55.074 INFO Random value generated: 7ir_one/bnolo
+21:42:55.074 INFO Store value 7ir_one/bnolo in key page_name
+21:42:56.400 INFO Write 'dir_one/' in element None
+21:42:56.401 INFO Press key: ENTER
+21:42:56.414 INFO Take screenshot error
+21:42:56.979 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page_inside_directory.py", line 17, in test
+    project.add_page(page_name)
+NameError: name 'page_name' is not defined
+21:42:56.979 INFO Close driver

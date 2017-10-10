@@ -1,0 +1,28 @@
+20:08:30.870 INFO Test execution started: project/add_page
+20:08:30.870 INFO Browser: chrome
+20:08:30.871 INFO Environment: test
+20:08:30.871 INFO Using data: 
+    url: http://localhost:8000
+
+20:08:33.019 INFO Navigate to: 'http://localhost:8000'
+20:08:33.123 INFO Write 'admin' in element username
+20:08:33.200 INFO Write 'admin' in element password
+20:08:33.235 INFO Click login_button
+20:08:33.605 INFO Random value generated: jdzqn
+20:08:33.605 INFO Store value jdzqn in key page_name
+20:08:33.956 INFO Write 'jdzqn' in element None
+20:08:33.957 INFO Press key: ENTER
+20:08:34.010 INFO Assert that 0 equals 1
+20:08:34.011 INFO Take screenshot error
+20:08:34.596 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 16, in test
+    project.verify_page_exists('not')
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 99, in verify_page_exists
+    actions.assert_equals(len(tree_elements), 1)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 56, in assert_equals
+    raise Exception('Expected {} to equal {}'.format(actual_value, expected_value))
+Exception: Expected 0 to equal 1
+20:08:34.596 INFO Close driver

@@ -1,0 +1,25 @@
+{
+    "test_case": "project.add_directory_to_pages",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'piece/' in element None",
+        "Press key: ENTER",
+        "error__acaa65bf"
+    ],
+    "description": "Verify that the user can add a directory in the pages section by appending '\\' at the end",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 115, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages.py\", line 16, in test\n    project.add_new_page_directory(data.directory_name)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py\", line 76, in add_new_page_directory\n    wait(1)\nNameError: name 'wait' is not defined\n",
+    "short_error": "NameError: name 'wait' is not defined\n",
+    "test_elapsed_time": 3.51,
+    "test_timestamp": "2017.10.09.20.39.28.255",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "directory_name": "'piece'"
+    },
+    "environment": "test"
+}

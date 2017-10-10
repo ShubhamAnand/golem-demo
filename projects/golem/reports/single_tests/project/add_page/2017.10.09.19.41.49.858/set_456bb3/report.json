@@ -1,0 +1,23 @@
+{
+    "test_case": "project.add_page",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "error__6f273e02"
+    ],
+    "description": "Verify that the user can create a new page from the project page",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 115, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py\", line 15, in test\n    project.add_new_page(data.page_name)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py\", line 42, in add_new_page\n    _expand_tree_path(element(id='pagesTree'), split_path)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py\", line 13, in _expand_tree_path\n    this_dir = path.pop()\nIndexError: pop from empty list\n",
+    "short_error": "IndexError: pop from empty list\n",
+    "test_elapsed_time": 3.49,
+    "test_timestamp": "2017.10.09.19.41.50.152",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "page_name": "'fvcsh'"
+    },
+    "environment": "test"
+}

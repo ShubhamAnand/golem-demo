@@ -1,0 +1,88 @@
+2017-10-09 21:20:49,012 golem INFO Test execution started: project/add_directory_to_pages
+2017-10-09 21:20:49,012 golem INFO Browser: chrome
+2017-10-09 21:20:49,013 golem INFO Environment: test
+2017-10-09 21:20:49,013 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 21:20:51,068 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 21:20:51,086 golem DEBUG Element found
+2017-10-09 21:20:51,171 golem INFO Write 'admin' in element username
+2017-10-09 21:20:51,186 golem DEBUG Element found
+2017-10-09 21:20:51,249 golem INFO Write 'admin' in element password
+2017-10-09 21:20:51,266 golem DEBUG Element found
+2017-10-09 21:20:51,286 golem INFO Click login_button
+2017-10-09 21:20:51,753 golem INFO Random value generated: jopiu
+2017-10-09 21:20:51,753 golem INFO Store value jopiu in key directory_name
+2017-10-09 21:20:51,783 golem DEBUG Element found
+2017-10-09 21:20:51,823 golem DEBUG Element found
+2017-10-09 21:20:51,853 golem DEBUG Element found
+2017-10-09 21:20:51,939 golem DEBUG Element found
+2017-10-09 21:20:52,017 golem INFO Write 'jopiu/' in element None
+2017-10-09 21:20:52,018 golem INFO Press key: ENTER
+2017-10-09 21:20:52,033 golem INFO Waiting for 3 seconds
+2017-10-09 21:20:55,043 golem DEBUG Element found
+2017-10-09 21:20:55,569 golem DEBUG Element not found yet, remaining time: 0.48520803451538086
+2017-10-09 21:20:56,082 golem INFO Take screenshot error
+2017-10-09 21:20:56,595 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li.branch[fullpath='testssss']"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 20, in _find_webelement
+    webelement = root.find_element_by_css_selector(selector_value)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 310, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 518, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"li.branch[fullpath='testssss']"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 102, in verify_page_directory_exists
+    tree_elements = pages_tree_ul.find(dir_selector, timeout=1)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 113, in _find
+    element_name, timeout)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 44, in _find_webelement
+    element_name, remaining_time)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element li.branch[fullpath='testssss'] not found using selector css:'li.branch[fullpath='testssss']'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages.py", line 17, in test
+    project.verify_page_directory_exists('testssss')
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 104, in verify_page_directory_exists
+    raise Exception('Page directory {} does not exist'.format(full_path))
+Exception: Page directory testssss does not exist
+2017-10-09 21:20:56,596 golem INFO Close driver

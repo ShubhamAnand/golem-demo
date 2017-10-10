@@ -1,0 +1,19 @@
+18:18:58.633 INFO Test execution started: project.add_test
+18:18:58.634 INFO Browser: chrome-headless
+18:18:58.634 INFO Environment: test
+18:18:58.635 INFO Using data: 
+    url: http://localhost:8000
+
+18:19:13.175 INFO Navigate to: 'http://localhost:8000'
+18:19:16.734 INFO Write 'admin' in element username
+18:19:16.886 INFO Write 'admin' in element password
+18:19:17.034 INFO Click login_button
+18:19:17.717 INFO Take screenshot error
+18:19:19.845 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_test.py", line 13, in test
+    index.crate_access_project('test')
+AttributeError: module 'projects.golem.pages.index' has no attribute 'crate_access_project'
+18:19:19.846 INFO Close driver

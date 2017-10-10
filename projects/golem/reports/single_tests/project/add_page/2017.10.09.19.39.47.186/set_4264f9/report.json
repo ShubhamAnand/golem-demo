@@ -1,0 +1,15 @@
+{
+    "test_case": "project.add_page",
+    "result": "fail",
+    "steps": [],
+    "description": null,
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 93, in run_test\n    page, page.split('.'))\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/core/utils.py\", line 357, in generate_page_object_module\n    .format(project, full_path))\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/importlib/__init__.py\", line 126, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"<frozen importlib._bootstrap>\", line 978, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 961, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 950, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 655, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 674, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 781, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 741, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 205, in _call_with_frames_removed\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py\", line 45\n    element(add_link_selector).click()\n          ^\nSyntaxError: invalid syntax\n\n\nteardown failed\nTraceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 133, in run_test\n    test_module.teardown(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py\", line 21, in teardown\n    close()\nNameError: name 'close' is not defined\n",
+    "short_error": "NameError: name 'close' is not defined\n",
+    "test_elapsed_time": 0.01,
+    "test_timestamp": "2017.10.09.19.39.47.573",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

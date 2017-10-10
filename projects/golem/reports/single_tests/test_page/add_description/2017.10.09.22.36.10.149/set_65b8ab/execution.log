@@ -1,0 +1,44 @@
+2017-10-09 22:36:10,429 golem INFO Test execution started: test_page/add_description
+2017-10-09 22:36:10,430 golem INFO Browser: chrome
+2017-10-09 22:36:10,430 golem INFO Environment: test
+2017-10-09 22:36:10,430 golem INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+2017-10-09 22:36:12,564 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 22:36:12,582 golem DEBUG Element found
+2017-10-09 22:36:12,669 golem INFO Write 'admin' in element username
+2017-10-09 22:36:12,685 golem DEBUG Element found
+2017-10-09 22:36:12,749 golem INFO Write 'admin' in element password
+2017-10-09 22:36:12,766 golem DEBUG Element found
+2017-10-09 22:36:12,791 golem INFO Click login_button
+2017-10-09 22:36:13,259 golem INFO Random value generated: drtsusv
+2017-10-09 22:36:13,259 golem INFO Store value drtsusv in key name
+2017-10-09 22:36:13,384 golem DEBUG Element found
+2017-10-09 22:36:13,924 golem DEBUG Element not found yet, remaining time: 0.4852569103240967
+2017-10-09 22:36:14,439 golem DEBUG Element found
+2017-10-09 22:36:14,464 golem DEBUG Element found
+2017-10-09 22:36:14,497 golem DEBUG Element found
+2017-10-09 22:36:14,578 golem DEBUG Element found
+2017-10-09 22:36:14,657 golem INFO Write 'drtsusv' in element None
+2017-10-09 22:36:14,658 golem INFO Press key: ENTER
+2017-10-09 22:36:14,677 golem DEBUG Element found
+2017-10-09 22:36:14,696 golem DEBUG Element found
+2017-10-09 22:36:14,730 golem DEBUG Element found
+2017-10-09 22:36:14,753 golem INFO Click None
+2017-10-09 22:36:14,941 golem DEBUG Element found
+2017-10-09 22:36:15,045 golem INFO Write 'description of the test' in element description
+2017-10-09 22:36:15,059 golem DEBUG Element found
+2017-10-09 22:36:15,079 golem INFO Click save
+2017-10-09 22:36:15,143 golem INFO Waiting for 3 seconds
+2017-10-09 22:36:18,145 golem INFO Take screenshot error
+2017-10-09 22:36:18,739 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 20, in test
+    refresh_page()
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 188, in refresh_page
+    get_browser().get(driver.getCurrentUrl());
+NameError: name 'driver' is not defined
+2017-10-09 22:36:18,739 golem INFO Close driver

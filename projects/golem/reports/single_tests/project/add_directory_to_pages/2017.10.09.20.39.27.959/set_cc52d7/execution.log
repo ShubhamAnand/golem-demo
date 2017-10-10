@@ -1,0 +1,32 @@
+2017-10-09 20:39:28,254 golem INFO Test execution started: project/add_directory_to_pages
+2017-10-09 20:39:28,254 golem INFO Browser: chrome
+2017-10-09 20:39:28,254 golem INFO Environment: test
+2017-10-09 20:39:28,255 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 20:39:30,259 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 20:39:30,283 golem DEBUG Element found
+2017-10-09 20:39:30,367 golem INFO Write 'admin' in element username
+2017-10-09 20:39:30,383 golem DEBUG Element found
+2017-10-09 20:39:30,443 golem INFO Write 'admin' in element password
+2017-10-09 20:39:30,458 golem DEBUG Element found
+2017-10-09 20:39:30,480 golem INFO Click login_button
+2017-10-09 20:39:30,803 golem INFO Random value generated: piece
+2017-10-09 20:39:30,803 golem INFO Store value piece in key directory_name
+2017-10-09 20:39:30,920 golem DEBUG Element found
+2017-10-09 20:39:30,953 golem DEBUG Element found
+2017-10-09 20:39:30,984 golem DEBUG Element found
+2017-10-09 20:39:31,071 golem DEBUG Element found
+2017-10-09 20:39:31,135 golem INFO Write 'piece/' in element None
+2017-10-09 20:39:31,135 golem INFO Press key: ENTER
+2017-10-09 20:39:31,150 golem INFO Take screenshot error
+2017-10-09 20:39:31,697 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages.py", line 16, in test
+    project.add_new_page_directory(data.directory_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 76, in add_new_page_directory
+    wait(1)
+NameError: name 'wait' is not defined
+2017-10-09 20:39:31,697 golem INFO Close driver

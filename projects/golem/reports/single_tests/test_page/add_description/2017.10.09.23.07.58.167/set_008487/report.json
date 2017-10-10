@@ -1,0 +1,29 @@
+{
+    "test_case": "test_page.add_description",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'xhkqmhv' in element None",
+        "Press key: ENTER",
+        "Click None",
+        "Write 'description of the test' in element description",
+        "Click save",
+        "error__4f247ed0"
+    ],
+    "description": "Verify that the user can access a test by clicking on it in the test list.",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 115, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py\", line 19, in test\n    test_page.save_test()\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/test_page.py\", line 35, in save_test\n    wait_for_element_not_exist('div.toast')\nNameError: name 'wait_for_element_not_exist' is not defined\n",
+    "short_error": "NameError: name 'wait_for_element_not_exist' is not defined\n",
+    "test_elapsed_time": 11.04,
+    "test_timestamp": "2017.10.09.23.07.58.780",
+    "browser": "chrome",
+    "test_data": {
+        "description": "'description of the test'",
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "name": "'xhkqmhv'"
+    },
+    "environment": "test"
+}

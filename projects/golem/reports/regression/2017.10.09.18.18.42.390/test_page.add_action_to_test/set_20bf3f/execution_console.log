@@ -1,0 +1,29 @@
+18:19:03.303 INFO Test execution started: test_page.add_action_to_test
+18:19:06.868 INFO Browser: chrome-headless
+18:19:06.868 INFO Environment: test
+18:19:06.869 INFO Using data: 
+    action: navigate
+    url: http://localhost:8000
+
+18:19:14.028 INFO Navigate to: 'http://localhost:8000'
+18:19:14.677 INFO Write 'admin' in element username
+18:19:15.037 INFO Write 'admin' in element password
+18:19:15.245 INFO Click login_button
+18:19:25.872 INFO Click None
+18:19:29.187 INFO Click #testSteps button.add-step
+18:19:29.960 INFO Write 'navigate' in element None
+18:19:29.960 INFO Press key: DOWN
+18:19:30.011 INFO Press key: ENTER
+18:19:30.284 INFO Click save
+18:19:32.321 INFO Refresh page
+18:19:32.323 INFO Take screenshot error
+18:19:34.068 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_action_to_test.py", line 18, in test
+    refresh_page()
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 188, in refresh_page
+    _capture_or_add_step(step_message, settings.settings['screenshot_on_step'])
+NameError: name 'settings' is not defined
+18:19:34.069 INFO Close driver

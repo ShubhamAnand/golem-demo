@@ -1,0 +1,27 @@
+18:18:54.491 INFO Test execution started: project.add_page_inside_directory
+18:18:56.812 INFO Browser: chrome-headless
+18:18:56.813 INFO Environment: test
+18:18:56.813 INFO Using data: 
+    url: http://localhost:8000
+
+18:19:13.134 INFO Navigate to: 'http://localhost:8000'
+18:19:13.692 INFO Write 'admin' in element username
+18:19:14.269 INFO Write 'admin' in element password
+18:19:14.527 INFO Click login_button
+18:19:18.644 INFO Random value generated: zmutb/
+18:19:18.647 INFO Store value zmutb/ in key dir_name
+18:19:18.647 INFO Random value generated: wqxko
+18:19:18.648 INFO Store value wqxko in key page_name
+18:19:20.466 INFO Write 'zmutb/' in element add input
+18:19:20.467 INFO Press key: ENTER
+18:19:20.619 INFO Take screenshot error
+18:19:22.572 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page_inside_directory.py", line 19, in test
+    project.add_new_page(data.page_name, data.dir_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 33, in add_new_page
+    this_branch_selector += 'li[data-branch-name=\'{}\'] > a'.format(branch)
+UnboundLocalError: local variable 'this_branch_selector' referenced before assignment
+18:19:25.376 INFO Close driver

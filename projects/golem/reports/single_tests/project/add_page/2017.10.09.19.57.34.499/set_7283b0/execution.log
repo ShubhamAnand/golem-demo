@@ -1,0 +1,30 @@
+2017-10-09 19:57:34,882 golem INFO Test execution started: project/add_page
+2017-10-09 19:57:34,882 golem INFO Browser: chrome
+2017-10-09 19:57:34,882 golem INFO Environment: test
+2017-10-09 19:57:34,883 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 19:57:36,950 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 19:57:36,971 golem DEBUG Element found
+2017-10-09 19:57:37,061 golem INFO Write 'admin' in element username
+2017-10-09 19:57:37,082 golem DEBUG Element found
+2017-10-09 19:57:37,145 golem INFO Write 'admin' in element password
+2017-10-09 19:57:37,159 golem DEBUG Element found
+2017-10-09 19:57:37,179 golem INFO Click login_button
+2017-10-09 19:57:37,528 golem INFO Random value generated: kosro
+2017-10-09 19:57:37,529 golem INFO Store value kosro in key page_name
+2017-10-09 19:57:37,639 golem DEBUG Element found
+2017-10-09 19:57:37,671 golem DEBUG Element found
+2017-10-09 19:57:37,703 golem DEBUG Element found
+2017-10-09 19:57:37,785 golem DEBUG Element found
+2017-10-09 19:57:37,811 golem INFO Take screenshot error
+2017-10-09 19:57:38,397 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 15, in test
+    project.add_new_page(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 46, in add_new_page
+    actions.send_keys(page_name)
+TypeError: send_keys() missing 1 required positional argument: 'text'
+2017-10-09 19:57:38,398 golem INFO Close driver

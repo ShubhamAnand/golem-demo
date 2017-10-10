@@ -1,0 +1,24 @@
+{
+    "test_case": "project.add_directory_to_pages",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'dhgap/' in element None",
+        "Press key: ENTER"
+    ],
+    "description": "Verify that the user can add a directory in the pages section by appending '\\' at the end",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 115, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages.py\", line 17, in test\n    project.verify_page_directory_exists(data.directory_name)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py\", line 98, in verify_page_directory_exists\n    actions.wait(20)\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 380, in wait\n    time.sleep(to_float)\nKeyboardInterrupt\n",
+    "short_error": "KeyboardInterrupt\n",
+    "test_elapsed_time": 5.21,
+    "test_timestamp": "2017.10.09.21.05.15.472",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "directory_name": "'dhgap'"
+    },
+    "environment": "test"
+}

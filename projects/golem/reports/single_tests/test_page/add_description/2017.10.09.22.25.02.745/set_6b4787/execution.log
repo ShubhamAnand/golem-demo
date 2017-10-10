@@ -1,0 +1,47 @@
+2017-10-09 22:25:03,024 golem INFO Test execution started: test_page/add_description
+2017-10-09 22:25:03,025 golem INFO Browser: chrome
+2017-10-09 22:25:03,025 golem INFO Environment: test
+2017-10-09 22:25:03,025 golem INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+2017-10-09 22:25:05,089 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 22:25:05,113 golem DEBUG Element found
+2017-10-09 22:25:05,201 golem INFO Write 'admin' in element username
+2017-10-09 22:25:05,218 golem DEBUG Element found
+2017-10-09 22:25:05,279 golem INFO Write 'admin' in element password
+2017-10-09 22:25:05,292 golem DEBUG Element found
+2017-10-09 22:25:05,316 golem INFO Click login_button
+2017-10-09 22:25:05,744 golem INFO Random value generated: wgkruvk
+2017-10-09 22:25:05,744 golem INFO Store value wgkruvk in key name
+2017-10-09 22:25:05,869 golem DEBUG Element found
+2017-10-09 22:25:06,407 golem DEBUG Element not found yet, remaining time: 0.4839930534362793
+2017-10-09 22:25:06,921 golem DEBUG Element found
+2017-10-09 22:25:06,944 golem DEBUG Element found
+2017-10-09 22:25:06,975 golem DEBUG Element found
+2017-10-09 22:25:07,054 golem DEBUG Element found
+2017-10-09 22:25:07,119 golem INFO Write 'wgkruvk' in element None
+2017-10-09 22:25:07,119 golem INFO Press key: ENTER
+2017-10-09 22:25:07,138 golem DEBUG Element found
+2017-10-09 22:25:07,155 golem DEBUG Element found
+2017-10-09 22:25:07,189 golem DEBUG Element found
+2017-10-09 22:25:07,207 golem INFO Click None
+2017-10-09 22:25:07,385 golem DEBUG Element found
+2017-10-09 22:25:07,483 golem INFO Write 'description of the test' in element description
+2017-10-09 22:25:07,497 golem DEBUG Element found
+2017-10-09 22:25:07,519 golem INFO Click save
+2017-10-09 22:25:07,567 golem INFO Waiting for 2 seconds
+2017-10-09 22:25:09,635 golem INFO Refresh page
+2017-10-09 22:25:09,643 golem DEBUG Element found
+2017-10-09 22:25:09,662 golem INFO Verify element 'description' contains text 'description of the test'
+2017-10-09 22:25:09,678 golem INFO Take screenshot error
+2017-10-09 22:25:10,235 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 21, in test
+    verify_text_in_element(test_page.description, data.description)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 372, in verify_text_in_element
+    .format(text, webelement.name))
+golem.core.exceptions.TextNotPresent: Text 'description of the test' was not found in element description
+2017-10-09 22:25:10,235 golem INFO Close driver

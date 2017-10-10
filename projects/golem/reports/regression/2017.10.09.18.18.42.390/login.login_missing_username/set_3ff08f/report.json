@@ -1,0 +1,21 @@
+{
+    "test_case": "login.login_missing_username",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Verify the correct error message is shown__a473ee71",
+        "Verify element 'Error list' contains text 'Username is required'"
+    ],
+    "description": "Verify that the user cannot log in if username value is missing",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 9.13,
+    "test_timestamp": "2017.10.09.18.18.43.578",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

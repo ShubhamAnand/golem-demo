@@ -1,0 +1,21 @@
+2017-10-05 15:08:41,843 golem INFO Test execution started: header.search_for_a_product
+2017-10-05 15:08:41,844 golem INFO Driver: chrome-headless
+2017-10-05 15:13:43,853 golem INFO Take screenshot error
+2017-10-05 15:13:45,802 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 93, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/tests/header/search_for_a_product.py", line 12, in test
+    navigate('http://store.demoqa.com/')
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 140, in navigate
+    driver.get(url)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 320, in get
+    self.execute(Command.GET, {'url': url})
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout
+  (Session info: headless chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+

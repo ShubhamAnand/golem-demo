@@ -1,0 +1,21 @@
+2017-10-05 15:43:04,049 golem INFO Test execution started: product.add_product_to_cart_go_to_checkout
+2017-10-05 15:43:04,050 golem INFO Driver: chrome-headless
+2017-10-05 15:43:12,257 golem INFO Navigate to: 'http://store.demoqa.com/'
+2017-10-05 15:43:12,273 golem DEBUG Element found
+2017-10-05 15:43:12,297 golem INFO Mouse hover element ''
+2017-10-05 15:43:12,333 golem DEBUG Element found
+2017-10-05 15:43:21,176 golem INFO Click None
+2017-10-05 15:43:21,178 golem INFO Take screenshot error
+2017-10-05 15:43:22,291 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 93, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/tests/product/add_product_to_cart_go_to_checkout.py", line 14, in test
+    category.add_product_to_cart('Magic Mouse')
+  File "/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/pages/category.py", line 13, in add_product_to_cart
+    products = elements('div.default_product_display')
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 209, in elements
+    webelement = get_browser().find_all(**kwargs)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 187, in _find_all
+    raise IncorrectSelectorType('Incorrect selector provided')
+golem.core.exceptions.IncorrectSelectorType: Incorrect selector provided

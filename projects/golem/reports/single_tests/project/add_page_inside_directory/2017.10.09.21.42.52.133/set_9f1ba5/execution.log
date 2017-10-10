@@ -1,0 +1,32 @@
+2017-10-09 21:42:52,409 golem INFO Test execution started: project/add_page_inside_directory
+2017-10-09 21:42:52,410 golem INFO Browser: chrome
+2017-10-09 21:42:52,410 golem INFO Environment: test
+2017-10-09 21:42:52,410 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 21:42:54,417 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 21:42:54,435 golem DEBUG Element found
+2017-10-09 21:42:54,520 golem INFO Write 'admin' in element username
+2017-10-09 21:42:54,534 golem DEBUG Element found
+2017-10-09 21:42:54,600 golem INFO Write 'admin' in element password
+2017-10-09 21:42:54,615 golem DEBUG Element found
+2017-10-09 21:42:54,636 golem INFO Click login_button
+2017-10-09 21:42:55,074 golem INFO Random value generated: 7ir_one/bnolo
+2017-10-09 21:42:55,074 golem INFO Store value 7ir_one/bnolo in key page_name
+2017-10-09 21:42:55,115 golem DEBUG Element found
+2017-10-09 21:42:55,651 golem DEBUG Element not found yet, remaining time: 0.48601388931274414
+2017-10-09 21:42:56,170 golem DEBUG Element found
+2017-10-09 21:42:56,194 golem DEBUG Element found
+2017-10-09 21:42:56,229 golem DEBUG Element found
+2017-10-09 21:42:56,320 golem DEBUG Element found
+2017-10-09 21:42:56,400 golem INFO Write 'dir_one/' in element None
+2017-10-09 21:42:56,401 golem INFO Press key: ENTER
+2017-10-09 21:42:56,414 golem INFO Take screenshot error
+2017-10-09 21:42:56,979 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page_inside_directory.py", line 17, in test
+    project.add_page(page_name)
+NameError: name 'page_name' is not defined
+2017-10-09 21:42:56,979 golem INFO Close driver

@@ -1,0 +1,36 @@
+2017-10-09 18:19:01,453 golem INFO Test execution started: test_page.add_action_to_test
+2017-10-09 18:19:01,454 golem INFO Browser: chrome-headless
+2017-10-09 18:19:01,455 golem INFO Environment: test
+2017-10-09 18:19:01,456 golem INFO Using data: 
+    action: send keys
+    url: http://localhost:8000
+
+2017-10-09 18:19:13,443 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 18:19:13,514 golem DEBUG Element found
+2017-10-09 18:19:14,136 golem INFO Write 'admin' in element username
+2017-10-09 18:19:14,282 golem DEBUG Element found
+2017-10-09 18:19:14,637 golem INFO Write 'admin' in element password
+2017-10-09 18:19:14,678 golem DEBUG Element found
+2017-10-09 18:19:14,863 golem INFO Click login_button
+2017-10-09 18:19:25,795 golem DEBUG Element found
+2017-10-09 18:19:25,849 golem DEBUG Element found
+2017-10-09 18:19:25,870 golem INFO Click None
+2017-10-09 18:19:29,329 golem DEBUG Element found
+2017-10-09 18:19:29,368 golem INFO Click #testSteps button.add-step
+2017-10-09 18:19:30,063 golem INFO Write 'send keys' in element None
+2017-10-09 18:19:30,064 golem INFO Press key: DOWN
+2017-10-09 18:19:30,108 golem INFO Press key: ENTER
+2017-10-09 18:19:30,253 golem DEBUG Element found
+2017-10-09 18:19:30,334 golem INFO Click save
+2017-10-09 18:19:32,298 golem INFO Refresh page
+2017-10-09 18:19:32,301 golem INFO Take screenshot error
+2017-10-09 18:19:34,068 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_action_to_test.py", line 18, in test
+    refresh_page()
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 188, in refresh_page
+    _capture_or_add_step(step_message, settings.settings['screenshot_on_step'])
+NameError: name 'settings' is not defined
+2017-10-09 18:19:34,094 golem INFO Close driver

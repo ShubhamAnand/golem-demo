@@ -1,0 +1,29 @@
+2017-10-09 19:54:04,569 golem INFO Test execution started: project/add_page
+2017-10-09 19:54:04,569 golem INFO Browser: chrome
+2017-10-09 19:54:04,570 golem INFO Environment: test
+2017-10-09 19:54:04,570 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 19:54:06,618 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 19:54:06,639 golem DEBUG Element found
+2017-10-09 19:54:06,734 golem INFO Write 'admin' in element username
+2017-10-09 19:54:06,755 golem DEBUG Element found
+2017-10-09 19:54:06,824 golem INFO Write 'admin' in element password
+2017-10-09 19:54:06,839 golem DEBUG Element found
+2017-10-09 19:54:06,864 golem INFO Click login_button
+2017-10-09 19:54:07,230 golem INFO Random value generated: apcej
+2017-10-09 19:54:07,231 golem INFO Store value apcej in key page_name
+2017-10-09 19:54:07,348 golem DEBUG Element found
+2017-10-09 19:54:07,384 golem DEBUG Element found
+2017-10-09 19:54:07,451 golem INFO Waiting for 5 seconds
+2017-10-09 19:54:12,484 golem INFO Take screenshot error
+2017-10-09 19:54:13,056 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 17, in test
+    project.verify_page_exists(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 130, in verify_page_exists
+    raise Exception('Page {} was not found'.format(dir_name))
+Exception: Page apcej was not found
+2017-10-09 19:54:13,057 golem INFO Close driver

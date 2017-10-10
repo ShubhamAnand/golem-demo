@@ -1,0 +1,28 @@
+{
+    "test_case": "project.add_test",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Click Create Project button",
+        "Write 'test' in element Project Name input",
+        "Click Create button",
+        "Access project test",
+        "Write 'fctum' in element add input",
+        "Press key: ENTER",
+        "error__6ecfecad"
+    ],
+    "description": "Verify that the user can create a new test from the project page",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 115, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_test.py\", line 16, in test\n    project.verify_test_exists(data.test_name)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py\", line 122, in verify_test_exists\n    tree_elements = pages_tree_ul.find_all(\"li.tree-element[fullpath='{}']\".format(full_dot_path))\nNameError: name 'pages_tree_ul' is not defined\n",
+    "short_error": "NameError: name 'pages_tree_ul' is not defined\n",
+    "test_elapsed_time": 5.67,
+    "test_timestamp": "2017.10.09.20.29.59.102",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "test_name": "'fctum'"
+    },
+    "environment": "test"
+}

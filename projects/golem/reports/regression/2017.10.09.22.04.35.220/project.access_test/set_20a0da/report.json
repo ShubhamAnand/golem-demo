@@ -1,0 +1,15 @@
+{
+    "test_case": "project.access_test",
+    "result": "fail",
+    "steps": [],
+    "description": "Verify that the user can access a test by clicking on it in the test list.",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 110, in run_test\n    test_module.setup(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/access_test.py\", line 10, in setup\n    navigate(data.env.url)\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 145, in navigate\n    driver = get_browser()\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/browser.py\", line 255, in get_browser\n    raise Exception(msg) from None\nException: Could not start chrome driver using the path './drivers/mac/chromedriver_mac_2.32', check the settings file.\n",
+    "short_error": "Exception: Could not start chrome driver using the path './drivers/mac/chromedriver_mac_2.32', check the settings file.\n",
+    "test_elapsed_time": 12.84,
+    "test_timestamp": "2017.10.09.22.04.53.889",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

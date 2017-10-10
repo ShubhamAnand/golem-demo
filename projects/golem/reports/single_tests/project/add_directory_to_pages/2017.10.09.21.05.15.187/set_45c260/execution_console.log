@@ -1,0 +1,28 @@
+21:05:15.471 INFO Test execution started: project/add_directory_to_pages
+21:05:15.471 INFO Browser: chrome
+21:05:15.471 INFO Environment: test
+21:05:15.472 INFO Using data: 
+    url: http://localhost:8000
+
+21:05:17.527 INFO Navigate to: 'http://localhost:8000'
+21:05:17.639 INFO Write 'admin' in element username
+21:05:17.722 INFO Write 'admin' in element password
+21:05:17.763 INFO Click login_button
+21:05:18.248 INFO Random value generated: dhgap
+21:05:18.248 INFO Store value dhgap in key directory_name
+21:05:18.519 INFO Write 'dhgap/' in element None
+21:05:18.520 INFO Press key: ENTER
+21:05:18.550 INFO Waiting for 20 seconds
+21:05:20.673 INFO Take screenshot error
+21:05:20.674 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages.py", line 17, in test
+    project.verify_page_directory_exists(data.directory_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 98, in verify_page_directory_exists
+    actions.wait(20)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 380, in wait
+    time.sleep(to_float)
+KeyboardInterrupt
+21:05:20.675 INFO Close driver

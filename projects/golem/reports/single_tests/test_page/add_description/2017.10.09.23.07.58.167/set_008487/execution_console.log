@@ -1,0 +1,30 @@
+23:07:58.777 INFO Test execution started: test_page/add_description
+23:07:58.778 INFO Browser: chrome
+23:07:58.779 INFO Environment: test
+23:07:58.779 INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+23:08:01.952 INFO Navigate to: 'http://localhost:8000'
+23:08:02.221 INFO Write 'admin' in element username
+23:08:02.405 INFO Write 'admin' in element password
+23:08:02.500 INFO Click login_button
+23:08:03.585 INFO Random value generated: xhkqmhv
+23:08:03.586 INFO Store value xhkqmhv in key name
+23:08:05.582 INFO Write 'xhkqmhv' in element None
+23:08:05.583 INFO Press key: ENTER
+23:08:05.794 INFO Click None
+23:08:06.491 INFO Write 'description of the test' in element description
+23:08:06.492 INFO Waiting for 2 seconds
+23:08:08.564 INFO Click save
+23:08:08.664 INFO Take screenshot error
+23:08:09.735 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 19, in test
+    test_page.save_test()
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/test_page.py", line 35, in save_test
+    wait_for_element_not_exist('div.toast')
+NameError: name 'wait_for_element_not_exist' is not defined
+23:08:09.736 INFO Close driver

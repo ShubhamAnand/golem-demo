@@ -1,0 +1,29 @@
+{
+    "test_case": "test_page.add_description",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'prmklvh' in element None",
+        "Press key: ENTER",
+        "Click None",
+        "Write 'description of the test' in element description",
+        "Click save",
+        "error__b9c4950a"
+    ],
+    "description": "Verify that the user can access a test by clicking on it in the test list.",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 115, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py\", line 20, in test\n    refresh_page()\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 189, in refresh_page\n    browser.get(browser.getCurrentUrl());\nAttributeError: 'WebDriver' object has no attribute 'getCurrentUrl'\n",
+    "short_error": "AttributeError: 'WebDriver' object has no attribute 'getCurrentUrl'\n",
+    "test_elapsed_time": 8.29,
+    "test_timestamp": "2017.10.09.22.36.55.917",
+    "browser": "chrome",
+    "test_data": {
+        "description": "'description of the test'",
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "name": "'prmklvh'"
+    },
+    "environment": "test"
+}

@@ -1,0 +1,37 @@
+2017-10-09 18:32:21,451 golem INFO Test execution started: project/add_page_inside_directory
+2017-10-09 18:32:21,452 golem INFO Browser: chrome
+2017-10-09 18:32:21,452 golem INFO Environment: test
+2017-10-09 18:32:21,452 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 18:32:23,514 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 18:32:23,536 golem DEBUG Element found
+2017-10-09 18:32:23,619 golem INFO Write 'admin' in element username
+2017-10-09 18:32:23,633 golem DEBUG Element found
+2017-10-09 18:32:23,694 golem INFO Write 'admin' in element password
+2017-10-09 18:32:23,712 golem DEBUG Element found
+2017-10-09 18:32:23,733 golem INFO Click login_button
+2017-10-09 18:32:24,768 golem INFO Random value generated: yzien
+2017-10-09 18:32:24,769 golem INFO Store value yzien in key dir_name
+2017-10-09 18:32:24,769 golem INFO Random value generated: tgsms
+2017-10-09 18:32:24,770 golem INFO Store value tgsms in key page_name
+2017-10-09 18:32:24,828 golem DEBUG Element found
+2017-10-09 18:32:24,933 golem DEBUG Element found
+2017-10-09 18:32:25,006 golem INFO Write 'yzien/' in element add input
+2017-10-09 18:32:25,006 golem INFO Press key: ENTER
+2017-10-09 18:32:25,011 golem DEBUG Element found
+2017-10-09 18:32:25,062 golem DEBUG Element found
+2017-10-09 18:32:25,142 golem DEBUG Element found
+2017-10-09 18:32:25,299 golem DEBUG Element found
+2017-10-09 18:32:25,371 golem INFO Write 'tgsms' in element add input
+2017-10-09 18:32:25,372 golem INFO Press key: ENTER
+2017-10-09 18:32:25,379 golem DEBUG Element found
+2017-10-09 18:32:25,408 golem INFO Take screenshot error
+2017-10-09 18:32:25,971 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page_inside_directory.py", line 20, in test
+    project.verify_page_exists(data.page_name, data.dir_name)
+TypeError: verify_page_exists() takes 1 positional argument but 2 were given
+2017-10-09 18:32:25,972 golem INFO Close driver

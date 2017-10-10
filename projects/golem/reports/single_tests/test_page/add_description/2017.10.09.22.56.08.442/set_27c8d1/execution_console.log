@@ -1,0 +1,27 @@
+22:56:08.733 INFO Test execution started: test_page/add_description
+22:56:08.733 INFO Browser: chrome
+22:56:08.733 INFO Environment: test
+22:56:08.734 INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+22:56:10.838 INFO Navigate to: 'http://localhost:8000'
+22:56:10.959 INFO Write 'admin' in element username
+22:56:11.047 INFO Write 'admin' in element password
+22:56:11.086 INFO Click login_button
+22:56:11.659 INFO Random value generated: iezmmgn
+22:56:11.660 INFO Store value iezmmgn in key name
+22:56:12.970 INFO Write 'iezmmgn' in element None
+22:56:12.970 INFO Press key: ENTER
+22:56:13.066 INFO Click None
+22:56:13.364 INFO Write 'description of the test' in element description
+22:56:13.364 INFO Waiting for 2 seconds
+22:56:15.367 INFO Take screenshot error
+22:56:15.992 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 19, in test
+    print(test_page.description.text)
+AttributeError: 'tuple' object has no attribute 'text'
+22:56:15.992 INFO Close driver

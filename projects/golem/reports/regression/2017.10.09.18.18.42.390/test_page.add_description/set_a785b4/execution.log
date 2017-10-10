@@ -1,0 +1,42 @@
+2017-10-09 18:19:22,932 golem INFO Test execution started: test_page.add_description
+2017-10-09 18:19:25,379 golem INFO Browser: chrome-headless
+2017-10-09 18:19:25,392 golem INFO Environment: test
+2017-10-09 18:19:25,401 golem INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+2017-10-09 18:19:32,361 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 18:19:32,460 golem DEBUG Element found
+2017-10-09 18:19:32,964 golem INFO Write 'admin' in element username
+2017-10-09 18:19:33,072 golem DEBUG Element found
+2017-10-09 18:19:33,246 golem INFO Write 'admin' in element password
+2017-10-09 18:19:33,297 golem DEBUG Element found
+2017-10-09 18:19:33,403 golem INFO Click login_button
+2017-10-09 18:19:36,287 golem INFO Random value generated: gmiswwz
+2017-10-09 18:19:36,287 golem INFO Store value gmiswwz in key name
+2017-10-09 18:19:38,402 golem DEBUG Element found
+2017-10-09 18:19:38,587 golem DEBUG Element found
+2017-10-09 18:19:38,795 golem INFO Write 'gmiswwz' in element add input
+2017-10-09 18:19:38,795 golem INFO Press key: ENTER
+2017-10-09 18:19:38,806 golem DEBUG Element found
+2017-10-09 18:19:38,852 golem INFO Waiting for element li[fullpath='gmiswwz'] to be visible
+2017-10-09 18:19:38,907 golem DEBUG Element found
+2017-10-09 18:19:39,533 golem DEBUG Element found
+2017-10-09 18:19:39,582 golem DEBUG Element found
+2017-10-09 18:19:39,603 golem INFO Click None
+2017-10-09 18:19:40,576 golem DEBUG Element found
+2017-10-09 18:19:40,762 golem INFO Write 'description of the test' in element description
+2017-10-09 18:19:40,810 golem DEBUG Element found
+2017-10-09 18:19:40,887 golem INFO Click save
+2017-10-09 18:19:41,131 golem INFO Refresh page
+2017-10-09 18:19:41,133 golem INFO Take screenshot error
+2017-10-09 18:19:42,134 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 20, in test
+    refresh_page()
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 188, in refresh_page
+    _capture_or_add_step(step_message, settings.settings['screenshot_on_step'])
+NameError: name 'settings' is not defined
+2017-10-09 18:19:42,135 golem INFO Close driver

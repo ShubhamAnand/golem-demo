@@ -1,0 +1,49 @@
+23:07:47.032 INFO Test execution started: test_page/add_description
+23:07:47.033 INFO Browser: chrome
+23:07:47.033 INFO Environment: test
+23:07:47.034 INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+23:07:50.763 INFO Navigate to: 'http://localhost:8000'
+23:07:51.073 INFO Write 'admin' in element username
+23:07:51.277 INFO Write 'admin' in element password
+23:07:51.381 INFO Click login_button
+23:07:52.391 INFO Random value generated: mxihvye
+23:07:52.392 INFO Store value mxihvye in key name
+23:07:54.308 INFO Write 'mxihvye' in element None
+23:07:54.311 INFO Press key: ENTER
+23:07:54.548 INFO Click None
+23:07:55.362 INFO Take screenshot error
+23:07:55.365 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 17, in test
+    send_keys(test_page.description, data.description)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 226, in send_keys
+    webelement = get_browser().find(element)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 114, in _find
+    element_name, timeout)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 52, in _find_webelement
+    while not webelement.is_displayed() and remaining_time > 0:
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 363, in is_displayed
+    return self._execute(Command.IS_ELEMENT_DISPLAYED)['value']
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 306, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/remote_connection.py", line 464, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/remote_connection.py", line 488, in _request
+    resp = self._conn.getresponse()
+  File "/usr/local/Cellar/python3/3.6.0/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/usr/local/Cellar/python3/3.6.0/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/Cellar/python3/3.6.0/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/Cellar/python3/3.6.0/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+23:07:55.370 INFO Close driver

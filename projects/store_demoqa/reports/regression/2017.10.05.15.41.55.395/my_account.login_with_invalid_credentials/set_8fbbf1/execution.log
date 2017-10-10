@@ -1,0 +1,23 @@
+2017-10-05 15:42:46,591 golem INFO Test execution started: my_account.login_with_invalid_credentials
+2017-10-05 15:42:46,591 golem INFO Driver: chrome-headless
+2017-10-05 15:43:04,984 golem INFO Navigate to: 'http://store.demoqa.com/'
+2017-10-05 15:43:05,003 golem DEBUG Element found
+2017-10-05 15:43:05,063 golem INFO Click my_account
+2017-10-05 15:43:10,412 golem DEBUG Element found
+2017-10-05 15:43:11,995 golem INFO Write 'my_username' in element username input
+2017-10-05 15:43:12,013 golem DEBUG Element found
+2017-10-05 15:43:13,592 golem INFO Write 'some_password' in element password input
+2017-10-05 15:43:13,608 golem DEBUG Element found
+2017-10-05 15:43:13,698 golem INFO Click login_button
+2017-10-05 15:43:13,699 golem INFO Waiting for element ('css', 'div.wpsc_loading_animation', 'loading_icon') to be not visible
+2017-10-05 15:43:13,717 golem DEBUG Element found
+2017-10-05 15:43:13,745 golem DEBUG Element is still visible, waiting...
+2017-10-05 15:43:14,254 golem DEBUG Element is still visible, waiting...
+2017-10-05 15:43:14,762 golem DEBUG Element is still visible, waiting...
+2017-10-05 15:43:15,269 golem INFO Waiting for element ('css', '#ajax_loginform>p.response', 'error_message') to be visible
+2017-10-05 15:43:15,286 golem DEBUG Element found
+2017-10-05 15:43:15,303 golem DEBUG Element still not visible, waiting
+2017-10-05 15:43:15,826 golem DEBUG Element found
+2017-10-05 15:43:15,839 golem INFO Verify element 'error_message' contains text 'ERROR: Invalid login credentials.'
+2017-10-05 15:43:15,858 golem INFO Take screenshot Error message
+2017-10-05 15:43:17,097 golem INFO Test passed

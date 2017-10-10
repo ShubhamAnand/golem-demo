@@ -1,0 +1,24 @@
+{
+    "test_case": "project.create_page_with_middle_spaces",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'test with spaces' in element None",
+        "Press key: ENTER",
+        "Verify that the error Only letters, numbers, '-' and '_' are allowed is displayed"
+    ],
+    "description": "Verify that the user cannot create a page with a name that contains spaces in the middle",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 8.78,
+    "test_timestamp": "2017.10.09.22.05.20.921",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

@@ -1,0 +1,21 @@
+{
+    "test_case": "project.add_test",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "error__ec3404c9"
+    ],
+    "description": "Verify that the user can create a new test from the project page",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 115, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_test.py\", line 13, in test\n    index.crate_access_project('test')\nAttributeError: module 'projects.golem.pages.index' has no attribute 'crate_access_project'\n",
+    "short_error": "AttributeError: module 'projects.golem.pages.index' has no attribute 'crate_access_project'\n",
+    "test_elapsed_time": 21.41,
+    "test_timestamp": "2017.10.09.18.18.58.658",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

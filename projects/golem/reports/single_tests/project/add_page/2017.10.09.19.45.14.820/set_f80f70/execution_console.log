@@ -1,0 +1,23 @@
+19:45:15.106 INFO Test execution started: project/add_page
+19:45:15.107 INFO Browser: chrome
+19:45:15.107 INFO Environment: test
+19:45:15.107 INFO Using data: 
+    url: http://localhost:8000
+
+19:45:17.154 INFO Navigate to: 'http://localhost:8000'
+19:45:17.275 INFO Write 'admin' in element username
+19:45:17.357 INFO Write 'admin' in element password
+19:45:17.397 INFO Click login_button
+19:45:17.740 INFO Random value generated: fxott
+19:45:17.741 INFO Store value fxott in key page_name
+19:45:17.895 INFO Take screenshot error
+19:45:18.481 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 15, in test
+    project.add_new_page(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 43, in add_new_page
+    dot_path = split_path.join('.')
+AttributeError: 'list' object has no attribute 'join'
+19:45:18.482 INFO Close driver

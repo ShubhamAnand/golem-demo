@@ -1,0 +1,29 @@
+{
+    "test_case": "test_page.add_action_to_test",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Click None",
+        "Click #testSteps button.add-step",
+        "Write 'click' in element None",
+        "Press key: DOWN",
+        "Press key: ENTER",
+        "Click save",
+        "error__5fb5c841"
+    ],
+    "description": "Verify that the user can access a test by clicking on it in the test list.",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 115, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_action_to_test.py\", line 18, in test\n    refresh_page()\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 188, in refresh_page\n    _capture_or_add_step(step_message, settings.settings['screenshot_on_step'])\nNameError: name 'settings' is not defined\n",
+    "short_error": "NameError: name 'settings' is not defined\n",
+    "test_elapsed_time": 32.85,
+    "test_timestamp": "2017.10.09.18.19.01.378",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "action": "'click'",
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

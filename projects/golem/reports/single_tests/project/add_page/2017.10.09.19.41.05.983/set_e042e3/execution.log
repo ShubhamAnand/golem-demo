@@ -1,0 +1,28 @@
+2017-10-09 19:41:06,270 golem INFO Test execution started: project/add_page
+2017-10-09 19:41:06,270 golem INFO Browser: chrome
+2017-10-09 19:41:06,270 golem INFO Environment: test
+2017-10-09 19:41:06,271 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 19:41:08,422 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 19:41:08,448 golem DEBUG Element found
+2017-10-09 19:41:08,535 golem INFO Write 'admin' in element username
+2017-10-09 19:41:08,552 golem DEBUG Element found
+2017-10-09 19:41:08,617 golem INFO Write 'admin' in element password
+2017-10-09 19:41:08,636 golem DEBUG Element found
+2017-10-09 19:41:08,663 golem INFO Click login_button
+2017-10-09 19:41:08,997 golem INFO Random value generated: hsdge
+2017-10-09 19:41:08,998 golem INFO Store value hsdge in key page_name
+2017-10-09 19:41:09,026 golem DEBUG Element found
+2017-10-09 19:41:09,145 golem DEBUG Element found
+2017-10-09 19:41:09,156 golem INFO Take screenshot error
+2017-10-09 19:41:09,718 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 15, in test
+    project.add_new_page(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 42, in add_new_page
+    _expand_tree_path(element(id='pagesTree'))
+TypeError: _expand_tree_path() missing 1 required positional argument: 'path'
+2017-10-09 19:41:09,719 golem INFO Close driver

@@ -1,11 +1,10 @@
 
 
 browsers = [
-    'firefox',
-    'chrome'
+    'chrome-headless'
 ]
 
-workers = 10
+workers = 4
 
 tests = [
     '*'

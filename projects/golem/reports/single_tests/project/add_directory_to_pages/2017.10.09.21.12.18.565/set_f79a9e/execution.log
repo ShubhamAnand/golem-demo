@@ -1,0 +1,37 @@
+2017-10-09 21:12:18,854 golem INFO Test execution started: project/add_directory_to_pages
+2017-10-09 21:12:18,854 golem INFO Browser: chrome
+2017-10-09 21:12:18,855 golem INFO Environment: test
+2017-10-09 21:12:18,855 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 21:12:20,936 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 21:12:20,958 golem DEBUG Element found
+2017-10-09 21:12:21,044 golem INFO Write 'admin' in element username
+2017-10-09 21:12:21,060 golem DEBUG Element found
+2017-10-09 21:12:21,120 golem INFO Write 'admin' in element password
+2017-10-09 21:12:21,136 golem DEBUG Element found
+2017-10-09 21:12:21,156 golem INFO Click login_button
+2017-10-09 21:12:21,539 golem INFO Random value generated: ktkpj
+2017-10-09 21:12:21,540 golem INFO Store value ktkpj in key directory_name
+2017-10-09 21:12:21,689 golem DEBUG Element found
+2017-10-09 21:12:21,736 golem DEBUG Element found
+2017-10-09 21:12:21,770 golem DEBUG Element found
+2017-10-09 21:12:21,850 golem DEBUG Element found
+2017-10-09 21:12:21,922 golem INFO Write 'ktkpj/' in element None
+2017-10-09 21:12:21,923 golem INFO Press key: ENTER
+2017-10-09 21:12:21,937 golem INFO Waiting for 3 seconds
+2017-10-09 21:12:24,950 golem DEBUG Element found
+2017-10-09 21:12:24,973 golem INFO Assert that 0 equals 1
+2017-10-09 21:12:24,974 golem INFO Take screenshot error
+2017-10-09 21:12:25,503 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages.py", line 17, in test
+    project.verify_page_directory_exists(data.directory_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 100, in verify_page_directory_exists
+    actions.assert_equals(len(tree_elements), 1)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 56, in assert_equals
+    raise Exception('Expected {} to equal {}'.format(actual_value, expected_value))
+Exception: Expected 0 to equal 1
+2017-10-09 21:12:25,504 golem INFO Close driver

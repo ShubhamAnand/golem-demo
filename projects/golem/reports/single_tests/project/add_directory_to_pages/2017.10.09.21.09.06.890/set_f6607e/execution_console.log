@@ -1,0 +1,29 @@
+21:09:07.196 INFO Test execution started: project/add_directory_to_pages
+21:09:07.197 INFO Browser: chrome
+21:09:07.197 INFO Environment: test
+21:09:07.197 INFO Using data: 
+    url: http://localhost:8000
+
+21:09:09.304 INFO Navigate to: 'http://localhost:8000'
+21:09:09.409 INFO Write 'admin' in element username
+21:09:09.495 INFO Write 'admin' in element password
+21:09:09.535 INFO Click login_button
+21:09:09.893 INFO Random value generated: afmyd
+21:09:09.893 INFO Store value afmyd in key directory_name
+21:09:10.268 INFO Write 'afmyd/' in element None
+21:09:10.268 INFO Press key: ENTER
+21:09:10.285 INFO Waiting for 3 seconds
+21:09:13.318 INFO Assert that 0 equals 1
+21:09:13.319 INFO Take screenshot error
+21:09:13.875 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages.py", line 17, in test
+    project.verify_page_directory_exists(data.directory_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 100, in verify_page_directory_exists
+    actions.assert_equals(len(tree_elements), 1)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 56, in assert_equals
+    raise Exception('Expected {} to equal {}'.format(actual_value, expected_value))
+Exception: Expected 0 to equal 1
+21:09:13.875 INFO Close driver

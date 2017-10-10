@@ -1,0 +1,25 @@
+{
+    "test_case": "project.add_directory_to_pages_section",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'zixgg/' in element add input",
+        "Press key: ENTER",
+        "error__ac7ba37c"
+    ],
+    "description": "Verify that the user can add a directory in the pages section by appending '\\' at the end",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 115, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages_section.py\", line 18, in test\n    project.verify_page_exists(data.directory_name)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py\", line 80, in verify_page_exists\n    raise Exception('Page {} was not found'.format(dir_name))\nException: Page zixgg/ was not found\n",
+    "short_error": "Exception: Page zixgg/ was not found\n",
+    "test_elapsed_time": 18.1,
+    "test_timestamp": "2017.10.09.18.18.44.486",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "directory_name": "'zixgg/'"
+    },
+    "environment": "test"
+}

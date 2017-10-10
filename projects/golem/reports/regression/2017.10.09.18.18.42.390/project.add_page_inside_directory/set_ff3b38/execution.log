@@ -1,0 +1,33 @@
+2017-10-09 18:18:54,491 golem INFO Test execution started: project.add_page_inside_directory
+2017-10-09 18:18:56,812 golem INFO Browser: chrome-headless
+2017-10-09 18:18:56,813 golem INFO Environment: test
+2017-10-09 18:18:56,813 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 18:19:13,134 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 18:19:13,257 golem DEBUG Element found
+2017-10-09 18:19:13,692 golem INFO Write 'admin' in element username
+2017-10-09 18:19:13,982 golem DEBUG Element found
+2017-10-09 18:19:14,269 golem INFO Write 'admin' in element password
+2017-10-09 18:19:14,463 golem DEBUG Element found
+2017-10-09 18:19:14,527 golem INFO Click login_button
+2017-10-09 18:19:18,644 golem INFO Random value generated: zmutb/
+2017-10-09 18:19:18,647 golem INFO Store value zmutb/ in key dir_name
+2017-10-09 18:19:18,647 golem INFO Random value generated: wqxko
+2017-10-09 18:19:18,648 golem INFO Store value wqxko in key page_name
+2017-10-09 18:19:19,271 golem DEBUG Element found
+2017-10-09 18:19:19,990 golem DEBUG Element found
+2017-10-09 18:19:20,466 golem INFO Write 'zmutb/' in element add input
+2017-10-09 18:19:20,467 golem INFO Press key: ENTER
+2017-10-09 18:19:20,564 golem DEBUG Element found
+2017-10-09 18:19:20,619 golem INFO Take screenshot error
+2017-10-09 18:19:22,572 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page_inside_directory.py", line 19, in test
+    project.add_new_page(data.page_name, data.dir_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 33, in add_new_page
+    this_branch_selector += 'li[data-branch-name=\'{}\'] > a'.format(branch)
+UnboundLocalError: local variable 'this_branch_selector' referenced before assignment
+2017-10-09 18:19:25,376 golem INFO Close driver

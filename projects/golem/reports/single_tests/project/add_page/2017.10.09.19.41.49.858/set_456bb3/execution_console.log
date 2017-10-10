@@ -1,0 +1,25 @@
+19:41:50.151 INFO Test execution started: project/add_page
+19:41:50.151 INFO Browser: chrome
+19:41:50.151 INFO Environment: test
+19:41:50.152 INFO Using data: 
+    url: http://localhost:8000
+
+19:41:52.263 INFO Navigate to: 'http://localhost:8000'
+19:41:52.377 INFO Write 'admin' in element username
+19:41:52.458 INFO Write 'admin' in element password
+19:41:52.500 INFO Click login_button
+19:41:52.837 INFO Random value generated: fvcsh
+19:41:52.838 INFO Store value fvcsh in key page_name
+19:41:52.985 INFO Take screenshot error
+19:41:53.570 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 15, in test
+    project.add_new_page(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 42, in add_new_page
+    _expand_tree_path(element(id='pagesTree'), split_path)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 13, in _expand_tree_path
+    this_dir = path.pop()
+IndexError: pop from empty list
+19:41:53.571 INFO Close driver

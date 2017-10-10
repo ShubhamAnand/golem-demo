@@ -1,0 +1,30 @@
+22:33:42.959 INFO Test execution started: test_page/add_description
+22:33:42.959 INFO Browser: chrome
+22:33:42.960 INFO Environment: test
+22:33:42.960 INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+22:33:45.063 INFO Navigate to: 'http://localhost:8000'
+22:33:45.172 INFO Write 'admin' in element username
+22:33:45.263 INFO Write 'admin' in element password
+22:33:45.302 INFO Click login_button
+22:33:45.749 INFO Random value generated: jhcgnkj
+22:33:45.749 INFO Store value jhcgnkj in key name
+22:33:47.138 INFO Write 'jhcgnkj' in element None
+22:33:47.138 INFO Press key: ENTER
+22:33:47.232 INFO Click None
+22:33:47.468 INFO Write 'description of the test' in element description
+22:33:47.501 INFO Click save
+22:33:47.564 INFO Waiting for 3 seconds
+22:33:50.566 INFO Take screenshot error
+22:33:51.120 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 20, in test
+    refresh_page()
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 187, in refresh_page
+    driver.execute_script("location.reload()")
+NameError: name 'driver' is not defined
+22:33:51.120 INFO Close driver

@@ -1,0 +1,51 @@
+2017-10-09 22:28:34,071 golem INFO Test execution started: test_page/add_description
+2017-10-09 22:28:34,071 golem INFO Browser: chrome
+2017-10-09 22:28:34,072 golem INFO Environment: test
+2017-10-09 22:28:34,072 golem INFO Using data: 
+    description: description of the test
+    url: http://localhost:8000
+
+2017-10-09 22:28:36,161 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 22:28:36,180 golem DEBUG Element found
+2017-10-09 22:28:36,267 golem INFO Write 'admin' in element username
+2017-10-09 22:28:36,282 golem DEBUG Element found
+2017-10-09 22:28:36,345 golem INFO Write 'admin' in element password
+2017-10-09 22:28:36,362 golem DEBUG Element found
+2017-10-09 22:28:36,382 golem INFO Click login_button
+2017-10-09 22:28:37,031 golem INFO Random value generated: lvujbvf
+2017-10-09 22:28:37,032 golem INFO Store value lvujbvf in key name
+2017-10-09 22:28:37,154 golem DEBUG Element found
+2017-10-09 22:28:37,690 golem DEBUG Element not found yet, remaining time: 0.48508501052856445
+2017-10-09 22:28:38,755 golem DEBUG Element found
+2017-10-09 22:28:38,787 golem DEBUG Element found
+2017-10-09 22:28:38,819 golem DEBUG Element found
+2017-10-09 22:28:38,905 golem DEBUG Element found
+2017-10-09 22:28:38,970 golem INFO Write 'lvujbvf' in element None
+2017-10-09 22:28:38,970 golem INFO Press key: ENTER
+2017-10-09 22:28:38,991 golem DEBUG Element found
+2017-10-09 22:28:39,018 golem DEBUG Element found
+2017-10-09 22:28:39,049 golem DEBUG Element found
+2017-10-09 22:28:39,071 golem INFO Click None
+2017-10-09 22:28:39,236 golem DEBUG Element found
+2017-10-09 22:28:39,330 golem INFO Write 'description of the test' in element description
+2017-10-09 22:28:39,344 golem DEBUG Element found
+2017-10-09 22:28:39,364 golem INFO Click save
+2017-10-09 22:28:39,428 golem INFO Waiting for 5 seconds
+2017-10-09 22:28:44,677 golem INFO Refresh page
+2017-10-09 22:28:44,738 golem INFO Refresh page
+2017-10-09 22:28:44,800 golem INFO Refresh page
+2017-10-09 22:28:44,864 golem INFO Refresh page
+2017-10-09 22:28:44,864 golem INFO Waiting for 10 seconds
+2017-10-09 22:28:55,036 golem DEBUG Element found
+2017-10-09 22:28:55,054 golem INFO Verify element 'description' contains text 'description of the test'
+2017-10-09 22:28:55,072 golem INFO Take screenshot error
+2017-10-09 22:28:55,425 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_page/add_description.py", line 25, in test
+    verify_text_in_element(test_page.description, data.description)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 372, in verify_text_in_element
+    .format(text, webelement.name))
+golem.core.exceptions.TextNotPresent: Text 'description of the test' was not found in element description
+2017-10-09 22:28:55,426 golem INFO Close driver

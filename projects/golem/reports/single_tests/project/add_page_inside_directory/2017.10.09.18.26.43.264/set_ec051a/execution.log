@@ -1,0 +1,33 @@
+2017-10-09 18:26:43,556 golem INFO Test execution started: project/add_page_inside_directory
+2017-10-09 18:26:43,557 golem INFO Browser: chrome
+2017-10-09 18:26:43,557 golem INFO Environment: test
+2017-10-09 18:26:43,557 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-09 18:26:45,639 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-09 18:26:45,660 golem DEBUG Element found
+2017-10-09 18:26:45,743 golem INFO Write 'admin' in element username
+2017-10-09 18:26:45,759 golem DEBUG Element found
+2017-10-09 18:26:45,823 golem INFO Write 'admin' in element password
+2017-10-09 18:26:45,839 golem DEBUG Element found
+2017-10-09 18:26:45,860 golem INFO Click login_button
+2017-10-09 18:26:46,786 golem INFO Random value generated: efodu
+2017-10-09 18:26:46,786 golem INFO Store value efodu in key dir_name
+2017-10-09 18:26:46,786 golem INFO Random value generated: jeasv
+2017-10-09 18:26:46,787 golem INFO Store value jeasv in key page_name
+2017-10-09 18:26:46,843 golem DEBUG Element found
+2017-10-09 18:26:46,941 golem DEBUG Element found
+2017-10-09 18:26:47,010 golem INFO Write 'efodu/' in element add input
+2017-10-09 18:26:47,010 golem INFO Press key: ENTER
+2017-10-09 18:26:47,020 golem DEBUG Element found
+2017-10-09 18:26:47,051 golem INFO Take screenshot error
+2017-10-09 18:26:47,640 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 115, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page_inside_directory.py", line 19, in test
+    project.add_new_page(data.page_name, data.dir_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 33, in add_new_page
+    this_branch_selector += 'li[data-branch-name=\'{}\'] > a'.format(branch)
+UnboundLocalError: local variable 'this_branch_selector' referenced before assignment
+2017-10-09 18:26:47,641 golem INFO Close driver
