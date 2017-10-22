@@ -1,0 +1,31 @@
+11:24:54.170 INFO Test execution started: test_builder/add_action_to_test
+11:24:54.170 INFO Browser: chrome
+11:24:54.170 INFO Environment: test
+11:24:54.171 INFO Using data: 
+    url: http://localhost:8000
+
+11:24:56.513 INFO Navigate to: 'http://localhost:8000'
+11:24:56.647 INFO Write 'admin' in element username
+11:24:56.728 INFO Write 'admin' in element password
+11:24:56.765 INFO Click login_button
+11:24:58.769 INFO Write 'testing_actions' in element None
+11:24:58.769 INFO Press key: ENTER
+11:24:58.873 INFO Click None
+11:24:59.165 INFO Click #testSteps button.add-step
+11:24:59.239 INFO Take screenshot error
+11:25:00.004 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_builder/add_action_to_test.py", line 16, in test
+    test_builder.add_action(data.action)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/test_builder.py", line 15, in add_action
+    actions.send_keys(last_input, action_name)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 238, in send_keys
+    webelement.send_keys(text)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 351, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/common/utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'NoneType' has no len()
+11:25:00.005 INFO Test does not have a teardown function

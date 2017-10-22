@@ -1,0 +1,29 @@
+13:25:09.920 INFO Test execution started: project.add_directory_to_pages
+13:25:09.921 INFO Browser: chrome-headless
+13:25:09.922 INFO Environment: test
+13:25:09.923 INFO Using data: 
+    url: http://localhost:8000
+
+13:25:23.193 INFO Navigate to: 'http://localhost:8000'
+13:25:23.827 INFO Write 'admin' in element username
+13:25:24.002 INFO Write 'admin' in element password
+13:25:24.117 INFO Click login_button
+13:25:24.891 INFO Click Create Project button
+13:25:25.000 INFO Waiting for element ('id', 'newProjectName', 'Project Name input') to be visible
+13:25:25.294 INFO Write 'test' in element Project Name input
+13:25:25.444 INFO Click Create button
+13:25:25.582 INFO Waiting for element ('id', 'createProjectCreate', 'Create button') to be not visible
+13:25:46.082 INFO Timeout, element is still visible.
+13:25:46.162 INFO Take screenshot error
+13:25:47.131 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 109, in run_test
+    test_module.setup(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_directory_to_pages.py", line 12, in setup
+    index.create_access_project('test')
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/index.py", line 56, in create_access_project
+    access_project(project_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/index.py", line 42, in access_project
+    raise Exception('Project {} not found'.format(project_name))
+Exception: Project test not found
+13:25:47.132 INFO Close driver

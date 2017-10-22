@@ -1,0 +1,32 @@
+11:08:47.590 INFO Test execution started: page_builder/add_element_to_page
+11:08:47.590 INFO Browser: chrome
+11:08:47.590 INFO Environment: test
+11:08:47.591 INFO Using data: 
+    url: http://localhost:8000
+
+11:08:50.020 INFO Navigate to: 'http://localhost:8000'
+11:08:50.144 INFO Write 'admin' in element username
+11:08:50.616 INFO Write 'admin' in element password
+11:08:50.673 INFO Click login_button
+11:08:51.341 INFO Store value ['some_element', 'id', 'selector_value', 'display_name'] in key element_def
+11:08:51.341 INFO Random value generated: 433
+11:08:52.716 INFO Write 'test_add_element_433' in element None
+11:08:52.716 INFO Press key: ENTER
+11:08:52.823 INFO Click None
+11:08:52.994 INFO Click Add Element button
+11:08:53.189 INFO Write 'some_element' in element None
+11:08:53.273 INFO Write 'id' in element None
+11:08:53.372 INFO Write 'selector_value' in element None
+11:08:53.410 INFO Clear None element
+11:08:53.501 INFO Write 'display_name' in element None
+11:08:53.501 INFO Waiting for 2 seconds
+11:08:55.502 INFO Take screenshot error
+11:08:55.874 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/page_builder/add_element_to_page.py", line 21, in test
+    page_builder.save_page()
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/page_builder.py", line 32, in save_page
+    click(page_builder.save_button)
+NameError: name 'click' is not defined

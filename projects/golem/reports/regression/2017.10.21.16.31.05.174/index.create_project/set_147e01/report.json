@@ -1,0 +1,26 @@
+{
+    "test_case": "index.create_project",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Click Create Project button",
+        "Write 'rwfs' in element Project Name input",
+        "Click Create button",
+        "verify the project exists in the list__3255bd04",
+        "test end__17aea6de"
+    ],
+    "description": "Verify that the user can create a new project in the index page",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 8.85,
+    "test_timestamp": "2017.10.21.16.31.06.293",
+    "browser": "firefox",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "project_name": "'rwfs'"
+    },
+    "environment": "test"
+}

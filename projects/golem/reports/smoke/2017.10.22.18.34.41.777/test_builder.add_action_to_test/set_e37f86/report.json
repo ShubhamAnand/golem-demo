@@ -1,0 +1,26 @@
+{
+    "test_case": "test_builder.add_action_to_test",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Click Create Project button",
+        "Write 'test' in element Project Name input",
+        "Click Create button",
+        "Access project test",
+        "error__9894677b"
+    ],
+    "description": "Verify that the user can add an action to a test and save it successfully",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 109, in run_test\n    test_module.setup(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_builder/add_action_to_test.py\", line 12, in setup\n    index.create_access_project('test')\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/index.py\", line 56, in create_access_project\n    access_project(project_name)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/index.py\", line 40, in access_project\n    item.click()\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py\", line 80, in click\n    self._execute(Command.CLICK_ELEMENT)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py\", line 501, in _execute\n    return self._parent.execute(command, params)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py\", line 308, in execute\n    self.error_handler.check_response(response)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py\", line 194, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.WebDriverException: Message: unknown error: Element <a href=\"/p/.../\" class=\"list-group-item\">test</a> is not clickable at point (634, 533). Other element would receive the click: <div class=\"modal fade in\" id=\"errorModal\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"false\" style=\"display: block;\">...</div>\n  (Session info: chrome=61.0.3163.100)\n  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)\n\n",
+    "short_error": "\n",
+    "test_elapsed_time": 31.34,
+    "test_timestamp": "2017.10.22.18.35.24.960",
+    "browser": "chrome",
+    "test_data": {
+        "action": "'capture'",
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

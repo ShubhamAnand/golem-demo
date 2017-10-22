@@ -1,0 +1,26 @@
+{
+    "test_case": "index.create_project",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Click Create Project button",
+        "Write 'project_vvtq' in element Project Name input",
+        "Click Create button",
+        "verify the project exists in the list__6af537de",
+        "test end__d0abec1d"
+    ],
+    "description": "Verify that the user can create a new project in the index page",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 8.82,
+    "test_timestamp": "2017.10.22.19.45.23.301",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "project_name": "'project_vvtq'"
+    },
+    "environment": "test"
+}

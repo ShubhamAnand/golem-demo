@@ -1,0 +1,28 @@
+{
+    "test_case": "project.access_page",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Click None",
+        "Write 'jfbyn' in element None",
+        "Press key: ENTER",
+        "Click None",
+        "Verify element 'page_name' contains text 'jfbyn'",
+        "test end__0b52767c"
+    ],
+    "description": "Verify that the user can access a page by clicking on it in the page list.",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 4.63,
+    "test_timestamp": "2017.10.21.17.33.21.492",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "page_name": "'jfbyn'"
+    },
+    "environment": "test"
+}

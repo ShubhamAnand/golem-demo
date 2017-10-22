@@ -1,0 +1,18 @@
+{
+    "test_case": "api.login",
+    "result": "fail",
+    "steps": [
+        "Make GET request to http://localhost:8000/login/"
+    ],
+    "description": "",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/login.py\", line 11, in test\n    assert_equals(data.last_response.code, 200)\nAttributeError: 'Response' object has no attribute 'code'\n",
+    "short_error": "AttributeError: 'Response' object has no attribute 'code'\n",
+    "test_elapsed_time": 0.02,
+    "test_timestamp": "2017.10.21.16.41.59.797",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "last_response": "<Response [200]>"
+    },
+    "environment": "test"
+}

@@ -1,0 +1,21 @@
+{
+    "test_case": "my_account.login_with_invalid_credentials",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://store.demoqa.com/'",
+        "Click my_account",
+        "Write 'my_username' in element username input",
+        "Write 'some_password' in element password input",
+        "Click login_button",
+        "Verify element 'error_message' contains text 'ERROR: Invalid login credentials.'",
+        "error__e2d4b7e9"
+    ],
+    "description": "Verify that the application gives the correct error message when the user logs in with invalid credentials",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/tests/my_account/login_with_invalid_credentials.py\", line 15, in test\n    'ERROR: Invalid login credentials.')\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 375, in verify_text_in_element\n    .format(text, webelement.name))\ngolem.core.exceptions.TextNotPresent: Text 'ERROR: Invalid login credentials.' was not found in element error_message\n",
+    "short_error": "golem.core.exceptions.TextNotPresent: Text 'ERROR: Invalid login credentials.' was not found in element error_message\n",
+    "test_elapsed_time": 18.76,
+    "test_timestamp": "2017.10.11.21.21.32.816",
+    "browser": "chrome (headless)",
+    "test_data": {},
+    "environment": ""
+}

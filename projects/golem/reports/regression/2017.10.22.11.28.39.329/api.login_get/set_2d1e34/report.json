@@ -1,0 +1,18 @@
+{
+    "test_case": "api.login_get",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000/login/'",
+        "error__d7be6d92"
+    ],
+    "description": "Verify that a get request to /login/ returns status code 200",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/login_get.py\", line 11, in test\n    assert_equals(data.last_response.status_code, 200)\nAttributeError: 'NoneType' object has no attribute 'status_code'\n",
+    "short_error": "AttributeError: 'NoneType' object has no attribute 'status_code'\n",
+    "test_elapsed_time": 5.34,
+    "test_timestamp": "2017.10.22.11.28.39.993",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

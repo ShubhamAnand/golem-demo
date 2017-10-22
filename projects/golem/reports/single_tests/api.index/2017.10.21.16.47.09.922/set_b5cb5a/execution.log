@@ -1,0 +1,16 @@
+2017-10-21 16:47:10,571 root INFO Test execution started: api.index
+2017-10-21 16:47:10,572 root INFO Browser: chrome
+2017-10-21 16:47:10,572 root INFO Environment: test
+2017-10-21 16:47:10,572 root INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-21 16:47:10,574 root INFO Make GET request to http://localhost:8000
+2017-10-21 16:47:10,580 urllib3.connectionpool DEBUG Starting new HTTP connection (1): localhost
+2017-10-21 16:47:10,589 urllib3.connectionpool DEBUG http://localhost:8000 "GET / HTTP/1.1" 302 233
+2017-10-21 16:47:10,591 urllib3.connectionpool DEBUG Resetting dropped connection: localhost
+2017-10-21 16:47:10,603 urllib3.connectionpool DEBUG http://localhost:8000 "GET /login?next=/ HTTP/1.1" 301 277
+2017-10-21 16:47:10,607 urllib3.connectionpool DEBUG Resetting dropped connection: localhost
+2017-10-21 16:47:10,610 urllib3.connectionpool DEBUG http://localhost:8000 "GET /login/?next=/ HTTP/1.1" 200 7097
+2017-10-21 16:47:10,610 root INFO Store value <Response [200]> in key last_response
+2017-10-21 16:47:10,611 root INFO Assert that 200 equals 200
+2017-10-21 16:47:10,611 root INFO Test passed

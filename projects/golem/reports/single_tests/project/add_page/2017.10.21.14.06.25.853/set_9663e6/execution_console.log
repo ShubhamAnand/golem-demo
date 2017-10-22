@@ -1,0 +1,21 @@
+14:06:26.132 INFO Test execution started: project/add_page
+14:06:26.133 INFO Browser: firefox
+14:06:26.133 INFO Environment: test
+14:06:26.133 INFO Using data: 
+    url: http://localhost:8000
+
+14:06:29.143 INFO Navigate to: 'http://localhost:8000'
+14:06:29.237 INFO Write 'admin' in element username
+14:06:29.287 INFO Write 'admin' in element password
+14:06:29.301 INFO Click login_button
+14:06:29.615 INFO Random value generated: zdfwv
+14:06:29.616 INFO Store value zdfwv in key page_name
+14:06:29.618 INFO Take screenshot error
+14:06:29.838 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 16, in test
+    press_key('DOWN')
+TypeError: press_key() missing 1 required positional argument: 'key'
+14:06:29.838 INFO Close driver

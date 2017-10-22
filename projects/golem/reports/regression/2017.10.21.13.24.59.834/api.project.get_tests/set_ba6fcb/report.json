@@ -1,0 +1,19 @@
+{
+    "test_case": "api.project.get_tests",
+    "result": "fail",
+    "steps": [
+        "Make POST request to http://localhost:8000/project/get_tests/",
+        "Assert that 500 equals 200"
+    ],
+    "description": "Verify that the /project/get_tests/ API call returns response code 200",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/project/get_tests.py\", line 11, in test\n    assert_equals(data.last_response.status_code, 200)\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 56, in assert_equals\n    raise Exception('Expected {} to equal {}'.format(actual_value, expected_value))\nException: Expected 500 to equal 200\n",
+    "short_error": "Exception: Expected 500 to equal 200\n",
+    "test_elapsed_time": 0.03,
+    "test_timestamp": "2017.10.21.13.25.00.568",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "last_response": "<Response [500]>"
+    },
+    "environment": "test"
+}

@@ -1,0 +1,15 @@
+{
+    "test_case": "api.login_post",
+    "result": "fail",
+    "steps": [],
+    "description": "Verify that a post request to /login/ returns status code 200",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/login_post.py\", line 10, in test\n    post(data.env.url + '/login/', {}, {'username': '', 'password': '', 'next': ''})\nNameError: name 'post' is not defined\n",
+    "short_error": "NameError: name 'post' is not defined\n",
+    "test_elapsed_time": 0.0,
+    "test_timestamp": "2017.10.22.11.28.39.993",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

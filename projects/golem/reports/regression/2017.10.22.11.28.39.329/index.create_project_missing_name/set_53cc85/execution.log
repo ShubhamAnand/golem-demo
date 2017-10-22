@@ -1,0 +1,90 @@
+2017-10-22 11:28:40,320 root INFO Test execution started: index.create_project_missing_name
+2017-10-22 11:28:40,321 root INFO Browser: chrome
+2017-10-22 11:28:40,321 root INFO Environment: test
+2017-10-22 11:28:40,321 root INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-22 11:28:41,341 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any"}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "chromeOptions": {"extensions": [], "args": ["--start-maximized"]}}}
+2017-10-22 11:28:44,803 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:44,804 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/window/current/maximize {"windowHandle": "current", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:45,358 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:45,358 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/url {"url": "http://localhost:8000", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:46,235 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:46,235 root INFO Navigate to: 'http://localhost:8000'
+2017-10-22 11:28:46,236 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element {"using": "id", "value": "username", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:46,271 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:46,271 root DEBUG Element found
+2017-10-22 11:28:46,271 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8034505939664218-1/displayed {"id": "0.8034505939664218-1", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:46,302 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:46,303 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8034505939664218-1/displayed {"id": "0.8034505939664218-1", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:46,312 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:46,312 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8034505939664218-1/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "0.8034505939664218-1", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:47,635 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:47,635 root INFO Write 'admin' in element username
+2017-10-22 11:28:47,636 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element {"using": "id", "value": "password", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:47,671 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:47,671 root DEBUG Element found
+2017-10-22 11:28:47,672 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8034505939664218-2/displayed {"id": "0.8034505939664218-2", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:47,703 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:47,703 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8034505939664218-2/displayed {"id": "0.8034505939664218-2", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:47,714 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:47,715 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8034505939664218-2/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "0.8034505939664218-2", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:47,808 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:47,808 root INFO Write 'admin' in element password
+2017-10-22 11:28:47,809 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element {"using": "css selector", "value": "button[type='submit']", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:47,854 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:47,855 root DEBUG Element found
+2017-10-22 11:28:47,855 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8034505939664218-3/displayed {"id": "0.8034505939664218-3", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:47,921 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:47,921 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8034505939664218-3/displayed {"id": "0.8034505939664218-3", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:47,956 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:47,957 root INFO Click login_button
+2017-10-22 11:28:47,957 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8034505939664218-3/click {"id": "0.8034505939664218-3", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:48,390 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:48,390 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element {"using": "css selector", "value": "#projectCreationButton button", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:48,421 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:48,422 root DEBUG Element found
+2017-10-22 11:28:48,422 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8008933742470679-1/displayed {"id": "0.8008933742470679-1", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:48,448 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:48,449 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8008933742470679-1/displayed {"id": "0.8008933742470679-1", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:48,457 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:48,457 root INFO Click Create Project button
+2017-10-22 11:28:48,458 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8008933742470679-1/click {"id": "0.8008933742470679-1", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:48,539 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:48,539 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element {"using": "id", "value": "createProjectCreate", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:48,586 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:48,586 root DEBUG Element found
+2017-10-22 11:28:48,586 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8008933742470679-2/displayed {"id": "0.8008933742470679-2", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:48,618 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:48,618 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8008933742470679-2/displayed {"id": "0.8008933742470679-2", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:48,633 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:48,633 root INFO Click Create button
+2017-10-22 11:28:48,633 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8008933742470679-2/click {"id": "0.8008933742470679-2", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:49,189 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:49,190 root INFO Waiting for element ('id', 'errorModal', 'error_modal') to be visible
+2017-10-22 11:28:49,190 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element {"using": "id", "value": "errorModal", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:49,218 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:49,218 root DEBUG Element found
+2017-10-22 11:28:49,218 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8008933742470679-3/displayed {"id": "0.8008933742470679-3", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:49,249 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:49,249 root DEBUG Element still not visible, waiting
+2017-10-22 11:28:49,750 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8008933742470679-3/displayed {"id": "0.8008933742470679-3", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:49,886 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:49,886 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8008933742470679-3/displayed {"id": "0.8008933742470679-3", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:49,896 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:49,897 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8008933742470679-3/displayed {"id": "0.8008933742470679-3", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:49,905 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:49,906 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/elements {"using": "css selector", "value": "#errorList li", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:49,933 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:49,934 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/element/0.8008933742470679-4/text {"id": "0.8008933742470679-4", "sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:49,966 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:49,967 root INFO Take screenshot verify the application shows the error message: Project name is too short
+2017-10-22 11:28:49,967 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/screenshot {"sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:51,521 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:51,522 root INFO Take screenshot test end
+2017-10-22 11:28:51,523 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7/screenshot {"sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:52,653 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:52,654 root INFO Close driver
+2017-10-22 11:28:52,655 selenium.webdriver.remote.remote_connection DEBUG DELETE http://127.0.0.1:64314/session/da2a8a75a22b013f1253687f04aecfb7 {"sessionId": "da2a8a75a22b013f1253687f04aecfb7"}
+2017-10-22 11:28:52,706 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:52,721 root INFO Test passed

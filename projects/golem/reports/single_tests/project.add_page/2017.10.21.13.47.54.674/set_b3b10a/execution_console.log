@@ -1,0 +1,24 @@
+13:47:55.306 INFO Test execution started: project.add_page
+13:47:55.306 INFO Browser: chrome
+13:47:55.307 INFO Environment: test
+13:47:55.307 INFO Using data: 
+    url: http://localhost:8000
+
+13:47:57.587 INFO Navigate to: 'http://localhost:8000'
+13:47:57.711 INFO Write 'admin' in element username
+13:47:57.793 INFO Write 'admin' in element password
+13:47:57.829 INFO Click login_button
+13:47:58.253 INFO Random value generated: ggljq
+13:47:58.253 INFO Store value ggljq in key page_name
+13:47:58.253 INFO Waiting for 3 seconds
+13:48:01.321 INFO Take screenshot error
+13:48:01.651 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 16, in test
+    project.add_page(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 40, in add_page
+    click(form_container.find('a.new-element-link'))
+NameError: name 'click' is not defined
+13:48:01.652 INFO Close driver

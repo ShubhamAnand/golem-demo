@@ -1,0 +1,26 @@
+{
+    "test_case": "index.create_project_name_too_short",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Click Create Project button",
+        "Write 'gz' in element Project Name input",
+        "Click Create button",
+        "verify the application shows the error message: Project name is too short__15b1b7c9",
+        "test end__16614e3f"
+    ],
+    "description": "Verify that the application shows the correct error message when creating a project with the name too short (less than 3 chars long)",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 16.59,
+    "test_timestamp": "2017.10.21.13.02.30.489",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "project_name": "'gz'"
+    },
+    "environment": "test"
+}

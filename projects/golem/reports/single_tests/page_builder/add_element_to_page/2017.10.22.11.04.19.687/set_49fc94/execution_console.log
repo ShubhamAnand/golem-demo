@@ -1,0 +1,34 @@
+11:04:20.055 INFO Test execution started: page_builder/add_element_to_page
+11:04:20.055 INFO Browser: chrome
+11:04:20.055 INFO Environment: test
+11:04:20.056 INFO Using data: 
+    url: http://localhost:8000
+
+11:04:22.557 INFO Navigate to: 'http://localhost:8000'
+11:04:22.693 INFO Write 'admin' in element username
+11:04:22.774 INFO Write 'admin' in element password
+11:04:22.819 INFO Click login_button
+11:04:23.445 INFO Store value ['some_element', 'id', 'selector_value', 'display_name'] in key element_def
+11:04:23.446 INFO Random value generated: 800
+11:04:24.806 INFO Write 'test_add_element_800' in element None
+11:04:24.806 INFO Press key: ENTER
+11:04:24.913 INFO Click None
+11:04:25.083 INFO Click Add Element button
+11:04:25.255 INFO Write 'some_element' in element None
+11:04:25.350 INFO Write 'id' in element None
+11:04:25.464 INFO Write 'selector_value' in element None
+11:04:25.501 INFO Clear None element
+11:04:25.583 INFO Write 'display_name' in element None
+11:04:25.584 INFO Waiting for 1 seconds
+11:04:26.619 INFO Click Save button
+11:04:26.724 INFO Refresh page
+11:04:26.733 INFO Take screenshot error
+11:04:27.410 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/page_builder/add_element_to_page.py", line 23, in test
+    page_builder.verify_element_exists(data.element_def)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/page_builder.py", line 34, in verify_element_exists
+    element_name = last_element_row.find('input.element-name').get_attribute('value')
+NameError: name 'last_element_row' is not defined

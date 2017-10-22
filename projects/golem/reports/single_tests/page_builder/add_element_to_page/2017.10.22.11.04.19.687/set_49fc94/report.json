@@ -1,0 +1,34 @@
+{
+    "test_case": "page_builder.add_element_to_page",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'test_add_element_800' in element None",
+        "Press key: ENTER",
+        "Click None",
+        "Click Add Element button",
+        "Write 'some_element' in element None",
+        "Write 'id' in element None",
+        "Write 'selector_value' in element None",
+        "Clear None element",
+        "Write 'display_name' in element None",
+        "Click Save button",
+        "Refresh page",
+        "error__c9314e22"
+    ],
+    "description": "\nVerify that the user can add an element to a page and save it successfully\n",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/page_builder/add_element_to_page.py\", line 23, in test\n    page_builder.verify_element_exists(data.element_def)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/page_builder.py\", line 34, in verify_element_exists\n    element_name = last_element_row.find('input.element-name').get_attribute('value')\nNameError: name 'last_element_row' is not defined\n",
+    "short_error": "NameError: name 'last_element_row' is not defined\n",
+    "test_elapsed_time": 7.42,
+    "test_timestamp": "2017.10.22.11.04.20.056",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "element_def": "['some_element', 'id', 'selector_value', 'display_name']"
+    },
+    "environment": "test"
+}

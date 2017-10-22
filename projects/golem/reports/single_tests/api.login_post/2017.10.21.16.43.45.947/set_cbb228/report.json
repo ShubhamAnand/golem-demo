@@ -1,0 +1,19 @@
+{
+    "test_case": "api.login_post",
+    "result": "fail",
+    "steps": [
+        "Make POST request to http://localhost:8000/login/",
+        "Assert that 400 equals 200"
+    ],
+    "description": "",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/login_post.py\", line 11, in test\n    assert_equals(data.last_response.status_code, 200)\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 56, in assert_equals\n    raise Exception('Expected {} to equal {}'.format(actual_value, expected_value))\nException: Expected 400 to equal 200\n",
+    "short_error": "Exception: Expected 400 to equal 200\n",
+    "test_elapsed_time": 0.03,
+    "test_timestamp": "2017.10.21.16.43.46.703",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "last_response": "<Response [400]>"
+    },
+    "environment": "test"
+}

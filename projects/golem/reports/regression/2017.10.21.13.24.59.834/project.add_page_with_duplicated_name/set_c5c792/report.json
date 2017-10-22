@@ -1,0 +1,29 @@
+{
+    "test_case": "project.add_page_with_duplicated_name",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'dioho' in element None",
+        "Press key: ENTER",
+        "Write 'dioho' in element None",
+        "Press key: ENTER",
+        "Verify that the error A file with that name already exists is displayed",
+        "Error message is displayed__4f6c8be3",
+        "test end__fe2bb5b8"
+    ],
+    "description": "Verify that the application displays the correct error message when the page name already exists",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 11.24,
+    "test_timestamp": "2017.10.21.13.25.27.431",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "page_name": "'dioho'"
+    },
+    "environment": "test"
+}

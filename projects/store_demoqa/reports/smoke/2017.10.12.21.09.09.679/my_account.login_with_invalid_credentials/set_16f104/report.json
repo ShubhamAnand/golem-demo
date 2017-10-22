@@ -1,0 +1,13 @@
+{
+    "test_case": "my_account.login_with_invalid_credentials",
+    "result": "fail",
+    "steps": [],
+    "description": "Verify that the application gives the correct error message when the user logs in with invalid credentials",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/tests/my_account/login_with_invalid_credentials.py\", line 9, in test\n    navigate('http://store.demoqa.com/')\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 145, in navigate\n    driver = get_browser()\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/browser.py\", line 301, in get_browser\n    desired_capabilities=DesiredCapabilities.CHROME)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py\", line 151, in __init__\n    self.start_session(desired_capabilities, browser_profile)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py\", line 240, in start_session\n    response = self.execute(Command.NEW_SESSION, parameters)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py\", line 306, in execute\n    response = self.command_executor.execute(driver_command, params)\nAttributeError: 'NoneType' object has no attribute 'execute'\n",
+    "short_error": "AttributeError: 'NoneType' object has no attribute 'execute'\n",
+    "test_elapsed_time": 0.0,
+    "test_timestamp": "2017.10.12.21.09.10.556",
+    "browser": "chrome (remote)",
+    "test_data": {},
+    "environment": ""
+}

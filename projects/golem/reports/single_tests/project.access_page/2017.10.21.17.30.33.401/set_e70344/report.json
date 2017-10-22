@@ -1,0 +1,26 @@
+{
+    "test_case": "project.access_page",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Click None",
+        "Write 'dtaqk' in element None",
+        "Press key: ENTER",
+        "error__eb21bb0e"
+    ],
+    "description": "Verify that the user can access a page by clicking on it in the page list.",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/access_page.py\", line 18, in test\n    project.access_page(data.page_name)\nAttributeError: module 'projects.golem.pages.project' has no attribute 'access_page'\n",
+    "short_error": "AttributeError: module 'projects.golem.pages.project' has no attribute 'access_page'\n",
+    "test_elapsed_time": 5.05,
+    "test_timestamp": "2017.10.21.17.30.34.064",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "page_name": "'dtaqk'"
+    },
+    "environment": "test"
+}

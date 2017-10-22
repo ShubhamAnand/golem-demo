@@ -1,0 +1,35 @@
+14:10:05.909 INFO Test execution started: project/add_page
+14:10:05.909 INFO Browser: chrome
+14:10:05.909 INFO Environment: test
+14:10:05.910 INFO Using data: 
+    url: http://localhost:8000
+
+14:10:08.273 INFO Navigate to: 'http://localhost:8000'
+14:10:08.400 INFO Write 'admin' in element username
+14:10:08.495 INFO Write 'admin' in element password
+14:10:08.535 INFO Click login_button
+14:10:08.971 INFO Random value generated: hgksb
+14:10:08.972 INFO Store value hgksb in key page_name
+14:10:08.972 INFO Press key: DOWN
+14:10:09.042 INFO Take screenshot error
+14:10:09.713 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 16, in test
+    press_key(('id', 'content'), 'DOWN')
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 161, in press_key
+    webelement.send_keys(Keys.DOWN)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 352, in send_keys
+    'value': keys_to_typing(value)})
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot focus element
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+14:10:09.714 INFO Close driver

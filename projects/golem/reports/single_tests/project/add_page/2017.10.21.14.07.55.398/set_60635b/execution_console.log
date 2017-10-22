@@ -1,0 +1,36 @@
+14:07:55.683 INFO Test execution started: project/add_page
+14:07:55.684 INFO Browser: firefox
+14:07:55.684 INFO Environment: test
+14:07:55.684 INFO Using data: 
+    url: http://localhost:8000
+
+14:07:58.680 INFO Navigate to: 'http://localhost:8000'
+14:07:58.754 INFO Write 'admin' in element username
+14:07:58.792 INFO Write 'admin' in element password
+14:07:58.810 INFO Click login_button
+14:07:59.146 INFO Random value generated: hlkcb
+14:07:59.146 INFO Store value hlkcb in key page_name
+14:07:59.147 INFO Press key: DOWN
+14:07:59.310 INFO Click None
+14:08:03.601 INFO Take screenshot error
+14:08:03.797 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py", line 17, in test
+    project.add_page(data.page_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 42, in add_page
+    actions.send_keys(add_page_input, page_name)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 234, in send_keys
+    webelement.send_keys(text)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 352, in send_keys
+    'value': keys_to_typing(value)})
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: Element is not visible
+
+14:08:03.798 INFO Close driver

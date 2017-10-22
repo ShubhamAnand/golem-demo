@@ -1,0 +1,25 @@
+2017-10-21 16:31:05,896 root INFO Test execution started: api.login
+2017-10-21 16:31:05,896 root INFO Browser: chrome
+2017-10-21 16:31:05,896 root INFO Environment: test
+2017-10-21 16:31:05,897 root INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-21 16:31:05,898 root ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 86, in run_test
+    'projects.{0}.tests.{1}'.format(project, test_name))
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/login.py", line 10
+    get(data.env.url, , )
+                      ^
+SyntaxError: invalid syntax
+2017-10-21 16:31:05,899 root INFO Test does not have a teardown function

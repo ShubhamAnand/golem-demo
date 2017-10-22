@@ -1,0 +1,24 @@
+{
+    "test_case": "project.add_page",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Click None",
+        "error__f63ae1fc"
+    ],
+    "description": "Verify that the user can create a new page from the project page",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py\", line 15, in test\n    project.add_page(data.page_name)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py\", line 42, in add_page\n    actions.send_keys(add_page_input, page_name)\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 234, in send_keys\n    webelement.send_keys(text)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py\", line 352, in send_keys\n    'value': keys_to_typing(value)})\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py\", line 501, in _execute\n    return self._parent.execute(command, params)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py\", line 308, in execute\n    self.error_handler.check_response(response)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py\", line 194, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.ElementNotInteractableException: Message: Element is not visible\n\n",
+    "short_error": "\n",
+    "test_elapsed_time": 9.29,
+    "test_timestamp": "2017.10.21.13.58.50.001",
+    "browser": "firefox",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "page_name": "'dqwrr'"
+    },
+    "environment": "test"
+}

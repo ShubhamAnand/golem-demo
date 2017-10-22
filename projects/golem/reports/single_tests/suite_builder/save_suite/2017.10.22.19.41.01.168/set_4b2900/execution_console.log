@@ -1,0 +1,30 @@
+19:41:01.452 INFO Test execution started: suite_builder/save_suite
+19:41:01.453 INFO Browser: chrome
+19:41:01.453 INFO Environment: test
+19:41:01.453 INFO Using data: 
+    url: http://localhost:8000
+
+19:41:04.045 INFO Navigate to: 'http://localhost:8000'
+19:41:04.163 INFO Write 'admin' in element username
+19:41:04.251 INFO Write 'admin' in element password
+19:41:04.301 INFO Click login_button
+19:41:07.709 INFO Random value generated: 171
+19:41:09.110 INFO Write 'test_save_suite171' in element None
+19:41:09.110 INFO Press key: ENTER
+19:41:09.215 INFO Click None
+19:41:09.427 INFO Clear Workers input element
+19:41:09.526 INFO Write '3' in element Workers input
+19:41:09.560 INFO Click Save button
+19:41:09.614 INFO Waiting for element #toast-container to not exist
+19:41:13.879 INFO Refresh page
+19:41:13.914 INFO Take screenshot error
+19:41:14.692 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/suite_builder/save_suite.py", line 20, in test
+    suite_builder.verify_workers_value(3)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/suite_builder.py", line 17, in verify_workers_value
+    if not actual_value == expected:
+NameError: name 'expected' is not defined
+19:41:14.692 INFO Close driver

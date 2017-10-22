@@ -1,0 +1,45 @@
+19:47:39.313 INFO Test execution started: test_builder.add_action_to_test
+19:47:39.314 INFO Browser: chrome
+19:47:39.314 INFO Environment: test
+19:47:39.315 INFO Using data: 
+    action: close
+    url: http://localhost:8000
+
+19:47:47.622 INFO Navigate to: 'http://localhost:8000'
+19:47:47.814 INFO Write 'admin' in element username
+19:47:48.321 INFO Write 'admin' in element password
+19:47:48.458 INFO Click login_button
+19:47:50.994 INFO Click None
+19:47:52.192 INFO Click #testSteps button.add-step
+19:47:52.788 INFO Write 'close' in element None
+19:47:52.788 INFO Press key: DOWN
+19:47:52.830 INFO Press key: ENTER
+19:47:52.976 INFO Click save
+19:47:53.868 INFO Refresh page
+19:47:53.888 INFO Take screenshot error
+19:47:53.892 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_builder/add_action_to_test.py", line 19, in test
+    test_builder.verify_last_action(data.action)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/test_builder.py", line 21, in verify_last_action
+    action_inputs = elements("#testSteps .step-first-input")
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 213, in elements
+    webelement = get_browser().find_all(**kwargs)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 165, in _find_all
+    webelements = self.find_elements_by_css_selector(css)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 521, in find_elements_by_css_selector
+    return self.find_elements(by=By.CSS_SELECTOR, value=css_selector)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 871, in find_elements
+    'value': value})['value'] or []
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: unexpected alert open: {Alert text : There are unsaved changes}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+19:47:55.670 INFO Test does not have a teardown function

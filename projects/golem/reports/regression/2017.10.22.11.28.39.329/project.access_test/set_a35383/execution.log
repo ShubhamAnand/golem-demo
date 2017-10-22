@@ -1,0 +1,25 @@
+2017-10-22 11:29:32,134 root INFO Test execution started: project.access_test
+2017-10-22 11:29:32,135 root INFO Browser: chrome
+2017-10-22 11:29:32,135 root INFO Environment: test
+2017-10-22 11:29:32,136 root INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-22 11:29:32,143 root ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 92, in run_test
+    page, page.split('.'))
+  File "/Users/lucianofeo/Desktop/golem/src/golem/core/utils.py", line 357, in generate_page_object_module
+    .format(project, full_path))
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 948, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'projects.golem.pages.test_page'
+2017-10-22 11:29:32,144 root ERROR An error ocurred in the teardown:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 135, in run_test
+    test_module.teardown(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/access_test.py", line 21, in teardown
+    close()
+NameError: name 'close' is not defined

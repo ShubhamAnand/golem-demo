@@ -1,0 +1,25 @@
+2017-10-21 13:18:08,867 root INFO Test execution started: api.login
+2017-10-21 13:18:08,867 root INFO Browser: chrome-headless
+2017-10-21 13:18:08,868 root INFO Environment: test
+2017-10-21 13:18:08,868 root INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-21 13:18:09,893 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:65347/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any"}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "chromeOptions": {"extensions": [], "args": ["headless", "--window-size=1600,1600"]}}}
+2017-10-21 13:18:12,689 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-21 13:18:12,689 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:65347/session/f5c65565136c52495ce82196d116ae93/window/current/maximize {"windowHandle": "current", "sessionId": "f5c65565136c52495ce82196d116ae93"}
+2017-10-21 13:18:12,819 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-21 13:18:12,819 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:65347/session/f5c65565136c52495ce82196d116ae93/url {"url": "http://localhost:8000/login/", "sessionId": "f5c65565136c52495ce82196d116ae93"}
+2017-10-21 13:18:13,401 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-21 13:18:13,401 root INFO Navigate to: 'http://localhost:8000/login/'
+2017-10-21 13:18:13,402 root INFO Take screenshot error
+2017-10-21 13:18:13,403 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:65347/session/f5c65565136c52495ce82196d116ae93/screenshot {"sessionId": "f5c65565136c52495ce82196d116ae93"}
+2017-10-21 13:18:14,661 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-21 13:18:14,662 root ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/login.py", line 11, in test
+    store('someurl', 'data.env.url + '/login/'')
+NameError: name 'login' is not defined
+2017-10-21 13:18:14,663 selenium.webdriver.remote.remote_connection DEBUG DELETE http://127.0.0.1:65347/session/f5c65565136c52495ce82196d116ae93 {"sessionId": "f5c65565136c52495ce82196d116ae93"}
+2017-10-21 13:18:14,714 selenium.webdriver.remote.remote_connection DEBUG Finished Request

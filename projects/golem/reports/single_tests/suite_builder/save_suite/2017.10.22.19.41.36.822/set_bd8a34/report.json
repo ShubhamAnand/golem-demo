@@ -1,0 +1,29 @@
+{
+    "test_case": "suite_builder.save_suite",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'test_save_suite464' in element None",
+        "Press key: ENTER",
+        "Click None",
+        "Clear Workers input element",
+        "Write '3' in element Workers input",
+        "Click Save button",
+        "Refresh page",
+        "error__26c6f58d"
+    ],
+    "description": "Verify that the user can make changes to a suite and save it successfully",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/suite_builder/save_suite.py\", line 20, in test\n    suite_builder.verify_workers_value(3)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/suite_builder.py\", line 17, in verify_workers_value\n    if not actual_value == expected:\nNameError: name 'expected' is not defined\n",
+    "short_error": "NameError: name 'expected' is not defined\n",
+    "test_elapsed_time": 11.2,
+    "test_timestamp": "2017.10.22.19.41.37.110",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

@@ -1,0 +1,13 @@
+2017-10-22 11:28:39,992 root INFO Test execution started: api.login_post
+2017-10-22 11:28:39,992 root INFO Browser: chrome
+2017-10-22 11:28:39,993 root INFO Environment: test
+2017-10-22 11:28:39,993 root INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-22 11:28:39,995 root ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/login_post.py", line 10, in test
+    post(data.env.url + '/login/', {}, {'username': '', 'password': '', 'next': ''})
+NameError: name 'post' is not defined

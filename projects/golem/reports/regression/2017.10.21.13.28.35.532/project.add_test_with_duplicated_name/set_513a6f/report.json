@@ -1,0 +1,29 @@
+{
+    "test_case": "project.add_test_with_duplicated_name",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'ilzcl' in element None",
+        "Press key: ENTER",
+        "Write 'ilzcl' in element None",
+        "Press key: ENTER",
+        "Verify that the error A test with that name already exists is displayed",
+        "Error message is displayed__5f471486",
+        "test end__a7f51630"
+    ],
+    "description": "Verify that the user cannot create a new test if a test with the same name already exists",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 7.54,
+    "test_timestamp": "2017.10.21.13.30.16.050",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "test_name": "'ilzcl'"
+    },
+    "environment": "test"
+}

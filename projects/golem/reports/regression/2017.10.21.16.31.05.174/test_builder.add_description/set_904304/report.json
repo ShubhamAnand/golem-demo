@@ -1,0 +1,26 @@
+{
+    "test_case": "test_builder.add_description",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'asxaucj' in element None",
+        "Press key: ENTER",
+        "Click None",
+        "error__4d670622"
+    ],
+    "description": "Verify that the user can access a test by clicking on it in the test list.",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_builder/add_description.py\", line 17, in test\n    send_keys(test_page.description, data.description)\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 234, in send_keys\n    webelement.send_keys(text)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py\", line 351, in send_keys\n    {'text': \"\".join(keys_to_typing(value)),\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/common/utils.py\", line 150, in keys_to_typing\n    for i in range(len(val)):\nTypeError: object of type 'NoneType' has no len()\n",
+    "short_error": "TypeError: object of type 'NoneType' has no len()\n",
+    "test_elapsed_time": 13.28,
+    "test_timestamp": "2017.10.21.16.33.25.780",
+    "browser": "firefox",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "name": "'asxaucj'"
+    },
+    "environment": "test"
+}

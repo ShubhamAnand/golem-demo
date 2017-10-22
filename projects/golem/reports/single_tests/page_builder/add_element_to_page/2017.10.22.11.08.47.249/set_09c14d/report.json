@@ -1,0 +1,32 @@
+{
+    "test_case": "page_builder.add_element_to_page",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'test_add_element_433' in element None",
+        "Press key: ENTER",
+        "Click None",
+        "Click Add Element button",
+        "Write 'some_element' in element None",
+        "Write 'id' in element None",
+        "Write 'selector_value' in element None",
+        "Clear None element",
+        "Write 'display_name' in element None",
+        "error__7137d521"
+    ],
+    "description": "\nVerify that the user can add an element to a page and save it successfully\n",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/page_builder/add_element_to_page.py\", line 21, in test\n    page_builder.save_page()\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/page_builder.py\", line 32, in save_page\n    click(page_builder.save_button)\nNameError: name 'click' is not defined\n",
+    "short_error": "NameError: name 'click' is not defined\n",
+    "test_elapsed_time": 8.35,
+    "test_timestamp": "2017.10.22.11.08.47.591",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "element_def": "['some_element', 'id', 'selector_value', 'display_name']"
+    },
+    "environment": "test"
+}

@@ -1,0 +1,26 @@
+{
+    "test_case": "test_builder.add_action_to_test",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'testing_actions' in element None",
+        "Press key: ENTER",
+        "Click None",
+        "Click #testSteps button.add-step",
+        "error__3d3f6271"
+    ],
+    "description": "Verify that the user can add an action to a test and save it successfully",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/test_builder/add_action_to_test.py\", line 16, in test\n    test_builder.add_action(data.action)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/test_builder.py\", line 15, in add_action\n    actions.send_keys(last_input, action_name)\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 238, in send_keys\n    webelement.send_keys(text)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py\", line 351, in send_keys\n    {'text': \"\".join(keys_to_typing(value)),\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/common/utils.py\", line 150, in keys_to_typing\n    for i in range(len(val)):\nTypeError: object of type 'NoneType' has no len()\n",
+    "short_error": "TypeError: object of type 'NoneType' has no len()\n",
+    "test_elapsed_time": 5.9,
+    "test_timestamp": "2017.10.22.11.24.54.171",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

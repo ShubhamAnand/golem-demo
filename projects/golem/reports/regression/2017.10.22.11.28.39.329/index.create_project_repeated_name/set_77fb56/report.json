@@ -1,0 +1,29 @@
+{
+    "test_case": "index.create_project_repeated_name",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Click Create Project button",
+        "Write 'project_pfpcl' in element Project Name input",
+        "Click Create button",
+        "Click Create Project button",
+        "Write 'project_pfpcl' in element Project Name input",
+        "Click Create button",
+        "verify the application shows the error message: A project with that name already exists__b65a0b74",
+        "test end__fb69d324"
+    ],
+    "description": "Verify that the application shows the correct error message when the user tries to create a project with non unique name",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 13.05,
+    "test_timestamp": "2017.10.22.11.28.53.305",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "project_name": "'project_pfpcl'"
+    },
+    "environment": "test"
+}

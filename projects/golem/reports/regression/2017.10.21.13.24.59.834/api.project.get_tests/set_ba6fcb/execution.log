@@ -1,0 +1,20 @@
+2017-10-21 13:25:00,566 root INFO Test execution started: api.project.get_tests
+2017-10-21 13:25:00,567 root INFO Browser: chrome-headless
+2017-10-21 13:25:00,567 root INFO Environment: test
+2017-10-21 13:25:00,568 root INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-21 13:25:00,571 root INFO Make POST request to http://localhost:8000/project/get_tests/
+2017-10-21 13:25:00,580 urllib3.connectionpool DEBUG Starting new HTTP connection (1): localhost
+2017-10-21 13:25:00,596 urllib3.connectionpool DEBUG http://localhost:8000 "POST /project/get_tests/ HTTP/1.1" 500 None
+2017-10-21 13:25:00,597 root INFO Store value <Response [500]> in key last_response
+2017-10-21 13:25:00,597 root INFO Assert that 500 equals 200
+2017-10-21 13:25:00,598 root ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/project/get_tests.py", line 11, in test
+    assert_equals(data.last_response.status_code, 200)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 56, in assert_equals
+    raise Exception('Expected {} to equal {}'.format(actual_value, expected_value))
+Exception: Expected 500 to equal 200

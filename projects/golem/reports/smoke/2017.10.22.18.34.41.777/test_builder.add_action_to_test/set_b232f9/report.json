@@ -1,0 +1,31 @@
+{
+    "test_case": "test_builder.add_action_to_test",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Click None",
+        "Click #testSteps button.add-step",
+        "Write 'send keys' in element None",
+        "Press key: DOWN",
+        "Press key: ENTER",
+        "Click save",
+        "Refresh page",
+        "Assert that send keys equals send keys",
+        "test end__5bf8cbd6"
+    ],
+    "description": "Verify that the user can add an action to a test and save it successfully",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 12.33,
+    "test_timestamp": "2017.10.22.18.35.17.871",
+    "browser": "chrome",
+    "test_data": {
+        "action": "'send keys'",
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

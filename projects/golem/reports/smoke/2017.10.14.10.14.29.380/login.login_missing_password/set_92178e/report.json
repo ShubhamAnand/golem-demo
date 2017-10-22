@@ -1,0 +1,22 @@
+{
+    "test_case": "login.login_missing_password",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Click login_button",
+        "Verify the correct error message is shown__48acaf1b",
+        "Verify element 'Error list' contains text 'Password is required'",
+        "test end__63862d16"
+    ],
+    "description": "Verify that the user cannot log in if password value is missing",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 10.98,
+    "test_timestamp": "2017.10.14.10.14.41.499",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

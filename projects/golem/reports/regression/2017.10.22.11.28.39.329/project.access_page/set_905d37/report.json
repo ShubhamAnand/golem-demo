@@ -1,0 +1,15 @@
+{
+    "test_case": "project.access_page",
+    "result": "fail",
+    "steps": [],
+    "description": null,
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 92, in run_test\n    page, page.split('.'))\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/core/utils.py\", line 357, in generate_page_object_module\n    .format(project, full_path))\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/importlib/__init__.py\", line 126, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"<frozen importlib._bootstrap>\", line 978, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 961, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 948, in _find_and_load_unlocked\nModuleNotFoundError: No module named 'projects.golem.pages.page'\n\n\nteardown failed\nTraceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 135, in run_test\n    test_module.teardown(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/access_page.py\", line 22, in teardown\n    close()\nNameError: name 'close' is not defined\n",
+    "short_error": "NameError: name 'close' is not defined\n",
+    "test_elapsed_time": 0.03,
+    "test_timestamp": "2017.10.22.11.29.26.868",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

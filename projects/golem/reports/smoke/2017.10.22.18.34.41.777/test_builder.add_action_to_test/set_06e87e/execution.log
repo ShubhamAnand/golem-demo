@@ -1,0 +1,188 @@
+2017-10-22 18:35:12,103 root INFO Test execution started: test_builder.add_action_to_test
+2017-10-22 18:35:12,104 root INFO Browser: chrome
+2017-10-22 18:35:12,104 root INFO Environment: test
+2017-10-22 18:35:12,105 root INFO Using data: 
+    action: click
+    url: http://localhost:8000
+
+2017-10-22 18:35:13,130 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any"}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "chromeOptions": {"extensions": [], "args": ["--start-maximized"]}}}
+2017-10-22 18:35:14,458 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:14,459 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/window/current/maximize {"windowHandle": "current", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:14,692 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:14,692 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/url {"url": "http://localhost:8000", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:15,520 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:15,520 root INFO Navigate to: 'http://localhost:8000'
+2017-10-22 18:35:15,521 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element {"using": "id", "value": "username", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:15,552 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:15,552 root DEBUG Element found
+2017-10-22 18:35:15,552 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3283291216951252-1/displayed {"id": "0.3283291216951252-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:15,578 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:15,579 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3283291216951252-1/displayed {"id": "0.3283291216951252-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:15,588 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:15,588 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3283291216951252-1/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "0.3283291216951252-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:15,690 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:15,690 root INFO Write 'admin' in element username
+2017-10-22 18:35:15,691 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element {"using": "id", "value": "password", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:15,741 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:15,742 root DEBUG Element found
+2017-10-22 18:35:15,742 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3283291216951252-2/displayed {"id": "0.3283291216951252-2", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:15,794 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:15,794 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3283291216951252-2/displayed {"id": "0.3283291216951252-2", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:15,818 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:15,818 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3283291216951252-2/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "0.3283291216951252-2", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:15,961 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:15,962 root INFO Write 'admin' in element password
+2017-10-22 18:35:15,962 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element {"using": "css selector", "value": "button[type='submit']", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:15,992 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:15,993 root DEBUG Element found
+2017-10-22 18:35:15,993 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3283291216951252-3/displayed {"id": "0.3283291216951252-3", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:16,035 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:16,036 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3283291216951252-3/displayed {"id": "0.3283291216951252-3", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:16,049 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:16,049 root INFO Click login_button
+2017-10-22 18:35:16,050 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3283291216951252-3/click {"id": "0.3283291216951252-3", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:16,745 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:16,746 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/elements {"using": "css selector", "value": "#projectList>a", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:16,774 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:16,774 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-1/text {"id": "0.7017210164277163-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:16,822 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:16,823 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-2/text {"id": "0.7017210164277163-2", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:16,867 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:16,867 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-3/text {"id": "0.7017210164277163-3", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:16,898 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:16,898 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-4/text {"id": "0.7017210164277163-4", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:16,928 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:16,929 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-5/text {"id": "0.7017210164277163-5", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:16,960 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:16,960 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-6/text {"id": "0.7017210164277163-6", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:16,991 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:16,992 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-7/text {"id": "0.7017210164277163-7", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,026 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,027 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-8/text {"id": "0.7017210164277163-8", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,058 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,058 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-9/text {"id": "0.7017210164277163-9", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,116 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,117 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-10/text {"id": "0.7017210164277163-10", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,147 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,148 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-11/text {"id": "0.7017210164277163-11", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,179 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,179 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-12/text {"id": "0.7017210164277163-12", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,210 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,211 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-13/text {"id": "0.7017210164277163-13", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,239 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,239 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-14/text {"id": "0.7017210164277163-14", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,268 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,268 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/elements {"using": "css selector", "value": "#projectList>a", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,636 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,636 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-1/text {"id": "0.7017210164277163-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,646 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,646 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-2/text {"id": "0.7017210164277163-2", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,656 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,656 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-3/text {"id": "0.7017210164277163-3", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,665 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,666 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-4/text {"id": "0.7017210164277163-4", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,675 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,675 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-5/text {"id": "0.7017210164277163-5", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,685 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,685 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-6/text {"id": "0.7017210164277163-6", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,696 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,696 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-7/text {"id": "0.7017210164277163-7", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,706 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,706 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-8/text {"id": "0.7017210164277163-8", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,715 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,715 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-9/text {"id": "0.7017210164277163-9", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,725 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,726 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-10/text {"id": "0.7017210164277163-10", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,735 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,735 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-11/text {"id": "0.7017210164277163-11", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,744 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,744 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-12/text {"id": "0.7017210164277163-12", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,754 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,754 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-13/text {"id": "0.7017210164277163-13", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:17,764 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:17,764 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.7017210164277163-13/click {"id": "0.7017210164277163-13", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:19,816 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:19,817 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element {"using": "id", "value": "testCasesTree", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,505 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,505 root DEBUG Element found
+2017-10-22 18:35:20,505 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-1/displayed {"id": "0.3692478015706073-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,553 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,554 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-1/displayed {"id": "0.3692478015706073-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,572 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,573 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-1/element {"using": "css selector", "value": "li.tree-element[fullpath='testing_actions']", "id": "0.3692478015706073-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,623 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,624 root DEBUG Element found
+2017-10-22 18:35:20,624 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-2/displayed {"id": "0.3692478015706073-2", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,650 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,650 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-2/displayed {"id": "0.3692478015706073-2", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,659 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,659 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element {"using": "id", "value": "testCasesTree", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,667 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,667 root DEBUG Element found
+2017-10-22 18:35:20,668 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-1/displayed {"id": "0.3692478015706073-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,681 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,682 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-1/displayed {"id": "0.3692478015706073-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,690 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,691 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-1/element {"using": "css selector", "value": "li.tree-element[fullpath='testing_actions']", "id": "0.3692478015706073-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,699 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,699 root DEBUG Element found
+2017-10-22 18:35:20,699 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-2/displayed {"id": "0.3692478015706073-2", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,707 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,708 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-2/displayed {"id": "0.3692478015706073-2", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,716 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,717 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-2/element {"using": "css selector", "value": "a", "id": "0.3692478015706073-2", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,743 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,744 root DEBUG Element found
+2017-10-22 18:35:20,744 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-3/displayed {"id": "0.3692478015706073-3", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,771 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,772 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-3/displayed {"id": "0.3692478015706073-3", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:20,781 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:20,781 root INFO Click None
+2017-10-22 18:35:20,784 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.3692478015706073-3/click {"id": "0.3692478015706073-3", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:21,617 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:21,617 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element {"using": "css selector", "value": "#testSteps button.add-step", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:21,647 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:21,647 root DEBUG Element found
+2017-10-22 18:35:21,648 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.2727189138576913-1/displayed {"id": "0.2727189138576913-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:21,736 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:21,737 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.2727189138576913-1/displayed {"id": "0.2727189138576913-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:21,745 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:21,746 root INFO Click #testSteps button.add-step
+2017-10-22 18:35:21,746 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.2727189138576913-1/click {"id": "0.2727189138576913-1", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:22,017 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:22,018 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/elements {"using": "css selector", "value": "#testSteps .step-first-input", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:22,061 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:22,061 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.2727189138576913-15/value {"text": "click", "value": ["c", "l", "i", "c", "k"], "id": "0.2727189138576913-15", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:22,333 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:22,334 root INFO Write 'click' in element None
+2017-10-22 18:35:22,335 root INFO Press key: DOWN
+2017-10-22 18:35:22,336 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.2727189138576913-15/value {"text": "\ue015", "value": ["\ue015"], "id": "0.2727189138576913-15", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:22,394 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:22,394 root INFO Press key: ENTER
+2017-10-22 18:35:22,394 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.2727189138576913-15/value {"text": "\ue006", "value": ["\ue006"], "id": "0.2727189138576913-15", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:22,485 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:22,486 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element {"using": "id", "value": "save", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:22,525 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:22,526 root DEBUG Element found
+2017-10-22 18:35:22,527 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.2727189138576913-16/displayed {"id": "0.2727189138576913-16", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:22,561 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:22,561 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.2727189138576913-16/displayed {"id": "0.2727189138576913-16", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:22,570 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:22,571 root INFO Click save
+2017-10-22 18:35:22,571 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.2727189138576913-16/click {"id": "0.2727189138576913-16", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:22,666 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:22,667 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/refresh {"sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:22,853 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:22,853 root INFO Refresh page
+2017-10-22 18:35:22,854 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/elements {"using": "css selector", "value": "#testSteps .step-first-input", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:22,868 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:22,868 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/element/0.606711808873684-14/attribute/value {"name": "value", "id": "0.606711808873684-14", "sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:22,877 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:22,877 root INFO Assert that click equals click
+2017-10-22 18:35:22,877 root INFO Take screenshot test end
+2017-10-22 18:35:22,878 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16/screenshot {"sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:24,152 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:24,154 root INFO Test does not have a teardown function
+2017-10-22 18:35:24,316 selenium.webdriver.remote.remote_connection DEBUG DELETE http://127.0.0.1:52543/session/b77f70820660e4574e1e1cf8a5650b16 {"sessionId": "b77f70820660e4574e1e1cf8a5650b16"}
+2017-10-22 18:35:24,368 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 18:35:24,383 root INFO Test passed

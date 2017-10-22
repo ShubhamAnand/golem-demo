@@ -1,0 +1,27 @@
+{
+    "test_case": "project.access_suite",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'rinhj' in element None",
+        "Press key: ENTER",
+        "Click None",
+        "Verify element 'suite_name' contains text 'rinhj'",
+        "test end__407350e9"
+    ],
+    "description": "Verify that the user can access a suite by clicking on it in the suite list.",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 8.87,
+    "test_timestamp": "2017.10.22.11.29.27.485",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "suite_name": "'rinhj'"
+    },
+    "environment": "test"
+}

@@ -1,0 +1,23 @@
+19:20:30.057 INFO Test execution started: project.access_suite
+19:20:30.057 INFO Browser: chrome
+19:20:30.058 INFO Environment: test
+19:20:30.058 INFO Using data: 
+    url: http://localhost:8000
+
+19:20:32.537 INFO Navigate to: 'http://localhost:8000'
+19:20:32.664 INFO Write 'admin' in element username
+19:20:32.753 INFO Write 'admin' in element password
+19:20:32.792 INFO Click login_button
+19:20:33.373 INFO Random value generated: qjlwo
+19:20:33.373 INFO Store value qjlwo in key suite_name
+19:20:33.675 INFO Write 'qjlwo' in element None
+19:20:33.675 INFO Press key: ENTER
+19:20:33.698 INFO Take screenshot error
+19:20:34.533 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/access_suite.py", line 17, in test
+    project.access_suite(data.suite_name)
+AttributeError: module 'projects.golem.pages.project' has no attribute 'access_suite'
+19:20:34.534 INFO Close driver

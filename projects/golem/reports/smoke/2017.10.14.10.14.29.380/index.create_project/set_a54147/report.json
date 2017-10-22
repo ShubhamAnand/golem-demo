@@ -1,0 +1,26 @@
+{
+    "test_case": "index.create_project",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Click Create Project button",
+        "Write 'gldi' in element Project Name input",
+        "Click Create button",
+        "verify the project exists in the list__767d6f21",
+        "test end__1b90cab1"
+    ],
+    "description": "Verify that the user can create a new project in the index page",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 10.73,
+    "test_timestamp": "2017.10.14.10.14.30.121",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "project_name": "'gldi'"
+    },
+    "environment": "test"
+}

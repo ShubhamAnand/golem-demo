@@ -1,0 +1,25 @@
+{
+    "test_case": "project.add_page",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Click Create Project button",
+        "Write 'test' in element Project Name input",
+        "Click Create button",
+        "Access project test",
+        "error__d6f5519d"
+    ],
+    "description": "Verify that the user can create a new page from the project page",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 109, in run_test\n    test_module.setup(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py\", line 11, in setup\n    index.create_access_project('test')\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/index.py\", line 56, in create_access_project\n    access_project(project_name)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/index.py\", line 42, in access_project\n    raise Exception('Project {} not found'.format(project_name))\nException: Project test not found\n",
+    "short_error": "Exception: Project test not found\n",
+    "test_elapsed_time": 37.07,
+    "test_timestamp": "2017.10.21.13.25.10.022",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

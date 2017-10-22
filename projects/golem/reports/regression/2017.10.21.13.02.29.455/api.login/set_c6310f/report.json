@@ -1,0 +1,18 @@
+{
+    "test_case": "api.login",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000/login/'",
+        "error__c4acb77d"
+    ],
+    "description": "",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/login.py\", line 11, in test\n    store('someurl', 'data.env.url + '/login/'')\nNameError: name 'login' is not defined\n",
+    "short_error": "NameError: name 'login' is not defined\n",
+    "test_elapsed_time": 5.12,
+    "test_timestamp": "2017.10.21.13.02.30.098",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

@@ -1,0 +1,23 @@
+{
+    "test_case": "project.add_page",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "error__4d33f5f9"
+    ],
+    "description": "Verify that the user can create a new page from the project page",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_page.py\", line 16, in test\n    project.add_page(data.page_name)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py\", line 40, in add_page\n    click(form_container.find('a.new-element-link'))\nNameError: name 'click' is not defined\n",
+    "short_error": "NameError: name 'click' is not defined\n",
+    "test_elapsed_time": 6.41,
+    "test_timestamp": "2017.10.21.13.47.55.307",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "page_name": "'ggljq'"
+    },
+    "environment": "test"
+}

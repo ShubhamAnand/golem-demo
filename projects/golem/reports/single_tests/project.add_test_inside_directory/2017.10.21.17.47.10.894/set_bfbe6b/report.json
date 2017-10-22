@@ -1,0 +1,23 @@
+{
+    "test_case": "project.add_test_inside_directory",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "error__a53d4f65"
+    ],
+    "description": "Verify that the user can create a new test inside a directory",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_test_inside_directory.py\", line 15, in test\n    project.add_test_directory_if_not_exists('one')\nAttributeError: module 'projects.golem.pages.project' has no attribute 'add_test_directory_if_not_exists'\n",
+    "short_error": "AttributeError: module 'projects.golem.pages.project' has no attribute 'add_test_directory_if_not_exists'\n",
+    "test_elapsed_time": 4.07,
+    "test_timestamp": "2017.10.21.17.47.11.554",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "page_name": "'one/mghxy'"
+    },
+    "environment": "test"
+}

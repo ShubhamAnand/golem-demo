@@ -1,0 +1,23 @@
+{
+    "test_case": "index.create_project_missing_name",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Click Create Project button",
+        "Click Create button",
+        "verify the application shows the error message: Project name is too short__630ca9df"
+    ],
+    "description": "Verify that the application shows the correct error message when creating a project without name",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 6.49,
+    "test_timestamp": "2017.10.09.22.10.19.072",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

@@ -1,0 +1,23 @@
+{
+    "test_case": "login.login_incorrect_password",
+    "result": "pass",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'incorect password' in element password",
+        "Click login_button",
+        "Verify the correct error message is shown__39a48f1f",
+        "Verify element 'Error list' contains text 'Username and password do not match'",
+        "test end__9c4b92ff"
+    ],
+    "description": "Verify that the user cannot log in with in correct password",
+    "error": "",
+    "short_error": "",
+    "test_elapsed_time": 6.58,
+    "test_timestamp": "2017.10.21.13.25.00.972",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

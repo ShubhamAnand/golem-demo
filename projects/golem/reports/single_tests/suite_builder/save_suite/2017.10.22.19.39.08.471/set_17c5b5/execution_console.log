@@ -1,0 +1,27 @@
+19:39:08.787 INFO Test execution started: suite_builder/save_suite
+19:39:08.788 INFO Browser: chrome
+19:39:08.788 INFO Environment: test
+19:39:08.789 INFO Using data: 
+    url: http://localhost:8000
+
+19:39:11.395 INFO Navigate to: 'http://localhost:8000'
+19:39:11.533 INFO Write 'admin' in element username
+19:39:11.636 INFO Write 'admin' in element password
+19:39:11.685 INFO Click login_button
+19:39:12.420 INFO Random value generated: 229
+19:39:13.800 INFO Write 'test_save_suite229' in element None
+19:39:13.800 INFO Press key: ENTER
+19:39:13.913 INFO Click None
+19:39:14.209 INFO Write '3' in element Workers input
+19:39:14.253 INFO Click Save button
+19:39:14.311 INFO Waiting for element #toast-container to not exist
+19:39:18.588 INFO Refresh page
+19:39:18.589 INFO Take screenshot error
+19:39:19.366 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/suite_builder/save_suite.py", line 19, in test
+    suite_builder.verify_workers_value(3)
+AttributeError: module 'projects.golem.pages.suite_builder' has no attribute 'verify_workers_value'
+19:39:19.367 INFO Close driver

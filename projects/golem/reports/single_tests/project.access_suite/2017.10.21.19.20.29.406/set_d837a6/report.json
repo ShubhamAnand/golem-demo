@@ -1,0 +1,25 @@
+{
+    "test_case": "project.access_suite",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'qjlwo' in element None",
+        "Press key: ENTER",
+        "error__21ddac9b"
+    ],
+    "description": "Verify that the user can access a suite by clicking on it in the suite list.",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/access_suite.py\", line 17, in test\n    project.access_suite(data.suite_name)\nAttributeError: module 'projects.golem.pages.project' has no attribute 'access_suite'\n",
+    "short_error": "AttributeError: module 'projects.golem.pages.project' has no attribute 'access_suite'\n",
+    "test_elapsed_time": 4.54,
+    "test_timestamp": "2017.10.21.19.20.30.058",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "suite_name": "'qjlwo'"
+    },
+    "environment": "test"
+}

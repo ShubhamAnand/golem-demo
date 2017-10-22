@@ -1,0 +1,34 @@
+16:25:14.222 INFO Test execution started: project/add_test
+16:25:14.223 INFO Browser: chrome
+16:25:14.223 INFO Environment: test
+16:25:14.224 INFO Using data: 
+    url: http://localhost:8000
+
+16:25:17.133 INFO Navigate to: 'http://localhost:8000'
+16:25:17.280 INFO Write 'admin' in element username
+16:25:17.387 INFO Write 'admin' in element password
+16:25:17.440 INFO Click login_button
+16:25:17.953 INFO Random value generated: xbean
+16:25:17.953 INFO Store value xbean in key test_name
+16:25:18.158 INFO Take screenshot error
+16:25:18.946 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_test.py", line 15, in test
+    project.add_test(data.test_name)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 54, in add_test
+    form_container.find('a.new-element-link').click()
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py", line 501, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <a class="new-element-link" href="javascript:void(0)" onclick="displayNewElementForm(this)">...</a> is not clickable at point (278, 679). Other element would receive the click: <html lang="en">...</html>
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)
+
+16:25:18.947 INFO Close driver

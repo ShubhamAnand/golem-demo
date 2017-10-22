@@ -1,0 +1,13 @@
+2017-10-13 11:05:36,247 root INFO Test execution started: product/click_add_to_cart
+2017-10-13 11:05:36,248 root INFO Browser: chrome
+2017-10-13 11:05:36,254 root ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/tests/product/click_add_to_cart.py", line 11, in test
+    navigate('http://store.demoqa.com/')
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 145, in navigate
+    driver = get_browser()
+  File "/Users/lucianofeo/Desktop/golem/src/golem/browser.py", line 224, in get_browser
+    desired_capabilities=browser_definition['desired_capabilities'])
+KeyError: 'desired_capabilities'

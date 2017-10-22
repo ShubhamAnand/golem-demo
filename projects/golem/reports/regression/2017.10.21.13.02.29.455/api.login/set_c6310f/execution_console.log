@@ -1,0 +1,15 @@
+13:02:30.097 INFO Test execution started: api.login
+13:02:30.097 INFO Browser: chrome
+13:02:30.098 INFO Environment: test
+13:02:30.098 INFO Using data: 
+    url: http://localhost:8000
+
+13:02:32.685 INFO Navigate to: 'http://localhost:8000/login/'
+13:02:32.686 INFO Take screenshot error
+13:02:35.152 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/login.py", line 11, in test
+    store('someurl', 'data.env.url + '/login/'')
+NameError: name 'login' is not defined

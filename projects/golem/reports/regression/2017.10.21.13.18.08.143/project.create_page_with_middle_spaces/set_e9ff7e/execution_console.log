@@ -1,0 +1,24 @@
+13:18:35.690 INFO Test execution started: project.create_page_with_middle_spaces
+13:18:35.691 INFO Browser: chrome-headless
+13:18:35.692 INFO Environment: test
+13:18:35.693 INFO Using data: 
+    url: http://localhost:8000
+
+13:18:49.123 INFO Navigate to: 'http://localhost:8000'
+13:18:49.919 INFO Write 'admin' in element username
+13:18:50.277 INFO Write 'admin' in element password
+13:18:50.354 INFO Click login_button
+13:18:52.898 INFO Write 'test with spaces' in element None
+13:18:52.898 INFO Press key: ENTER
+13:18:52.928 INFO Waiting for element ('id', 'errorModal', 'Error modal') to be visible
+13:18:53.791 INFO Take screenshot error
+13:18:55.482 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/create_page_with_middle_spaces.py", line 15, in test
+    project.verify_error_message('Only letters, numbers, \'-\' and \'_\' are allowed')
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 140, in verify_error_message
+    raise Exception('Error message {} was not found'.format(error_message))
+Exception: Error message Only letters, numbers, '-' and '_' are allowed was not found
+13:18:55.483 INFO Close driver

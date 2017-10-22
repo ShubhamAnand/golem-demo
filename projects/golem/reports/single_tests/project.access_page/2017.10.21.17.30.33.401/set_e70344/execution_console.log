@@ -1,0 +1,24 @@
+17:30:34.063 INFO Test execution started: project.access_page
+17:30:34.063 INFO Browser: chrome
+17:30:34.064 INFO Environment: test
+17:30:34.064 INFO Using data: 
+    url: http://localhost:8000
+
+17:30:37.404 INFO Navigate to: 'http://localhost:8000'
+17:30:37.629 INFO Write 'admin' in element username
+17:30:37.734 INFO Write 'admin' in element password
+17:30:37.787 INFO Click login_button
+17:30:38.370 INFO Random value generated: dtaqk
+17:30:38.371 INFO Store value dtaqk in key page_name
+17:30:38.501 INFO Click None
+17:30:38.660 INFO Write 'dtaqk' in element None
+17:30:38.660 INFO Press key: ENTER
+17:30:38.677 INFO Take screenshot error
+17:30:39.044 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/access_page.py", line 18, in test
+    project.access_page(data.page_name)
+AttributeError: module 'projects.golem.pages.project' has no attribute 'access_page'
+17:30:39.045 INFO Close driver

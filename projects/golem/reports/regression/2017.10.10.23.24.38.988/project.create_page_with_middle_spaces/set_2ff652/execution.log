@@ -1,0 +1,72 @@
+2017-10-10 23:24:52,095 golem INFO Test execution started: project.create_page_with_middle_spaces
+2017-10-10 23:24:52,096 golem INFO Browser: chrome-headless
+2017-10-10 23:24:52,096 golem INFO Environment: test
+2017-10-10 23:24:52,097 golem INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-10 23:25:04,953 golem INFO Navigate to: 'http://localhost:8000'
+2017-10-10 23:25:05,005 golem DEBUG Element found
+2017-10-10 23:25:05,217 golem INFO Write 'admin' in element username
+2017-10-10 23:25:05,264 golem DEBUG Element found
+2017-10-10 23:25:05,426 golem INFO Write 'admin' in element password
+2017-10-10 23:25:05,459 golem DEBUG Element found
+2017-10-10 23:25:05,510 golem INFO Click login_button
+2017-10-10 23:25:07,985 golem DEBUG Element found
+2017-10-10 23:25:08,288 golem DEBUG Element found
+2017-10-10 23:25:08,436 golem DEBUG Element found
+2017-10-10 23:25:08,687 golem DEBUG Element found
+2017-10-10 23:25:09,004 golem INFO Write 'test with spaces' in element None
+2017-10-10 23:25:09,005 golem INFO Press key: ENTER
+2017-10-10 23:25:09,069 golem INFO Waiting for element ('id', 'errorModal', 'Error modal') to be visible
+2017-10-10 23:25:09,138 golem DEBUG Element found
+2017-10-10 23:25:09,297 golem DEBUG Element still not visible, waiting
+2017-10-10 23:25:09,807 golem DEBUG Element still not visible, waiting
+2017-10-10 23:25:10,317 golem DEBUG Element still not visible, waiting
+2017-10-10 23:25:10,826 golem DEBUG Element still not visible, waiting
+2017-10-10 23:25:11,336 golem DEBUG Element still not visible, waiting
+2017-10-10 23:25:11,845 golem DEBUG Element still not visible, waiting
+2017-10-10 23:25:12,355 golem DEBUG Element still not visible, waiting
+2017-10-10 23:25:12,866 golem DEBUG Element still not visible, waiting
+2017-10-10 23:25:13,385 golem DEBUG Element not visible, continuing anyway
+2017-10-10 23:25:13,393 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:13,902 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:14,412 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:14,920 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:15,430 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:15,939 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:16,448 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:16,956 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:17,465 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:17,975 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:18,485 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:18,993 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:19,502 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:20,010 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:20,521 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:21,032 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:21,540 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:22,050 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:22,560 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:23,070 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:23,580 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:24,089 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:24,598 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:25,108 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:25,618 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:26,128 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:26,637 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:27,146 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:27,653 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:28,162 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:28,675 golem DEBUG Element is not visible, waiting..
+2017-10-10 23:25:29,224 golem INFO Take screenshot error
+2017-10-10 23:25:30,881 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/create_page_with_middle_spaces.py", line 15, in test
+    project.verify_error_message('Only letters, numbers, \'-\' and \'_\' are allowed')
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py", line 140, in verify_error_message
+    raise Exception('Error message {} was not found'.format(error_message))
+Exception: Error message Only letters, numbers, '-' and '_' are allowed was not found
+2017-10-10 23:25:30,882 golem INFO Close driver

@@ -1,0 +1,20 @@
+21:21:32.815 INFO Test execution started: my_account.login_with_invalid_credentials
+21:21:32.816 INFO Browser: chrome-headless
+21:21:32.820 INFO Test does not have setup function
+21:21:46.326 INFO Navigate to: 'http://store.demoqa.com/'
+21:21:46.360 INFO Click my_account
+21:21:48.746 INFO Write 'my_username' in element username input
+21:21:48.831 INFO Write 'some_password' in element password input
+21:21:48.866 INFO Click login_button
+21:21:50.469 INFO Verify element 'error_message' contains text 'ERROR: Invalid login credentials.'
+21:21:50.490 INFO Take screenshot error
+21:21:51.518 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/tests/my_account/login_with_invalid_credentials.py", line 15, in test
+    'ERROR: Invalid login credentials.')
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 375, in verify_text_in_element
+    .format(text, webelement.name))
+golem.core.exceptions.TextNotPresent: Text 'ERROR: Invalid login credentials.' was not found in element error_message
+21:21:51.519 INFO Test does not have a teardown function

@@ -1,0 +1,25 @@
+2017-10-22 11:28:39,992 root INFO Test execution started: api.login_get
+2017-10-22 11:28:39,992 root INFO Browser: chrome
+2017-10-22 11:28:39,993 root INFO Environment: test
+2017-10-22 11:28:39,993 root INFO Using data: 
+    url: http://localhost:8000
+
+2017-10-22 11:28:41,006 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64304/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any"}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "chromeOptions": {"extensions": [], "args": ["--start-maximized"]}}}
+2017-10-22 11:28:41,603 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:41,603 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64304/session/86f9dff8d07fbca64efa4e9761418ad4/window/current/maximize {"windowHandle": "current", "sessionId": "86f9dff8d07fbca64efa4e9761418ad4"}
+2017-10-22 11:28:41,831 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:41,832 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:64304/session/86f9dff8d07fbca64efa4e9761418ad4/url {"url": "http://localhost:8000/login/", "sessionId": "86f9dff8d07fbca64efa4e9761418ad4"}
+2017-10-22 11:28:42,675 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:42,676 root INFO Navigate to: 'http://localhost:8000/login/'
+2017-10-22 11:28:42,677 root INFO Take screenshot error
+2017-10-22 11:28:42,677 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:64304/session/86f9dff8d07fbca64efa4e9761418ad4/screenshot {"sessionId": "86f9dff8d07fbca64efa4e9761418ad4"}
+2017-10-22 11:28:45,268 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2017-10-22 11:28:45,269 root ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/login_get.py", line 11, in test
+    assert_equals(data.last_response.status_code, 200)
+AttributeError: 'NoneType' object has no attribute 'status_code'
+2017-10-22 11:28:45,270 selenium.webdriver.remote.remote_connection DEBUG DELETE http://127.0.0.1:64304/session/86f9dff8d07fbca64efa4e9761418ad4 {"sessionId": "86f9dff8d07fbca64efa4e9761418ad4"}
+2017-10-22 11:28:45,323 selenium.webdriver.remote.remote_connection DEBUG Finished Request

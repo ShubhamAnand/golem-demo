@@ -1,0 +1,28 @@
+2017-10-11 21:21:32,815 golem INFO Test execution started: my_account.login_with_invalid_credentials
+2017-10-11 21:21:32,816 golem INFO Browser: chrome-headless
+2017-10-11 21:21:32,820 golem INFO Test does not have setup function
+2017-10-11 21:21:46,326 golem INFO Navigate to: 'http://store.demoqa.com/'
+2017-10-11 21:21:46,340 golem DEBUG Element found
+2017-10-11 21:21:46,360 golem INFO Click my_account
+2017-10-11 21:21:48,671 golem DEBUG Element found
+2017-10-11 21:21:48,746 golem INFO Write 'my_username' in element username input
+2017-10-11 21:21:48,762 golem DEBUG Element found
+2017-10-11 21:21:48,831 golem INFO Write 'some_password' in element password input
+2017-10-11 21:21:48,847 golem DEBUG Element found
+2017-10-11 21:21:48,866 golem INFO Click login_button
+2017-10-11 21:21:48,921 golem DEBUG Element found
+2017-10-11 21:21:48,934 golem DEBUG Element still not visible, waiting
+2017-10-11 21:21:49,441 golem DEBUG Element still not visible, waiting
+2017-10-11 21:21:49,952 golem DEBUG Element still not visible, waiting
+2017-10-11 21:21:50,469 golem INFO Verify element 'error_message' contains text 'ERROR: Invalid login credentials.'
+2017-10-11 21:21:50,490 golem INFO Take screenshot error
+2017-10-11 21:21:51,518 golem ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/store_demoqa/tests/my_account/login_with_invalid_credentials.py", line 15, in test
+    'ERROR: Invalid login credentials.')
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 375, in verify_text_in_element
+    .format(text, webelement.name))
+golem.core.exceptions.TextNotPresent: Text 'ERROR: Invalid login credentials.' was not found in element error_message
+2017-10-11 21:21:51,519 golem INFO Test does not have a teardown function

@@ -1,0 +1,30 @@
+19:43:11.467 INFO Test execution started: suite_builder/save_suite
+19:43:11.467 INFO Browser: chrome
+19:43:11.468 INFO Environment: test
+19:43:11.468 INFO Using data: 
+    url: http://localhost:8000
+
+19:43:13.902 INFO Navigate to: 'http://localhost:8000'
+19:43:14.017 INFO Write 'admin' in element username
+19:43:14.121 INFO Write 'admin' in element password
+19:43:14.177 INFO Click login_button
+19:43:15.062 INFO Random value generated: 848
+19:43:16.425 INFO Write 'test_save_suite848' in element None
+19:43:16.425 INFO Press key: ENTER
+19:43:16.530 INFO Click None
+19:43:16.765 INFO Clear Workers input element
+19:43:16.847 INFO Write '3' in element Workers input
+19:43:16.888 INFO Click Save button
+19:43:16.954 INFO Waiting for element #toast-container to not exist
+19:43:21.210 INFO Refresh page
+19:43:21.246 INFO Take screenshot error
+19:43:21.608 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/suite_builder/save_suite.py", line 20, in test
+    suite_builder.verify_workers_value(3)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/suite_builder.py", line 20, in verify_workers_value
+    raise Exception(msg)
+Exception: Error: expected workers value to e: 3,                but was 1
+19:43:21.609 INFO Close driver

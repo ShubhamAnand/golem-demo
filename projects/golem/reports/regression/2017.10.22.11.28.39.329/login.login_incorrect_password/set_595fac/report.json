@@ -1,0 +1,20 @@
+{
+    "test_case": "login.login_incorrect_password",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'incorect password' in element password",
+        "Click login_button"
+    ],
+    "description": "Verify that the user cannot log in with in correct password",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/login/login_incorrect_password.py\", line 14, in test\n    capture('Verify the correct error message is shown')\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/actions.py\", line 83, in capture\n    driver.get_screenshot_as_file(img_path)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py\", line 896, in get_screenshot_as_file\n    png = self.get_screenshot_as_png()\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py\", line 928, in get_screenshot_as_png\n    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))\nAttributeError: 'NoneType' object has no attribute 'encode'\n",
+    "short_error": "AttributeError: 'NoneType' object has no attribute 'encode'\n",
+    "test_elapsed_time": 530.11,
+    "test_timestamp": "2017.10.22.11.29.03.903",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}"
+    },
+    "environment": "test"
+}

@@ -1,0 +1,28 @@
+{
+    "test_case": "project.add_test_with_duplicated_name",
+    "result": "fail",
+    "steps": [
+        "Navigate to: 'http://localhost:8000'",
+        "Write 'admin' in element username",
+        "Write 'admin' in element password",
+        "Click login_button",
+        "Access project test",
+        "Write 'gjjbi' in element None",
+        "Press key: ENTER",
+        "Write 'gjjbi' in element None",
+        "Press key: ENTER",
+        "Verify that the error A test with that name already exists is displayed",
+        "error__eb667d6c"
+    ],
+    "description": "Verify that the user cannot create a new test if a test with the same name already exists",
+    "error": "Traceback (most recent call last):\n  File \"/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py\", line 114, in run_test\n    test_module.test(execution.data)\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/project/add_test_with_duplicated_name.py\", line 17, in test\n    project.verify_error_message('A test with that name already exists')\n  File \"/Users/lucianofeo/Desktop/golem/example/projects/golem/pages/project.py\", line 138, in verify_error_message\n    if error.text == error_message:\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py\", line 76, in text\n    return self._execute(Command.GET_ELEMENT_TEXT)['value']\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webelement.py\", line 501, in _execute\n    return self._parent.execute(command, params)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/webdriver.py\", line 308, in execute\n    self.error_handler.check_response(response)\n  File \"/Users/lucianofeo/Desktop/golem/env/lib/python3.6/site-packages/selenium-3.6.0-py3.6.egg/selenium/webdriver/remote/errorhandler.py\", line 194, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=61.0.3163.100)\n  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.12.5 x86_64)\n\n",
+    "short_error": "\n",
+    "test_elapsed_time": 20.41,
+    "test_timestamp": "2017.10.21.13.18.35.214",
+    "browser": "chrome (headless)",
+    "test_data": {
+        "env": "{'url': 'http://localhost:8000', 'name': 'test'}",
+        "test_name": "'gjjbi'"
+    },
+    "environment": "test"
+}

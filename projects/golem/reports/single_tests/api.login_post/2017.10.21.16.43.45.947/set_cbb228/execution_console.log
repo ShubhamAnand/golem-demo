@@ -1,0 +1,18 @@
+16:43:46.702 INFO Test execution started: api.login_post
+16:43:46.703 INFO Browser: chrome
+16:43:46.703 INFO Environment: test
+16:43:46.703 INFO Using data: 
+    url: http://localhost:8000
+
+16:43:46.707 INFO Make POST request to http://localhost:8000/login/
+16:43:46.732 INFO Store value <Response [400]> in key last_response
+16:43:46.732 INFO Assert that 400 equals 200
+16:43:46.733 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/api/login_post.py", line 11, in test
+    assert_equals(data.last_response.status_code, 200)
+  File "/Users/lucianofeo/Desktop/golem/src/golem/actions.py", line 56, in assert_equals
+    raise Exception('Expected {} to equal {}'.format(actual_value, expected_value))
+Exception: Expected 400 to equal 200

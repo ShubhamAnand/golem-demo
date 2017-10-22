@@ -1,0 +1,19 @@
+19:37:47.724 INFO Test execution started: suite_builder/save_suite
+19:37:47.724 INFO Browser: chrome
+19:37:47.725 INFO Environment: test
+19:37:47.725 INFO Using data: 
+    url: http://localhost:8000
+
+19:37:50.081 INFO Navigate to: 'http://localhost:8000'
+19:37:50.217 INFO Write 'admin' in element username
+19:37:50.315 INFO Write 'admin' in element password
+19:37:50.358 INFO Click login_button
+19:37:51.043 INFO Take screenshot error
+19:37:51.793 ERROR An error ocurred:
+Traceback (most recent call last):
+  File "/Users/lucianofeo/Desktop/golem/src/golem/test_runner/test_runner.py", line 114, in run_test
+    test_module.test(execution.data)
+  File "/Users/lucianofeo/Desktop/golem/example/projects/golem/tests/suite_builder/save_suite.py", line 15, in test
+    project.create_access_suite('test_save_suite' + random('ddd'))
+AttributeError: module 'projects.golem.pages.project' has no attribute 'create_access_suite'
+19:37:51.794 INFO Close driver
